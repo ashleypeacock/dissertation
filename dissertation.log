@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.25)  25 OCT 2013 02:00
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.25)  25 OCT 2013 19:38
 entering extended mode
 **dissertation.tex
 (C:\Users\Ashley\dissertation\dissertation\dissertation.tex
@@ -45,59 +45,72 @@ LaTeX Font Info:    ... okay on input line 2.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 2.
 LaTeX Font Info:    ... okay on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 5.
+(Font)              <12> on input line 6.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 5.
+(Font)              <8> on input line 6.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 5.
+(Font)              <6> on input line 6.
  [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
 (C:\Users\Ashley\dissertation\dissertation\dissertation.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 2.
-)
-\tf@toc=\write3
  [1
 
-]
+])
+\tf@toc=\write3
+ [2]
 Chapter 1.
-[2
+[3
 
 ]
 Chapter 2.
-[3
+[4
 
-] [4]
+]
+
+LaTeX Warning: Citation `findreference' on page 5 undefined on input line 30.
+
+[5] [6]
 Chapter 3.
-[5
+[7
 
 ]
 Chapter 4.
-[6
+[8
 
 ]
 Chapter 5.
-[7
+[9
 
-] (C:\Users\Ashley\dissertation\dissertation\dissertation.aux) ) 
+]
+Chapter 6.
+[10
+
+] [11
+
+] (C:\Users\Ashley\dissertation\dissertation\dissertation.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 263 strings out of 493921
- 3216 string characters out of 3147278
- 52031 words of memory out of 3000000
- 3628 multiletter control sequences out of 15000+200000
+ 269 strings out of 493921
+ 3293 string characters out of 3147278
+ 54031 words of memory out of 3000000
+ 3634 multiletter control sequences out of 15000+200000
  10023 words of font info for 35 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 23i,6n,19p,491b,179s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmr17.pfb>
-Output written on dissertation.pdf (8 pages, 81060 bytes).
+ 23i,6n,19p,642b,179s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmr17.pfb>
+Output written on dissertation.pdf (12 pages, 91378 bytes).
 PDF statistics:
- 49 PDF objects out of 1000 (max. 8388607)
+ 61 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
