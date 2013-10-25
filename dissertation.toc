@@ -1,0 +1,27 @@
+\contentsline {chapter}{\numberline {1}Introduction}{2}
+\contentsline {section}{\numberline {1.1}Selecting a project}{2}
+\contentsline {chapter}{\numberline {2}Literature review}{3}
+\contentsline {section}{\numberline {2.1}What is Autism?}{3}
+\contentsline {subsection}{\numberline {2.1.1}Triad of Impairments}{3}
+\contentsline {subsubsection}{Sensory overloads}{3}
+\contentsline {subsubsection}{Meltdowns}{3}
+\contentsline {subsubsection}{Fears}{3}
+\contentsline {subsection}{\numberline {2.1.2}Impact and Prevalence}{3}
+\contentsline {subsection}{\numberline {2.1.3}Public perception}{3}
+\contentsline {subsubsection}{Impact in school}{4}
+\contentsline {subsubsection}{Problems with training}{4}
+\contentsline {chapter}{\numberline {3}Design process}{5}
+\contentsline {section}{\numberline {3.1}Interviews}{5}
+\contentsline {section}{\numberline {3.2}Game design}{5}
+\contentsline {subsection}{\numberline {3.2.1}House design}{5}
+\contentsline {subsection}{\numberline {3.2.2}Character}{5}
+\contentsline {subsubsection}{Autism aspects to convey}{5}
+\contentsline {subsection}{\numberline {3.2.3}Design of sensory system}{5}
+\contentsline {subsection}{\numberline {3.2.4}Story boards}{5}
+\contentsline {chapter}{\numberline {4}Prototype}{6}
+\contentsline {section}{\numberline {4.1}Implementation}{6}
+\contentsline {section}{\numberline {4.2}Evaluation}{6}
+\contentsline {subsection}{\numberline {4.2.1}Expert feedback}{6}
+\contentsline {subsection}{\numberline {4.2.2}User feedback}{6}
+\contentsline {section}{\numberline {4.3}Improvements}{6}
+\contentsline {chapter}{\numberline {5}First version}{7}
