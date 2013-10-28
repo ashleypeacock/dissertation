@@ -5,17 +5,17 @@
 \contentsline {subsection}{\numberline {2.1.1}Triad of Impairments}{4}
 \contentsline {subsection}{\numberline {2.1.2}Information processing}{5}
 \contentsline {subsubsection}{Sensory processing}{6}
-\contentsline {subsection}{\numberline {2.1.3}Resulting behaviours}{7}
-\contentsline {subsubsection}{Sensory/Information overload}{7}
+\contentsline {subsubsection}{Sensory and Information overload}{8}
+\contentsline {subsection}{\numberline {2.1.3}Resulting behaviours}{8}
 \contentsline {subsubsection}{Meltdowns}{8}
-\contentsline {subsubsection}{Repetitive behaviours}{8}
-\contentsline {subsubsection}{Unusual fears}{8}
+\contentsline {subsubsection}{Repetitive behaviours}{9}
+\contentsline {subsubsection}{Unusual fears}{9}
 \contentsline {section}{\numberline {2.2}Impact and Prevalence}{9}
 \contentsline {section}{\numberline {2.3}Public perception of autism}{10}
-\contentsline {section}{\numberline {2.4}Previous work}{10}
-\contentsline {subsection}{\numberline {2.4.1}Education software}{10}
-\contentsline {subsection}{\numberline {2.4.2}Other simulators}{10}
-\contentsline {section}{\numberline {2.5}Other}{10}
+\contentsline {section}{\numberline {2.4}Previous work}{11}
+\contentsline {subsection}{\numberline {2.4.1}Education software}{11}
+\contentsline {subsection}{\numberline {2.4.2}Other simulators}{11}
+\contentsline {section}{\numberline {2.5}Other}{11}
 \contentsline {chapter}{\numberline {3}Design process}{12}
 \contentsline {section}{\numberline {3.1}Interviews}{12}
 \contentsline {section}{\numberline {3.2}Game design}{12}
