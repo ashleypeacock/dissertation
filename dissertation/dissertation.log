@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.25)  28 OCT 2013 05:34
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.25)  28 OCT 2013 07:55
 entering extended mode
 **dissertation.tex
 ("C:\Users\Ashley\University git\dissertation\dissertation\dissertation.tex"
@@ -76,65 +76,74 @@ Overfull \hbox (4.36177pt too wide) in paragraph at lines 35--37
 hat non-autistic
  []
 
-[5]
-
-LaTeX Warning: Citation `olga' on page 6 undefined on input line 51.
-
-[6]
-Underfull \hbox (badness 1448) in paragraph at lines 82--83
+[5] [6]
+Underfull \hbox (badness 1448) in paragraph at lines 80--81
 \OT1/cmr/m/n/10.95 pres-sure by crawl-ing un-der
  []
 
 
-Underfull \hbox (badness 4505) in paragraph at lines 86--86
+Underfull \hbox (badness 4505) in paragraph at lines 84--84
 []\OT1/cmr/m/n/10.95 Difficulty with walk-ing or
  []
 
 
-Overfull \hbox (26.59262pt too wide) in paragraph at lines 73--89
+Overfull \hbox (26.59262pt too wide) in paragraph at lines 71--87
 [][] 
  []
 
-[7] [8] [9] [10] [11]
-Chapter 3.
-[12
+[7] [8] [9]
 
-]
-Chapter 4.
+LaTeX Warning: Citation `rssyouth' on page 10 undefined on input line 130.
+
+
+LaTeX Warning: Citation `rss_ensory' on page 10 undefined on input line 130.
+
+
+LaTeX Warning: Citation `rss_sensory' on page 10 undefined on input line 130.
+
+
+LaTeX Warning: Citation `rssyouth' on page 10 undefined on input line 130.
+
+[10] [11] [12]
+Chapter 3.
 [13
 
 ]
-Chapter 5.
+Chapter 4.
 [14
 
 ]
-Chapter 6.
+Chapter 5.
 [15
 
-] [16
+]
+Chapter 6.
+[16
 
-] [17]
+] [17
+
+] [18]
 ("C:\Users\Ashley\University git\dissertation\dissertation\dissertation.aux")
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 278 strings out of 493921
- 3533 string characters out of 3147278
- 54031 words of memory out of 3000000
- 3643 multiletter control sequences out of 15000+200000
+ 285 strings out of 493921
+ 3647 string characters out of 3147278
+ 56031 words of memory out of 3000000
+ 3650 multiletter control sequences out of 15000+200000
  10023 words of font info for 35 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 23i,9n,19p,874b,203s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 23i,9n,19p,958b,201s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on dissertation.pdf (18 pages, 106906 bytes).
+Output written on dissertation.pdf (19 pages, 110221 bytes).
 PDF statistics:
- 80 PDF objects out of 1000 (max. 8388607)
+ 84 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
