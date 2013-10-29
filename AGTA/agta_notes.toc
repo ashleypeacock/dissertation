@@ -1,0 +1,9 @@
+\contentsline {section}{\numberline {0.1}Nash equilibrium}{1}
+\contentsline {subsection}{\numberline {0.1.1}Methods}{1}
+\contentsline {subsection}{\numberline {0.1.2}Informal methods}{1}
+\contentsline {subsection}{\numberline {0.1.3}Proofs and properties}{1}
+\contentsline {section}{\numberline {0.2}Iterative Dominance}{1}
+\contentsline {subsection}{\numberline {0.2.1}Strictly dominated strategy}{1}
+\contentsline {section}{\numberline {0.3}Notation and Definitions }{1}
+\contentsline {section}{\numberline {0.4}Examples}{1}
+\contentsline {subsection}{\numberline {0.4.1}Nash Equilibrium}{1}

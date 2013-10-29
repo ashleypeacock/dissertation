@@ -2,19 +2,71 @@
 \begin{document}
 
 \title{AGTA notes}
+
 \maketitle
 
-\section{Dominance}
+\section{Nash equilibrium}
+Nash equilibrium occurs when two players are simultaneously playing their best strategy and no player can benefit by deviating from this strategy. Every game has a mixed strategy Nash equilibrium but not all games have a pure strategy Nash.
 
-\subsection{Strictly dominated strategy}
+\subsection{Methods}
+
+\subsection{Informal methods}
+The following is a quick, informal method of finding Nash equilibrium although it is not advised to use definitively.
+
+\subsubsection*{Example}
+
+Consider the following matrix:
+
+\begin{center}
+$ \bordermatrix{~ & A    & B    & C    \cr 
+				D & 5, 1 & 2, 0 & 2, 2 \cr 
+				E & 0, 4 & 1, 5 & 4, 5 \cr
+				F & 2, 3 & 3, 6 & 1, 0 \cr}$ \end{center}  
+				
+In order to find the Nash Equilibrium, we need to find each players best responses to each of the other players best responses. Starting with player 1 (the rows), we highlight the best response that player 1 can make if player 2 plays A:
+
+\begin{center}
+$ \bordermatrix{~ & A & B & C \cr 
+				D & \textbf{5}, 1 & 2, 0 & 2, 2 \cr 
+				E & 0, 4 & 1, 5 & 4, 5 \cr
+				F & 2, 3 & 3, 6 & 1, 0 \cr}$  
+				\end{center}
+
+And then player 1's best response if player 2 plays B or C:
+\begin{center}
+$ \bordermatrix{~ & A & B & C \cr 
+				D & \textbf{5}, 1 & 2, 0 & 2, 2 \cr 
+				E & 0, 4 & 1, 5 & \textbf{4}, 5 \cr
+				F & 2, 3 & \textbf{3}, 6 & 1, 0 \cr}$  
+\end{center}		
+We then do the same for player 2 for responses to player 1, obtaining.
+\begin{center}
+$ \bordermatrix{~ & A & B & C \cr 
+				D & \textbf{5}, 1 & 2, 0 & 2, \textbf{2} \cr 
+				E & 0, 4 & 1, \textbf{5} & \textbf{4}, \textbf{5} \cr
+				F & 2, 3 & \textbf{3}, \textbf{6} & 1, 0 \cr}$  
+\end{center}		
+As (4, 5) and (3, 6) are both underlined, these are the Nash equilibriums of the game.
+			   
+
+\subsection{Proofs and properties}
+
+\section{Iterative Dominance}
+We can intuitively see that if one strategy is better than another(i.e it is a dominant strategy) than the dominated strategy will never be played. The order that iterative dominance is conducted does not effect the result.
+
+There are two types types of dominance - strict and weak dominance.
+
+If a game can be reduced to one strategy by strict dominance then we can say that there is only one Nash Equilibrium of the game. 
+
+\subsection*{Strictly dominated strategy}
 \begin{quote}
 A strictly dominated strategy can never be a best reply.
 \end{quote}
 Thus, we should remove it as it will never be played. 
 
-\section{Notation}
-$u_{i}(a_{i}, a_{-i})$ Means the pay off for playing $a_{i}$, regardless of all other strategies \\
-$u_{i}(a_{i}, a_{-i}) < u_{i}(a`_{i}, a_{-i})$
+\section{Notation and Definitions }
+$u_{i}(a_{i}, a_{-i})$: the pay off for playing $a_{i}$, regardless of all other strategies \\
+$u_{i}(a_{i}, a_{-i}) < u_{i}(a`_{i}, a_{-i})$: utility of $a`_{i}$ is better than $a_{i}$
 
 \section{Examples}
 \subsection{Nash Equilibrium}
