@@ -1,19 +1,30 @@
-\documentclass[11pt]{article}
+\documentclass[11pt]{report}
+
+\newcommand{\define}[2] {
+  \textbf{Definition: #1}
+  \begin{center} #2
+\end{center}
+}
+
 \begin{document}
 
 \title{AGTA notes}
 
 \maketitle
+\tableofcontents
 
-\section{Nash equilibrium}
+\chapter{Mixed and pure strategies}
+
+
+\chapter{Nash equilibrium}
 Nash equilibrium occurs when two players are simultaneously playing their best strategy and no player can benefit by deviating from this strategy. Every game has a mixed strategy Nash equilibrium but not all games have a pure strategy Nash.
 
-\subsection{Methods}
+\section{Methods}
 
-\subsection{Informal methods}
+\section{Informal methods}
 The following is a quick, informal method of finding Nash equilibrium although it is not advised to use definitively.
 
-\subsubsection*{Example}
+\subsection*{Example}
 
 Consider the following matrix:
 
@@ -49,26 +60,38 @@ $ \bordermatrix{~ & A & B & C \cr
 As (4, 5) and (3, 6) are both underlined, these are the Nash equilibriums of the game.
 			   
 
-\subsection{Proofs and properties}
+\section{Proofs and properties}
 
-\section{Iterative Dominance}
+\chapter{Minimax and Maximin}
+For 2-player zero-sum games, Nash Equilibria and Minimax profiles are the same thing. 
+
+
+\chapter{Iterative Dominance}
 We can intuitively see that if one strategy is better than another(i.e it is a dominant strategy) than the dominated strategy will never be played. The order that iterative dominance is conducted does not effect the result.
 
 There are two types types of dominance - strict and weak dominance.
 
-If a game can be reduced to one strategy by strict dominance then we can say that there is only one Nash Equilibrium of the game. 
+If both player are playing strictly dominated strategies, it must be a unique Nash Equilibrium. 
 
-\subsection*{Strictly dominated strategy}
+\section*{Strictly dominated strategy}
 \begin{quote}
 A strictly dominated strategy can never be a best reply.
 \end{quote}
 Thus, we should remove it as it will never be played. 
 
-\section{Notation and Definitions }
-$u_{i}(a_{i}, a_{-i})$: the pay off for playing $a_{i}$, regardless of all other strategies \\
-$u_{i}(a_{i}, a_{-i}) < u_{i}(a`_{i}, a_{-i})$: utility of $a`_{i}$ is better than $a_{i}$
+If both player are playing strictly dominated strategies, it must be a unique Nash Equilibrium. 
 
-\section{Examples}
-\subsection{Nash Equilibrium}
+\chapter{Notation and Definitions }
+
+\section{Basic definitions}
+\define{Mixed strategy profile}{A set of all the possible combinations of mixed strategies usually denoted by $x_{i}$. A mixed strategy is pure if $x_{i} = 1$ and this is denoted $pi_{i, j}$}
+\define{Pure strategy profile}{A set of all the possible combinations of mixed strategies usually denoted by $S_{i}$}
+\define{Mixed strategy}{ A mixed strategy is a randomised strategy $x_i$ with a probability distribution over $S_i$(\textbf{pure strategies}). A player will choose a random strategy based on the probabilities of $x_{i}$. In other words $x_{i}$ is a vector of probabilities that sum: \\ $x_{i}(1) + x_{i}(2) + x_{i}(3) + .... + x_{i}(m) = 1$ }
+\define{Zero-sum game}{In a zero sum game the utilities/pay-offs of the players must sum to zero. \\ In other words $u_{1} = -u_{2}$}
+\define{$u_{i}(a_{i}, a_{-i})$}{the pay off for playing $a_{i}$, regardless of all other strategies}
+\define{$u_{i}(a_{i}, a_{-i}) < u_{i}(a`_{i}, a_{-i})$}{utility of $a`_{i}$ is better than $a_{i}$}
+\define{Pareto efficient}{To do}
+\define{ESS: Evolutionary Stable Solution}{todo}
+
 
 \end{document}
