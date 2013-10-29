@@ -1,0 +1,80 @@
+\documentclass[11pt]{report}
+
+\newcommand{\define}[2] {
+  \textbf{Definition: #1}
+  \begin{center} #2
+\end{center}
+}
+
+\begin{document}
+
+\title{AGTA HW1 \\ Ashley Peacock \\ S0936300}
+
+\maketitle
+
+\section{Question 1}
+
+Given the matrix: 
+
+\begin{center}
+$ \bordermatrix{~ & ~    & ~    & ~ & ~    \cr 
+				~ & (6, 5) & (4, 8) & (6, 4) & (9, 2) \cr 
+				~ & (4, 6) & (7, 4) & (7, 5) & (4, 4) \cr
+				~ & (4, 7) & (4, 4) & (9, 5) & (2, 6) \cr
+				~ & (5, 9) & (4, 10)& (4, 9) & (8, 9) \cr}$ 
+\end{center}
+				
+To compute Nash equilibrium we start by removing dominated strategies.
+
+\begin{enumerate}
+\item Column 4 is weakly dominated by Column 1.
+\item Column 3 is weakly dominated by Column 1.
+\item Row 4 is is weakly dominated by Row 1.
+\end{enumerate}
+
+Removing the dominated strategies we are left with:
+
+\begin{center}
+$\bordermatrix{~ & ~      & ~  \cr
+			   ~ & (6, 5) & (4, 8) \cr
+			   ~ & (4, 6) & (7, 4) \cr
+			   ~ & (4, 7) & (4, 4) \cr} $
+\end{center}
+			   
+Row 3 is dominated by row 1 and 2. This leaves us with the following game:
+
+\begin{center}
+$\bordermatrix{~ & A      & B  \cr
+			   C & (6, 5) & (4, 8) \cr
+			   D & (4, 6) & (7, 4) \cr} $
+\end{center}
+
+There is no pure strategy nash equilibrium. The game cannot be reduced to a single strategy, i.e there is no strict dominant strategy for both players. Nash's theorem however states that every finite game does have a mixed nash equilibrium.
+
+Let $q$ be the probability that player 2 plays strategy A and $(1 - q)$ the probability player 2 plays strategy B.
+Let $p$ be the probability that player 1 plays strategy C and $(1 - p)$ the probability player 1 plays strategy D.
+
+Pay off for player 1:
+\begin{center}
+$6q + 4(1 - q) = 4q + 7(1 - q)$ \\
+$13q = 8q + 3$\\
+$q = 3/5$\\
+\end{center}
+
+Pay off for player 2
+\begin{center}
+$5p + 6(1 - p) = 8p + 4(1 - p)$\\
+$-p + 6 = 4p + 4$\\
+$5p = 2$\\
+$p = 2 / 5$
+\end{center}
+
+Profiles:\\
+$x_{1} = (2/5, 3/5 0, 0)$ \\
+$x_{2} = (3/5, 2/5, 0, 0)$ \\
+
+\section{Question 2}
+
+
+
+\end{document}
