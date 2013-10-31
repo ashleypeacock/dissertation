@@ -1,4 +1,4 @@
-\documentclass[11pt]{report}
+\documentclass[11pt]{article}
 
 \newcommand{\define}[2] {
   \textbf{Definition: #1}
@@ -8,7 +8,7 @@
 
 \begin{document}
 
-\title{AGTA HW1 \\ Ashley Peacock \\ S0936300}
+\title{AGTA HW1 \\ S0936300}
 
 \maketitle
 
@@ -24,7 +24,7 @@ $ \bordermatrix{~ & ~    & ~    & ~ & ~    \cr
 				~ & (5, 9) & (4, 10)& (4, 9) & (8, 9) \cr}$ 
 \end{center}
 				
-To compute Nash equilibrium we start by removing dominated strategies.
+To compute Nash equilibrium we start by removing dominated strategies. 
 
 \begin{enumerate}
 \item Column 4 is weakly dominated by Column 1.
@@ -49,7 +49,7 @@ $\bordermatrix{~ & A      & B  \cr
 			   D & (4, 6) & (7, 4) \cr} $
 \end{center}
 
-There is no pure strategy nash equilibrium. The game cannot be reduced to a single strategy, i.e there is no strict dominant strategy for both players. Nash's theorem however states that every finite game does have a mixed nash equilibrium.
+There is no pure strategy Nash Equilibrium. Nash's theorem however states that every finite game does have at least one mixed nash equilibrium.
 
 Let $q$ be the probability that player 2 plays strategy A and $(1 - q)$ the probability player 2 plays strategy B.
 Let $p$ be the probability that player 1 plays strategy C and $(1 - p)$ the probability player 1 plays strategy D.
@@ -70,11 +70,49 @@ $p = 2 / 5$
 \end{center}
 
 Profiles:\\
-$x_{1} = (2/5, 3/5 0, 0)$ \\
-$x_{2} = (3/5, 2/5, 0, 0)$ \\
+	$x_{1} = (2/5, 3/5, 0, 0)$ \\
+	$x_{2} = (3/5, 2/5, 0, 0)$ \\
+	
+We can see that both of these profiles are nash equilibrium as by choosing these profiles, the players become indifferent to one another. There are no other pure strategy equilibrium however, by using weak dominance there is a possibility of other mixed strategy equilibriums that were removed. 
 
 \section{Question 2}
 
+Linear problems used:
+\begin{center}
+$5a + 7b + 2c + 4d + 3e >= v$ \\
+$2a + 3b + 4c + 9d + 6e >= v$ \\
+$a + 5b + 8c + 3d + 6e >= v$ \\
+$9a + 6b + c + 4d + 4e >= v$ \\
+$5a + 2b + 7c + 6d + 2e >= v$ \\
+$a + b + c + d + e = 1$ \\
+$a >= 0, b>=0, c>=0, d>=0, e>=0$
+\end{center}
+
+Where $v$ is the value we are trying to maximise.
+
+Result:\\
+\begin{center}
+$a = \frac{48}{335}, b = \frac{23}{67}, c=\frac{82}{335}, d = \frac{17}{67}, e = \frac{1}{67}$
+\end{center}
+
+Value of game: 
+\begin{center}
+$v = \frac{1564}{335}$
+\end{center}
+
+\section{Question 3}
+
+\subsection{Part A}
+Matching pennies has a unique mixed strategy Nash equilibrium. Both players have the strategy profile $x = (\frac{1}{2}, \frac{1}{2})$
+
+\subsection{Part B}
+
+This part was proven experimentally. The experiment was carried out with a different number of trials and it could be observed that with an increasing amount of trials/games played that the probabilities further converged. No noticeable differences were observed when choosing different starting strategies and all four possible starting strategies were experimented with. No noticeable differences were observed when choosing a different tie break.
+
+In the case of a tie break, tails was chosen. Code is attached.
+
+\subsubsection*{Results}
+Please see appendix for an example of a full, step by step print out of a game converging. Below are the final probabilities/results when trailed with each of the different 4 strategies with a different number of moves.
 
 
 \end{document}
