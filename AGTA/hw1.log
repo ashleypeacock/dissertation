@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.25)  31 OCT 2013 03:10
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.25)  31 OCT 2013 14:49
 entering extended mode
 **hw1.tex
 ("C:\Users\Ashley\University git\dissertation\AGTA\hw1.tex"
@@ -67,27 +67,67 @@ Underfull \hbox (badness 10000) in paragraph at lines 93--94
 
  []
 
-[2] [3] ("C:\Users\Ashley\University git\dissertation\AGTA\hw1.aux") ) 
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 132--134
+
+ []
+
+[3]
+Underfull \hbox (badness 6792) in paragraph at lines 183--184
+[]\OT1/cmr/m/n/10.95 ((0.4934999, 0.506499), (0.4995,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--186
+[]\OT1/cmr/m/n/10.95 ((0.5066, 0.4934), (0.500499,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
+[]\OT1/cmr/m/n/10.95 ((0.506399, 0.493599), (0.5007,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--190
+[]\OT1/cmr/m/n/10.95 ((0.506499, 0.493499), (0.5006,
+ []
+
+
+Overfull \hbox (17.43304pt too wide) in paragraph at lines 155--192
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--196
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--233
+
+ []
+
+[4] [5] [6] ("C:\Users\Ashley\University git\dissertation\AGTA\hw1.aux") ) 
 Here is how much of TeX's memory you used:
  237 strings out of 493921
  2790 string characters out of 3147278
- 54031 words of memory out of 3000000
+ 62031 words of memory out of 3000000
  3605 multiletter control sequences out of 15000+200000
  8811 words of font info for 31 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 21i,7n,19p,460b,193s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on hw1.pdf (3 pages, 105867 bytes).
+ 21i,10n,19p,460b,199s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on hw1.pdf (6 pages, 114530 bytes).
 PDF statistics:
- 48 PDF objects out of 1000 (max. 8388607)
+ 57 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

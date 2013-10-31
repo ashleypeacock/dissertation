@@ -54,14 +54,14 @@ There is no pure strategy Nash Equilibrium. Nash's theorem however states that e
 Let $q$ be the probability that player 2 plays strategy A and $(1 - q)$ the probability player 2 plays strategy B.
 Let $p$ be the probability that player 1 plays strategy C and $(1 - p)$ the probability player 1 plays strategy D.
 
-Pay off for player 1:
+For player 1 to be indifferent to player 2:
 \begin{center}
 $6q + 4(1 - q) = 4q + 7(1 - q)$ \\
 $13q = 8q + 3$\\
 $q = 3/5$\\
 \end{center}
 
-Pay off for player 2
+For player 2 to be indifferent to player 1:
 \begin{center}
 $5p + 6(1 - p) = 8p + 4(1 - p)$\\
 $-p + 6 = 4p + 4$\\
@@ -111,8 +111,122 @@ This part was proven experimentally. The experiment was carried out with a diffe
 
 In the case of a tie break, tails was chosen. Code is attached.
 
+(unsure of proving mathematically, could use summations but was unsure if this was the correct approach)
+
 \subsubsection*{Results}
-Please see appendix for an example of a full, step by step print out of a game converging. Below are the final probabilities/results when trailed with each of the different 4 strategies with a different number of moves.
+Please see appendix for an example of a full, step by step print out of a game converging and resulting probabilities when played over a number of trials.
+
+We can see from the results that the final probabilities tend to converge to 0.5. We can also see in the results where the probability is printed after each move that the results tend to 0.5.
 
 
+
+\section{Question 4}
+
+\subsection{Part B}
+
+Solution to LP is(using maple)
+\begin{center}
+$x = \frac{78}{47}, y = \frac{79}{47}, z = \frac{12}{47}$
+\end{center}
+
+\textbf{Dual is:} \\
+$Minimize: 5x_{1} + 6x_{2} + 8x_{3}$\\
+\begin{center}
+\textbf{Subject to:} \\
+$2x_{1} + 3x_{2} >= 2$\\
+$x_{1} + 4x_{3} >= 3$\\
+$4x_{2} + 5x_{3} >= 5$ \\
+$x_{1}, x_{2}, x_{3} >= 0$
+\end{center}
+
+Solving using maple gives:
+
+\begin{center}
+$ y = \frac{20}{47}, \frac{17}{47}, \frac{31}{47}$
+\end{center}
+
+\section{Appendix}
+
+\subsection{Question 3: Full print out of a trial}
+Below is a full print out of the probabilities at each step after a move has been played. This was played over a series of 15 moves and we can see that a tie break is often reached, showing that the probabilities often converge to 0.5 before changing because of the tie break. Starting strategy was (1, 0) (player 1 plays heads, player 2 plays tails) \\
+
+P2 will play H with probability 0.0  P1 plays tails \\
+P1 will play H with probability 1.0  P2 plays tails\\
+P2 will play H with probability 0.0  P1 plays tails\\
+P1 will play H with probability 0.5  we're in a tie break\\
+P2 will play H with probability 0.0  P1 plays tails\\
+P1 will play H with probability 0.333333333333  P2 plays heads\\
+P2 will play H with probability 0.25  P1 plays tails\\
+P1 will play H with probability 0.25  P2 plays heads\\
+P2 will play H with probability 0.4  P1 plays tails\\
+P1 will play H with probability 0.2  P2 plays heads\\
+P2 will play H with probability 0.5  we're in a tie break\\
+P1 will play H with probability 0.166666666667  P2 plays heads\\
+P2 will play H with probability 0.571428571429  P1 plays heads\\
+P1 will play H with probability 0.142857142857  P2 plays heads\\
+P2 will play H with probability 0.625  P1 plays heads\\
+P1 will play H with probability 0.25  P2 plays heads\\
+P2 will play H with probability 0.666666666667  P1 plays heads\\
+P1 will play H with probability 0.333333333333  P2 plays heads\\
+P2 will play H with probability 0.7  P1 plays heads\\
+P1 will play H with probability 0.4  P2 plays heads\\
+P2 will play H with probability 0.727272727273  P1 plays heads\\
+P1 will play H with probability 0.454545454545  P2 plays heads\\
+P2 will play H with probability 0.75  P1 plays heads\\
+P1 will play H with probability 0.5  we're in a tie break\\
+P2 will play H with probability 0.692307692308  P1 plays heads\\
+P1 will play H with probability 0.538461538462  P2 plays tails\\
+P2 will play H with probability 0.642857142857  P1 plays heads\\
+P1 will play H with probability 0.571428571429  P2 plays tails\\
+P2 will play H with probability 0.6  P1 plays heads\\
+P1 will play H with probability 0.6  P2 plays tails\\
+P2 will play H with probability 0.5625  P1 plays heads\\
+P1 will play H with probability 0.625  P2 plays tails\\
+P2 will play H with probability 0.529411764706  P1 plays heads\\
+P1 will play H with probability 0.647058823529  P2 plays tails\\
+P2 will play H with probability 0.5  we're in a tie break\\
+P1 will play H with probability 0.666666666667  P2 plays tails\\
 \end{document}
+
+\subsection{Question 3: Final resulting probabilities}
+Below are the final probabilities when run over a number of moves. Each of the probabilities are close to 0.5 and 
+as the number of trials/moves increases, we can see that it converges even closer to this probability. Starting strategy (a, b) represents the number of heads each player played on their first go. So, (1, 0) would mean that player 1 played heads on their first go and player 2 played tails.
+\begin{table}
+	\begin{tabular}{|p{3cm}| p{3cm} | p{6cm}|}
+	\hline
+	Number of moves & Starting strategy & Final probability ((p1), (p2)) \\
+	\hline
+	50 & (0, 0) & ((0.44, 0.56), (0.56, 0.44)) \\
+	\hline
+	50 & (1, 0) & ((0.52, 0.479), (0.44, 0.56)) \\
+	\hline
+	50 & (0, 1) & ((0.56, 0.44), (0.479, 0.521)) \\
+	\hline
+	50 & (1, 1) & ((0.54, 0.46), (0.46, 0.54)) \\
+	\hline
+	100 & (0, 0) & ((0.469999, 0.53), (0.55, 0.45)) \\
+	\hline
+	100 & (1, 0) & ((0.51, 0.489), (0.45, 0.55)) \\
+	\hline
+	100 & (0, 1) & ((0.53, 0.469), (0.469, 0.53)) \\
+	\hline
+	100 & (1, 1) & ((0.5200, 0.479), (0.46, 0.54)) \\
+	\hline
+	1000 & (0, 0) & ((0.495, 0.505), (0.483, 0.517)) \\
+	\hline
+	1000 & (1, 0) & ((0.506, 0.493999), (0.517, 0.4829)) \\
+	\hline
+	1000 & (0, 1) & ((0.504, 0.496), (0.519, 0.4809)) \\
+	\hline
+	1000 & (1, 1) & ((0.505, 0.495), (0.518, 0.481999)) \\
+	\hline
+	10000 & (0, 0) & ((0.4934999, 0.506499), (0.4995, 0.500499)) \\
+	\hline
+	10000 & (1, 0) & ((0.5066, 0.4934), (0.500499, 0.4995)) \\
+	\hline
+	10000 & (0, 1) & ((0.506399, 0.493599), (0.5007, 0.4993)) \\
+	\hline
+	10000 & (1, 1) & ((0.506499, 0.493499), (0.5006, 0.4994)) \\
+	\hline
+	\end{tabular}
+\end{table}
