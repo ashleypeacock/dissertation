@@ -6,13 +6,162 @@
 \end{center}
 }
 
+\newcommand{\question}[2] {
+  \textbf{Question: #1}
+  \begin{center} #2
+\end{center}
+}
+
 \begin{document}
 
 \title{EXC Notes \\ S0936300}
+\maketitle
+
+\section{MapReduce}
+
+Map reduce is a programming model for processing large data sets with a parallel, distributed algorithm cluster. It is inspired by map and reduce functions used in functional programming although the functionality differs in that it is not soley used for the ability to map and reduce, but due to scalability and fault-tolerance achieved for a variety of applications by optimizing the execution engine once \cite{wiki}\cite{condense}.
+
+Properties:
+\begin{enumerate}
+\item Assumes large numbers of cheap, commodity machines
+\item Failure is part of life
+\item Tailored for dealing with Big Data
+\item Simple
+\item Scales well
+\end{enumerate}
+
+Who uses it?
+
+\begin{enumerate}
+\item Google, Facebook, Twitter
+\item IBM
+\item Amazong Web Services
+\item Edinburgh
+\item Many small start-ups
+\end{enumerate}
+
+MR has generated a lot of interest. It solve all scaling problems, google use it (so it must be great!), start-ups love it and they generate a lot of chatter in the Tech press(big companies use DBs and they don't talk about them). Who needs complicated, expensive DB's anyway?
+
+Map reduce is composed of the Map() function which performs filtering and sorting as well as the Reduce() function which performs a summary operation(such as counting the number of students in each queue).
+
+\begin{enumerate}
+\item Map(): Master node takes input, divides into smaller sub-problems and distributes these to the workers. Workers can sub-divide again. Once a worker has it's answer, it passes this to the master node.
+\item Reduce(): Master node then collects answers to all the sub-problems and combines to form the output.
+\end{enumerate}
+
+\subsection{Critique}
+Considerations as to whether MR can replace parallel databases. Parallel databases have been in development for over 20 years, they are robust, fast, scalable and based upon declarative data models.\\
+
+MR is not really suited for low-latency problems as it's batch nature and lack of real-time guarentees means you shouldn't use it for front-end tasks. 
+
+MR is not a good fit for problems which need global state information. Many Machine Learning algorithms require maintenance of centralised information and this implies a single task.
+
+\textbf{Which application classes might MR be a better choice than a P-DB?}
+\begin{itemize}
+\item Extract-transform-load problems
+\item Complex analytics
+\item Semi-structured data(no single scheme for the data, I.e logs from multiple sources)
+\item Quick and dirty analyses\\
+\end{itemize}
+
+\textbf{Results indicated}
+\begin{itemize}
+\item For a range of core tasks, P-DB was faster than Hadoop. P-DBS are flexible enough to deal with semi-structured data (unclear whether this is implementation specific)
+\item Hadoop was criticised as being too low-level
+\item Hadoop was easier for quick-and-dirty tasks. 
+\begin{itemize}
+\item Writing MR jobs can be easier than complex SQL queries. 
+\item Non-specialists can quickly write MR jobs
+\end{itemize}
+\item Hadoop is a lot cheaper
+\end{itemize}
+
+\section{MapReduce2}
+
+\subsection{Programming model}
+MR offers one restricted version of parallel programming.
+
+\begin{itemize}
+\item Coarse-grained
+\item No inter-process communication
+\item Communication is (generally) through files
+\end{itemize}
+
+Input data is divided into \textbf{shards}. The map operation then works over the shards and emits key-value pairs(can be anything which can be represented as a string). 
+
+Key-value pairs are then hashed. All those with the same hash-value are sent to the reducers. The input into the reducer is then sorted on it's key so that key-value pairs are locally grouped together.
+
+Each mapper and reducer runs in parallel\cite{ques}. There is no state sharing between tasks and task communication is achieved using either external resources or at start-time. There need not be the same number of mappers as reducers. It is possible to have no reducers.
+
+Tasks read their input sequentially as sequential disk reading is far more efficient than random access.
+
+Reducing starts once mapping ends. Sorting and merging can be interleaved.
+
+\begin{center}
+\textbf{Example} :Count the number of words in a collection of documents.
+
+Mapper: for each sentence, it emits the word and the value '1' 
+
+Reducer: takes input and gives a partial count for it's input (see slide 15)
+
+\end{center}
+
+\subsection{Map Reduce Efficiency}
+
+MR algorithms involve a lot of disk and network traffic:
+
+\begin{itemize}
+\item Typically start with big data
+\item Mappers can produce intermediate results that are bigger than the input data
+\item Input may not be on the same machine as that task which implies network traffic
+\item Per-reducer input needs to be sorted.
+\end{itemize}
+
+Sharding might not produce a balanced set of inputs for each reducer, they are often skewed. Having an imbalanced set of inputs turns a parallel algorithm into a sequential one(why?)\cite{ques}.
+
+Selecting the right number of mappers and reducers can greatly improve speed. More tasks mean that each task might fit in memory/require less network access and that failures are quicker to recover from. Fewer tasks mean having less of an over-head. But this is all a matter of guess-work.
+
+Algorithmically, we can:
+\begin{itemize}
+\item Emit fewer key-value pairs: tasks can locally aggregate results and periodically emit them(combining)
+\item Change the key: Key selection implies we partition the output. Some other selection might partition it more evenly.
+\end{itemize}
+
+\section{Hadoop}
+
+
+\section{Other concepts}
+
+\subsection{BigTable}
+BigTable is a form of Database.
 
 \section{Definitions}
 
+\define{Granularity}{Granularity is the extent in which a system is broken down into small parts. It is the extent to which a larger entity is sub-divided. For example a yard broken down into inches has finer granularity than a yard broken into feet}
+\define{Coarse-grained}{Consist of few, larger components}
+\define{Fine-grained}{Smaller components of which larger ones are composed}
+\define{Cluster}{Large number of nodes(computers) that are on the same local network and use the same hardware}
 \define{Moore's law}{Computing power doubles every 18 months.}
 \define{Kryder's law}{Storage is growing even faster than Moore's law}
+\define{Cell}{A grouping of servers, admins, users and clients}
 
-\maketitle
+\section{Questions}
+
+\question{Do we use Hadoop with MapReduce?}{MapReduce libraries have been written in many programming languages with different levels of optimization. A popular open-source implementation is Apache Hadoop \cite{wiki}}
+
+\question{Maps and Reducers run in parallel? Does it mean that they run together constantly or run one after the other? But this could still happen in parallel as long as each batch is waited on}{none}
+
+\begin{thebibliography}{9}
+
+\bibitem{wiki}
+Wikipedia
+
+\bibitem{condense}
+Re-write and remove detailed garble when know more on the topic.
+
+\bibitem{ques}
+There's a question about this
+
+\end{thebibliography}
+
+\end{document}
