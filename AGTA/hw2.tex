@@ -1,0 +1,59 @@
+\documentclass[11pt]{article}
+
+\newcommand{\define}[2] {
+  \textbf{Definition: #1}
+  \begin{center} #2
+\end{center}
+}
+
+\begin{document}
+
+\title{AGTA HW2 \\ S0936300}
+
+\maketitle
+
+\section{Question 1}
+The overall description of the game is drawn as well as a sub tree of the game used to explain how the minimax was achieved. 
+
+The expected value of the game is $\frac{1}{3}$. 
+
+In the subtree example, 'A' is the door with the prize behind it. There is a probability of 1/3 that we initially choose the correct door and a probability of 1/3(B) + 1/3(C) = 2/3 that we choose an incorrect door. The door that the contestant initially chooses has no effect on their decision making as they are unaware what node they in due to this being an imperfect information game. After Monty opens door Y, the contestant now has some information as to what position in the game they are in and can choose a strategy, to swap or not to swap?
+
+There are four possible outcomes:
+
+\begin{enumerate}
+\item Contestant initially chooses correct door and does not swap
+\item Contestant initially chooses correct door and swaps
+\item Contestant initially chooses incorrect door and does not swap
+\item Contestant initially chooses incorrect door and swaps.
+\end{enumerate}
+
+If the contestant initially chooses the correct door with probability 1/3 and chooses to stay, they will always choose the door with the prize behind it and receive a payoff of 1. Thus the expected value is 1/3 * 1 = 1/3
+
+If the contestant initially chooses the correct door with probability 1/3 and chooses to swap, they will always choose the one without a prize behind it and receive a payoff of -1. Thus there is a payoff/probability of -1 * 1/3.
+
+If the contestant initially chooses the incorrect door with probability 2/3 and chooses to swap, they will always receive the prize and thus the payoff will be $1 * \frac{2}{3}$.
+
+If the contestant initially chooses the incorrect door with probability $\frac{2}{3}$ and chooses not to swap, they will always loose and receive a payoff -1 and thus the expected value will be $\frac{-2}{3}$.
+
+Hence looking at the two strategies (to swap or not to swap) we have:
+
+Not swap: Min = -2/3. Max = 1/3
+Swap: Min = -1/3. Max = 2/3.
+
+We can see here that swapping is the ideal solution for the contestant and as it dominates the 'non-swapping' strategy, obtaining a minimum of '-1/3' if the initial door chosen was correct and a maximum of 2/3 if the door was not correct. The contestant has no reason to deviate strategy, regardless of the hosts choices. This is therefore in a state of equilibrium and hence a minimax solution. The maximum the host can expect to loose is 2/3 of it's pay.
+
+\section{Question 2}
+
+\subsection{Part A}
+See paper. 
+
+\subsection{Part B}
+A perfect information game is a game where every information set has exactly one node. If each of the payoffs are unique, each player will have a unique best response to every strategy of the other players. Thus, each subtree will only have a unique nash equilibrium (where the subtree will be the main tree itself). This can be shown by backwards induction.
+
+\subsection{Part C}
+A game that will have a nash equilibrium but no subgame-perfect equilibrium will be a game where each player is attempting to change the strategy of another player at each node.
+
+
+
+\end{document}

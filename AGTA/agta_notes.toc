@@ -3,6 +3,11 @@
 \contentsline {section}{\numberline {2.1}Methods}{3}
 \contentsline {section}{\numberline {2.2}Informal methods}{3}
 \contentsline {section}{\numberline {2.3}Proofs and properties}{4}
-\contentsline {chapter}{\numberline {3}Iterative Dominance}{5}
-\contentsline {chapter}{\numberline {4}Notation and Definitions }{6}
-\contentsline {section}{\numberline {4.1}Basic definitions}{6}
+\contentsline {chapter}{\numberline {3}Minimax and Maximin}{5}
+\contentsline {chapter}{\numberline {4}Iterative Dominance}{6}
+\contentsline {chapter}{\numberline {5}Normal form games}{7}
+\contentsline {section}{\numberline {5.1}Perfect information games}{7}
+\contentsline {section}{\numberline {5.2}Imperfect information games}{7}
+\contentsline {chapter}{\numberline {6}Notation and Definitions }{8}
+\contentsline {section}{\numberline {6.1}Basic definitions}{8}
+\contentsline {section}{\numberline {6.2}Rules}{9}

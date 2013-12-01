@@ -1,0 +1,110 @@
+\documentclass[11pt]{article}
+
+\newcommand{\define}[2] {
+  \textbf{Definition: #1}
+  \begin{center} #2
+\end{center}
+}
+
+\usepackage{graphicx}
+
+
+\begin{document}
+
+\section{Supervised learning}
+Supervised learning has a goal of mapping inputs $x$ to outputs $y E {1....C}$ where C is the number of classes. If C = 2 it is binary classification, if C > 2 it is multi class classification. 
+
+One way to formalise the idea is function approximation. We are mapping y = f(x) where the goal is to learn $f$ from some set of data. 
+
+\section{Probability}
+
+\section{Basic probability}
+\section{Basics}
+Union means that "A or B" can occur. Formally $P(A n B) = e$ where $e$ is the empty set. 
+If events are not mutually exclusive, the union $P(A or B)$ = $P(A) + P(B) - P(A n B)$ (taking off the intersection because otherwise we are counting the probability twice)
+If the events are mutually exclusive, the union is $P(A) + P(B)$
+
+If two events are mutually exclusive $P(A n B) = 0$
+
+We say that X and Y are unconditionally independent if P(X, Y) = P(X)P(Y)
+
+\subsection*{Joint probabilities}
+$P(A, B) = P(A n B) = P(A|B)P(B)$
+Specifically, P(A, B) is a probability distribution and P(A, B) is a set of probabilities. 
+This is sometimes known as the $product rule$. \\
+We can define the marginal distribution as follows (only if they are conditionally dependent):
+$\sum{P(A, B)} = \sum{P(A|B = b)P(B=b)}$
+If P(A n B) = P(A)P(B) then we can say the probabilities are independent. 
+
+\subsection*{Conditional probability}
+Event A occurring, given than B has occurred. 
+$P(A|B) = \frac{P(A, B)}{P(B)}$
+
+\subsection*{Bayes}
+Combining conditional probability with joint probability yields bayes theorem: 
+$P(X = x|Y = y) = \frac{P(X = x), Y = y}{P(Y = y)} = \frac{P(X = x)P(Y = y|X = x)}{\sum{P(X = x`)P(Y = y | X = X`)}}$
+
+\section{Distributions}
+
+\subsection{Binomial and Bernoulli distribution}
+The binomial distribution is discrete and only takes values yes/no with the probabilities and number of trials. It takes the values k, n and p where k is the number of successes in n trials where each success has probability k.
+I.e the probability of getting k successes in n trials.
+
+X ~ B(n, p)
+P(X = r) = (n  r) $p^r q^(n-r)$
+
+Bernoulli distribution is a discrete distribution that takes binary values, '1' with probability p and '0' with probability '1-p'. It is a special case of the binomial distribution, where n = 1.
+
+Beta-binomial distribution is a family of discrete probability distributions that arises when the probability of success in a bernoulli distribution is either fixed or known and the probabilities of success at each trial is not fixed(as it is in Bernoulli) but instead follows a beta-distribution. 
+
+The beta-binomial is a one-dimensional version of the dirichlet-multinomial distribution. The multivariate generalisation of the beta-distribution is the dirichlet distribution. 
+
+\section{Multinomial and multinoulli distributions}
+The binomial distribution can be used to model the flip of a coin toss, but the multinomial distribution can be used to model a k-sided die. 
+
+\subsection{Continuous distributions}
+
+\subsection{Gaussian distribution}
+
+\section{Metropolis hastings algorithm}
+The metropolis hastings algorithm is a Markov Chain Monte Carlo(MCMC) method for obtaining a sequence of random samples from a probability distribution in which sampling is difficult. The sequence can be used to generate a histogram and the method is generally used for sampling multi-dimensional distributions, especially when the number of dimensions is high. 
+
+The MH algorithm can draw any sample from a distribution P(x) provided you can compute the value of a function Q(x) which is proportional to the density of P.
+
+Samples are produced iteratively with the distribution of the next sample being dependent on the current value(thus making the sequence of samples into a Markov chain).
+
+Then with some probability the candidate is either accepted(and the sample is used in the next iteration) or rejected(in which case it is disregarded)
+
+Approach:
+The general idea is that we propose a move from state x to a new state x` with probability q(`x | x) where q is the propositional distribution. The user can choose any q they like subject to some conditions but a Gaussian is commonly used, centred on the current state.
+
+\begin{center}
+q(x`| x) = N(x`|x, E)
+\end{center}
+
+This is called the random walk Metropolis algorithm. 
+
+Having moved to x`, we then decide whether to accept this proposal or not, according to some formulae, which ensures that the fraction of time spent in each state is proportional to p*(x). If the proposal is accepted, the new state is x`, otherwise the new state is the same as the current state x.
+
+If the proposal is symmetric, so q(x`|x) = q(x|x`), the acceptance probability is given by the following formula:
+
+\begin{center}
+r = min(1, \frac{p*(x`)}{p*(x)})
+\end{center}
+
+MH has some disadvantages:
+\begin{itemize}
+\item Although the Markov chain will eventually converge to a desired distribution, the initial samples may follow a very different distribution, especially if the starting point is in a region of low density. Thus, a burn in period is required where the initial 1000 samples are thrown away.
+\end{itemize}
+
+\section{TODO}
+- Separate probability as conditional, independent, dependent, etc.
+
+\section{Definitions}
+\define{Binary classification}{When there are only two classes(C = 2) in which we are classifying data}
+\define{Multiclass classification}{When there are more than two classes we can classify data to. C > 2}
+\define{Multi-label classification}{When labels are not mutually exclusive, data could be classified to two classes for example "strong" and "tall"}
+\define{Mutually exclusive}{Events cannot occur at the same time, for example tossing a coin obtains either Heads or Tails but it cannot be both}
+\define{Independent events}{Events are independent if the occurrence of one events gives us no information about whether or not the other event will occur. Events have no influence on each other.}
+\define{Conditionally independent}{If event C has not occurred, P(A|B) = P(A) and P(B|A) = P(B). Eventually the event C occurs, and now if the event A occurs, the probability of B occuring will decrease and vice versa. The two probabilities become conditionally dependent because their probability of occurrence is dependent on the other's events}
+\end{document}
