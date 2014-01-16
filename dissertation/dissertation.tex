@@ -1,4 +1,7 @@
 \documentclass[11pt]{report}
+\usepackage{fullpage}
+\usepackage{float}
+\restylefloat{table}
 \begin{document}
 
 \title{Autism Simulator}
@@ -8,12 +11,67 @@
 \chapter{Introduction}
 
 \section{Selecting a project}
+The project started with the purpose of creating software to benefit someone with autism or ADHD or those in contact with these conditions such as family members or carers. Owing this is a very broad topic it was important to create multiple proposals and select the most useful. All proposals were put on a website and a selection was made after considering results from an online survey, conversing with professionals and people with ASD and considering systems and research currently available.
 
+Project proposals:
+\begin{table}[H]
+    \begin{tabular}{| p{4cm} | p{9cm} |}
+    \hline
+    Proposal name & Description                                                                  \\
+    \hline
+    \hline
+    Online diary & Online system to improve communication between carers, parents, social workers, schools. Parties could post questions and ask for suggestions when dealing with certain behaviours as well as document the child's day allowing easier identification of patterns of behaviour or problems                    \\
+    \hline
+    Social simulator & Simulated social scenarios for autistic users to trial various social situations and see possible outcomes  \\
+    \hline
+    Dynamic scheduler and planner app & A planner that would re-schedule tasks when not completed and present basic to-do lists with tasks broken down into manageable chunks  \\
+    \hline
+    Environment app & Phone app aimed to encourage children to look and question their environment \\
+    \hline
+   Autism simulator & A 3D virtual environment where the user plays as a child with autism and can thus experience some of the obstacles faced through a visual/game environment \\
+    \hline
+    \end{tabular}
+\end{table}
+
+\subsubsection{Questionnaire}
+A questionnaire was anonymously completed by six people in total and included people with ASD/ADHD, professionals, carers and parents and was compiled with both qualitative and quantitative questions.
+
+\begin{enumerate}
+\item Please give some information about yourself, for example if you have ASD/ADHD or are a professional/carer.
+\item Please select and rank three proposals you feel are the best
+\item Please explain reasons for selection
+\end{enumerate}
+
+\subsubsection{Results}
+
+Below summarises some of the comments given in the feedback questionnaire as well as considerating factors from other areas
+
+\begin{table}[H]
+    \begin{tabular}{| p{4cm} | p{8cm} |}
+    \hline
+    Proposal name & General reasons for/against                                                                 \\
+    \hline
+    \hline
+    Online diary & For: Cross communication between doctors, teachers, parents and carers which is often problematic with information missed. Against: Good in theory but may not be practical due to data protection. Relies too heavily on parents/carers being able to read emails or notifications. May be difficult for some schools to gain access to wifi.                \\
+    \hline
+    Social simulator & Against: Big project given the time-frame. Other companies working on a similar concept. Much research on this topic already. Conveying 'social stories' could be a better approach to deal with context specific situations. \\
+    \hline
+    Dynamic scheduler and planner app & Against: least unique proposal, many other planners available. For: No planners available that specifically target planning/executive functioning difficulties within ADHD and Autism \\
+    \hline
+    Environment app & Against: Hard to back with literature. Difficult concept to understand(possibly not explained well) For: Least amount of implementation work. Could be simply but effective. \\
+    \hline
+   Autism simulator & Against: Big project given the time frame, no previous simulators which can be drawn from. For: Most unique and popular idea. Misunderstanding from the general public is a big problem. Could be extremely helpful for teacher's training. \\
+    \hline
+    \end{tabular}
+\end{table}
+
+After considering feedback from the questionnaire, further feedback from the autism community, plausibility given the time constraints, usefulness to the community, originality and current skill-set the 'Autism simulator project was selected.
 
 \chapter{Literature review}
+
 \section{About autism}
 
-Autistic Spectrum Disorder is a lifelong condition which affects how an individual communicates and may perceive the world around them \cite{nas}. Autism is currently diagnosed by the presence of atypicalities in three domains: social imagination, social communication, social interaction, collectively known as the 'Triad of impairments'. In addition to these are nondiagnostic but highly prevalent features such as sensory abnormalities, information processing difficulties, unusual fears and prosopagnosia. With some of the disadvantages that may come with having autism, there are reported strengths as a result of having a unique cognitive style, for example a talent for spotting details\cite{bayes} or having a good long-term memory for encyclopaedic knowledge of their 'special interests'. As a spectrum disorder the severity and type of difficulties those with autism have, vastly differ and are unique to each individual.
+Autistic Spectrum Disorder is a lifelong condition which affects how an individual communicates and may perceive the world around them \cite{nas}. Autism is currently diagnosed by the presence of atypicalities in three domains(collectively known as the triad of impairments): social imagination, social communication, social interaction. In addition to these are non-diagnostic but highly prevalent features such as sensory abnormalities, information processing difficulties and prosopagnosia. With some of the disadvantages that may come with having autism, there are reported strengths as a result of having a unique cognitive style, for example a talent for spotting details\cite{bayes} or having a good long-term memory for encyclopaedic knowledge of their 'special interests'. As a spectrum disorder the severity and type of difficulties those with autism have, vastly differ and are unique to each individual.
 
 
 \subsection{Triad of Impairments}
@@ -131,7 +189,7 @@ Repetitive behaviours and sensory issues have been found to be positive correlat
 
 
 \section{Impact and Prevalence}
-Although difficult to calculate an exact amount, figures drawn from the 2011 census estimate that 1.1\% of the population have Autism\cite{nas}. This figure appears to be rising across the globe as awareness and understanding of the condition increases alongside broadening criteria\cite{increasingprevalence}, Aspergers syndrome is one example addition and which has only been a formal diagnosis since 1990. Early counts of people with autism spectrum conditions were less than 10 in 10,000, this has grown to a new prediction of 110 in 10,000 in the USA \cite{increasingprevalence}.
+Figures drawn from the 2011 census estimate that 1.1\% of the population have Autism\cite{nas}. This figure appears to be rising across the globe as awareness and understanding of the condition increases alongside broadening criteria\cite{increasingprevalence}, Aspergers syndrome is one example addition and which has only been a formal diagnosis since 1990. Early counts of people with autism spectrum conditions were less than 10 in 10,000, this has grown to a new prediction of 110 in 10,000 in the USA \cite{increasingprevalence}.
 
 It is estimated that only 22\% of teachers have been trained specifically in autism and the majority of training given is typically one to four hours. 54\% of all teachers in England do not feel they have had adequate training to teach children with autism.\cite{statsandfacts} 30\% of parents of children with autism in mainstream education are satisfied with the level of understanding of autism across the school\cite{nasschool}. 23\% of parents are dissatisfied with SENCO's level of understanding of autism. 
 
@@ -180,17 +238,71 @@ It doesn't appear that mainstream teachers have had access to training. The fund
 
 
 
-
 \chapter{Design process}
-\section{Interviews}
+As the project selected has a very large scope it was important to identify the most important goals and decide on restrictions. Autism as previously described comes with a vast amount of difficulties, some of which may be too complex or time consuming to convey(such as social difficulties). Owing the vast environments a child can be exposed to on a day to day basis(school, work, parks, etc), a house was chosen as this is the place we will most often be and with understanding the pitfalls and hazards around the house for a person with autism, understanding could then be generalised for the player to other environments. Once the environment was selected, interviews and a consultation from the LAER group aided narrowing which autism difficulties may be the most important.
+
 
 \section{Game design}
+Interviews were carried out with five people from varying backgrounds and exposure to autism:
+
+\subsection{Interviews}
+\begin{enumerate}
+\item Candidate one: teacher of a school for autistic children
+\item Candidate two: special needs teacher of a school with varying disabilities.
+\item Candidate three: parent of a teenager with Aspergers syndrome and ADD. Described themselves as neurodiverse having severe sensory difficulties but less social ones.
+\item Candidate four: parent of a child with Aspergers syndrome and is themselves neurodiverse. Candidate describes having high sensory issues and less social ones.
+\item Candidate five: person with high-functioning autism whom has higher social difficulties and less sensory.
+\end{enumerate}
+
+\subsection{Difficulties chosen}
+Following interviews and reviewing literature available, the following aspects of autism selected are:
+
+\begin{enumerate}
+\item Sensory atypicalities: selected as the primary difficulty to convey due to their prevalence and hidden nature which is less known to the public
+\item Meltdowns: As these can be caused by sensory atypicalities and it is important to convey to the user the impact of difficulties, not just the difficulties themselves.
+\item Special interests: A means in the game to 'soothe' the character and counteract meltdowns.
+\item Ambiguous instructions and processing delays: commented as a problem in the classroom.
+\end{enumerate}
+
 \subsection{House design}
 House design choices. 
+Put list of objects here and a house plan. 
 \subsection{Character}
 \subsubsection{Autism aspects to convey}
 \subsection{Design of sensory system}
 \subsection{Story boards}
+
+\subsection{Tool selection}
+For the first version of the simulator a game engine will be used, allowing focus to be directed on the higher level aspects and quicker development. Blender will be used as the modelling tool as it is freely available, powerful and well supported with lots of tutorials and documentation.
+
+\subsubsection{Game engines}
+
+\textbf{Unity}\\
+Unity is one of the most popular game engines available with good support for models. Unfortunately the licence costs 1500 and the free version comes with limitations.
+
+Advantages: popular game engine to use. Quick development with scripting. Phone app support.
+Disadvantages: Interface heavy, steep learning curve, limited to just scripting, costs, good computer required to run it efficiently.
+
+\textbf{JMonkey}\\
+JMonkey is a java 3d game engine that has been in development around for a few years. It has an extremely active and helpful community, allows complete customisation and holds little limitation being open source.
+
+Advantages: Provides development environment with scene graph. Active community where you often get responses from developers themselves. Java is quick to develop in. Support for online use and phone apps.
+Disadvantages: Java is not seen as the preferred language for graphics or games.
+
+\textbf{Panda3D}
+Originally created by Disney, Panda3D is an engine which can be used via python or C++ although support is mostly for python.
+
+Advantages: Quick to develop for with a choice in language. Good community with lots of tools.
+Disadvantages: No phone app and limited online support. Lack of documentation. 
+
+\textbf{Ogre3D}
+Ogre3d is primarily a graphics rendering engine and but it does have additional plugins such as 'physics' or drawing interfaces.
+
+Advantages: Lots of modules and plugins. Powerful and used commercially. Active support community.
+Disadvantages: Longer development process. Lack of tools such as a scene graph. No support for putting online.
+
+Jmonkey was chosen due to it's active community, speed of development/development environment and ease to put online. An ability to put the project online will increase availability. Although C++ would be much faster for the user, JMonkey doesn't have a reduction in performance that counteracts it's speedier development. 
+
 
 \chapter{Prototype}
 

@@ -1,35 +1,40 @@
-\contentsline {chapter}{\numberline {1}Introduction}{3}
-\contentsline {section}{\numberline {1.1}Selecting a project}{3}
-\contentsline {chapter}{\numberline {2}Literature review}{4}
-\contentsline {section}{\numberline {2.1}About autism}{4}
-\contentsline {subsection}{\numberline {2.1.1}Triad of Impairments}{4}
+\contentsline {chapter}{\numberline {1}Introduction}{2}
+\contentsline {section}{\numberline {1.1}Selecting a project}{2}
+\contentsline {subsubsection}{Questionnaire}{3}
+\contentsline {subsubsection}{Results}{3}
+\contentsline {chapter}{\numberline {2}Literature review}{5}
+\contentsline {section}{\numberline {2.1}About autism}{5}
+\contentsline {subsection}{\numberline {2.1.1}Triad of Impairments}{5}
 \contentsline {subsection}{\numberline {2.1.2}Information processing}{6}
-\contentsline {subsubsection}{Sensory processing}{6}
+\contentsline {subsubsection}{Sensory processing}{7}
 \contentsline {subsubsection}{Sensory and Information overload}{8}
-\contentsline {subsection}{\numberline {2.1.3}Resulting behaviours}{9}
-\contentsline {subsubsection}{Meltdowns}{9}
+\contentsline {subsection}{\numberline {2.1.3}Resulting behaviours}{8}
+\contentsline {subsubsection}{Meltdowns}{8}
 \contentsline {subsubsection}{Mono-processing}{9}
 \contentsline {subsubsection}{Unusual fears}{9}
 \contentsline {subsubsection}{Repetitive and restricted behaviours}{9}
-\contentsline {section}{\numberline {2.2}Impact and Prevalence}{10}
-\contentsline {section}{\numberline {2.3}Public perception of autism}{11}
-\contentsline {section}{\numberline {2.4}Previous work}{11}
-\contentsline {subsection}{\numberline {2.4.1}Education software}{11}
-\contentsline {subsection}{\numberline {2.4.2}Other simulators}{12}
-\contentsline {section}{\numberline {2.5}Other}{12}
-\contentsline {chapter}{\numberline {3}Design process}{13}
-\contentsline {section}{\numberline {3.1}Interviews}{13}
-\contentsline {section}{\numberline {3.2}Game design}{13}
-\contentsline {subsection}{\numberline {3.2.1}House design}{13}
-\contentsline {subsection}{\numberline {3.2.2}Character}{13}
+\contentsline {section}{\numberline {2.2}Impact and Prevalence}{9}
+\contentsline {section}{\numberline {2.3}Public perception of autism}{10}
+\contentsline {section}{\numberline {2.4}Previous work}{10}
+\contentsline {subsection}{\numberline {2.4.1}Education software}{10}
+\contentsline {subsection}{\numberline {2.4.2}Other simulators}{10}
+\contentsline {section}{\numberline {2.5}Other}{11}
+\contentsline {chapter}{\numberline {3}Design process}{12}
+\contentsline {section}{\numberline {3.1}Game design}{12}
+\contentsline {subsection}{\numberline {3.1.1}Interviews}{12}
+\contentsline {subsection}{\numberline {3.1.2}Difficulties chosen}{12}
+\contentsline {subsection}{\numberline {3.1.3}House design}{13}
+\contentsline {subsection}{\numberline {3.1.4}Character}{13}
 \contentsline {subsubsection}{Autism aspects to convey}{13}
-\contentsline {subsection}{\numberline {3.2.3}Design of sensory system}{13}
-\contentsline {subsection}{\numberline {3.2.4}Story boards}{13}
-\contentsline {chapter}{\numberline {4}Prototype}{14}
-\contentsline {section}{\numberline {4.1}Implementation}{14}
-\contentsline {section}{\numberline {4.2}Evaluation}{14}
-\contentsline {subsection}{\numberline {4.2.1}Expert feedback}{14}
-\contentsline {subsection}{\numberline {4.2.2}User feedback}{14}
-\contentsline {section}{\numberline {4.3}Improvements}{14}
-\contentsline {chapter}{\numberline {5}First version}{15}
-\contentsline {chapter}{\numberline {6}Final version}{16}
+\contentsline {subsection}{\numberline {3.1.5}Design of sensory system}{13}
+\contentsline {subsection}{\numberline {3.1.6}Story boards}{13}
+\contentsline {subsection}{\numberline {3.1.7}Tool selection}{13}
+\contentsline {subsubsection}{Game engines}{13}
+\contentsline {chapter}{\numberline {4}Prototype}{15}
+\contentsline {section}{\numberline {4.1}Implementation}{15}
+\contentsline {section}{\numberline {4.2}Evaluation}{15}
+\contentsline {subsection}{\numberline {4.2.1}Expert feedback}{15}
+\contentsline {subsection}{\numberline {4.2.2}User feedback}{15}
+\contentsline {section}{\numberline {4.3}Improvements}{15}
+\contentsline {chapter}{\numberline {5}First version}{16}
+\contentsline {chapter}{\numberline {6}Final version}{17}

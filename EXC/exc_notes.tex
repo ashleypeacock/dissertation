@@ -19,18 +19,18 @@
 
 \section{MapReduce}
 
-Map reduce is a programming model for processing large data sets with a parallel, distributed algorithm cluster. It is inspired by map and reduce functions used in functional programming although the functionality differs in that it is not soley used for the ability to map and reduce, but due to scalability and fault-tolerance achieved for a variety of applications by optimizing the execution engine once \cite{wiki}\cite{condense}.
+Map reduce is a programming model for processing large data sets with a parallel, distributed algorithm on a cluster. It is not simply Map and Reduce functions(like in functional languages), but the scalability and fault-tolerance achieved for a variety of applications by optimizing the execution engine once \cite{wiki}.\\
 
-Properties:
-\begin{enumerate}
+\textbf{Properties:}
+\begin{itemize}
 \item Assumes large numbers of cheap, commodity machines
 \item Failure is part of life
 \item Tailored for dealing with Big Data
 \item Simple
 \item Scales well
-\end{enumerate}
+\end{itemize}
 
-Who uses it?
+\textbf{Who uses it?}
 
 \begin{enumerate}
 \item Google, Facebook, Twitter
@@ -39,8 +39,6 @@ Who uses it?
 \item Edinburgh
 \item Many small start-ups
 \end{enumerate}
-
-MR has generated a lot of interest. It solve all scaling problems, google use it (so it must be great!), start-ups love it and they generate a lot of chatter in the Tech press(big companies use DBs and they don't talk about them). Who needs complicated, expensive DB's anyway?
 
 Map reduce is composed of the Map() function which performs filtering and sorting as well as the Reduce() function which performs a summary operation(such as counting the number of students in each queue).
 
@@ -129,6 +127,79 @@ Algorithmically, we can:
 
 \section{Hadoop}
 
+Apache hadoop framework is composed of the following:
+\begin{enumerate}
+\item Hadoop Common: Contains libraries and utilities needed by other hadoop modules
+\item HDFS: A distributed file-system that stores data on the commodity machines, providing very high aggregate bandwidth across the cluster. 
+\item Hadoop YARN: A resource-management platform responsible for managing compute resources in clusters and using them for scheduling of user's applications.
+\item MapReduce: a programming model for large scale data processing.
+\end{enumerate}
+
+All modules in hadoop are designed with the fundamental assumption that hardware failures are common and thus should be automatically handled in the software by the framework. Hadoops HDFS and Mapreduce were originally derived from google's HDFS and map-reduce. 
+
+\subsection{HDFS}
+Files are stored in HDFS (Hadoop File Distributed System). Files are stored as chunks or blocks which are by default 64mb. A file that is 150mb for example will be split up into blocks of 64:64:22.
+Each block is given a unique name and number and stored on a different $data node$ in the cluster. The $namenode$ contains meta data as to where each block is stored and which blocks make up a file.\\
+\textbf{Is there a problem?}
+\begin{itemize}
+\item Network failure
+\item Disk failure on DN
+\item Disk failure on NN
+\item It is not a problem that block sizes may differ (i.e file split into 64, 64 where 22 differs)
+\item It is not a problem if not all DN(datanodes) are used.
+\end{itemize}
+
+In order to deal with failure on DN, Hadoop replicates each block 3 times when stored in HDFS. When a datanode fails it isn't a problem as there are two other copies. Hadoop realises this is under-replicated and replicates the file again to ensure there are always 3 copies of the file available.
+
+\textbf{What if there are problems on the NameNode?}
+\begin{itemize}
+\item If there is a network failure, data inaccessible
+\item If there is a problem on the disc drive, the data is lost forever(how do we know where blocks are stored?)
+\end{itemize}
+
+One method was to store data on the NN and also NFS. Now there are commonly two name nodes an 'Active' name node and a 'Standby' name node which is used if the active NN fails.
+
+\subsection{MapReduce}
+Processing data in parallel can take a long time. MapReduce is designed to run in parallel. 
+
+When you run a MR job, you submit the job to a Job Tracker. This splits the work into mappers and reducers which will run on the other cluster/datanodes. The actual MapReduce is handled by a daemon called the 'Task Tracker'. As a mapper is on the node, it will be able to work directly on the data that is stored at the machine which saves a lot of network traffic. If this isn't possible because the task tracker is already busy, it can send the data to another machine for processing although this happens rarely. The task tracker then sends the work to the reducers(shuffle and sort) which then process the data and store it back in HDFS.  
+
+\subsubsection{Example}
+Imagine you have stores all over the country and you're asked to calculate total sales per store.
+
+Data:
+2012-01-01 London Clothes 25.99
+2012-01-01 Miami Music 12.15
+2012-01-02 NYC Toys 3.10
+2012-01-02 Miami Clothes 50.00
+
+If run in parallel, we would calculate per line, get to the second 'Miami' and update our counter for Miami before continuing. Historically we could probably use a HashTable, with the $key$ as the store name and the value as the total sales but the problems with using this on big data is that we can run out of memory and it can take a long time having to read the entire file from disk and then process it line by line.
+
+Using map reduce:
+Take the file and break it into chunks which go to the mapper(this is a block/chunk of 64mb that was broken down onto HDFS earlier).
+The mapper will then take each line in their chunk and categorise them by store. This is known as the intermediate records or data and will be in key-value form. In this example the key will be the store name and the value is the sales total for each individual input.
+Shuffle and sort then takes place which is the movement of intermediate records from the mappers to the reducers.
+The reducer is assigned a key(store name) and gets a list of values from all the mappers. It can then calculate the information per store.
+
+How could we get the final result in sorted order? We require just one extra step(which merges the results) or one reducer(which doesn't scale very well).
+
+
+\subsection{Lab 1}
+
+\subsubsection*{Computing pi}
+\begin{tabular}{l | l | l | l}
+Number of maps & Number of samples & Time & Result \\
+2 & 10 & 32.49 & 3.8 \\
+5 & 10 & 32.29 & 3.28 \\
+10 & 10 & 35.2 & 3.20 \\
+2 & 100 & 32.367 & 3.12 \\
+10 & 100 & 35.307 & 3.148
+\end{tabular}
+
+As the number of samples increases so does the accuracy. As the number of mappers increase, both the accuracy and time taken increases.
+
+\subsubsection*{Word counting}
+
 
 \section{Other concepts}
 
@@ -144,6 +215,10 @@ BigTable is a form of Database.
 \define{Moore's law}{Computing power doubles every 18 months.}
 \define{Kryder's law}{Storage is growing even faster than Moore's law}
 \define{Cell}{A grouping of servers, admins, users and clients}
+\define{HDFS: Namenode}{The namenode contains information as to which chunks/blocks of files are stored where}
+\define{HDFS: Datanode}{The datanode is where files/blocks in HDFS are stored}
+\define{NFS}{Network File System. A method of mounting a remote disk.}
+\define{Daemon}{A piece of code running all of the time on an individual node in a cluster}
 
 \section{Questions}
 
@@ -155,6 +230,12 @@ BigTable is a form of Database.
 
 \bibitem{wiki}
 Wikipedia
+
+\bibitem{udacity}
+Udacity
+
+\bibitem{Coursera}
+Coursera
 
 \bibitem{condense}
 Re-write and remove detailed garble when know more on the topic.
