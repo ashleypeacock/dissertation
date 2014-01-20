@@ -1,40 +1,51 @@
-\contentsline {chapter}{\numberline {1}Introduction}{2}
-\contentsline {section}{\numberline {1.1}Selecting a project}{2}
-\contentsline {subsubsection}{Questionnaire}{3}
-\contentsline {subsubsection}{Results}{3}
-\contentsline {chapter}{\numberline {2}Literature review}{5}
-\contentsline {section}{\numberline {2.1}About autism}{5}
-\contentsline {subsection}{\numberline {2.1.1}Triad of Impairments}{5}
-\contentsline {subsection}{\numberline {2.1.2}Information processing}{6}
-\contentsline {subsubsection}{Sensory processing}{7}
-\contentsline {subsubsection}{Sensory and Information overload}{8}
-\contentsline {subsection}{\numberline {2.1.3}Resulting behaviours}{8}
-\contentsline {subsubsection}{Meltdowns}{8}
-\contentsline {subsubsection}{Mono-processing}{9}
-\contentsline {subsubsection}{Unusual fears}{9}
-\contentsline {subsubsection}{Repetitive and restricted behaviours}{9}
-\contentsline {section}{\numberline {2.2}Impact and Prevalence}{9}
-\contentsline {section}{\numberline {2.3}Public perception of autism}{10}
-\contentsline {section}{\numberline {2.4}Previous work}{10}
-\contentsline {subsection}{\numberline {2.4.1}Education software}{10}
-\contentsline {subsection}{\numberline {2.4.2}Other simulators}{10}
-\contentsline {section}{\numberline {2.5}Other}{11}
-\contentsline {chapter}{\numberline {3}Design process}{12}
-\contentsline {section}{\numberline {3.1}Game design}{12}
-\contentsline {subsection}{\numberline {3.1.1}Interviews}{12}
-\contentsline {subsection}{\numberline {3.1.2}Difficulties chosen}{12}
-\contentsline {subsection}{\numberline {3.1.3}House design}{13}
-\contentsline {subsection}{\numberline {3.1.4}Character}{13}
-\contentsline {subsubsection}{Autism aspects to convey}{13}
-\contentsline {subsection}{\numberline {3.1.5}Design of sensory system}{13}
-\contentsline {subsection}{\numberline {3.1.6}Story boards}{13}
-\contentsline {subsection}{\numberline {3.1.7}Tool selection}{13}
-\contentsline {subsubsection}{Game engines}{13}
-\contentsline {chapter}{\numberline {4}Prototype}{15}
-\contentsline {section}{\numberline {4.1}Implementation}{15}
-\contentsline {section}{\numberline {4.2}Evaluation}{15}
-\contentsline {subsection}{\numberline {4.2.1}Expert feedback}{15}
-\contentsline {subsection}{\numberline {4.2.2}User feedback}{15}
-\contentsline {section}{\numberline {4.3}Improvements}{15}
-\contentsline {chapter}{\numberline {5}First version}{16}
-\contentsline {chapter}{\numberline {6}Final version}{17}
+\contentsline {chapter}{\numberline {1}Introduction}{3}
+\contentsline {section}{\numberline {1.1}Selecting a project}{3}
+\contentsline {subsubsection}{Questionnaire}{4}
+\contentsline {subsubsection}{Results}{4}
+\contentsline {chapter}{\numberline {2}Literature review}{6}
+\contentsline {section}{\numberline {2.1}About autism}{6}
+\contentsline {subsection}{\numberline {2.1.1}Triad of Impairments}{6}
+\contentsline {subsection}{\numberline {2.1.2}Information processing}{8}
+\contentsline {subsubsection}{Sensory processing}{8}
+\contentsline {subsubsection}{Sensory and Information overload}{10}
+\contentsline {subsection}{\numberline {2.1.3}Resulting behaviours}{11}
+\contentsline {subsubsection}{Meltdowns}{11}
+\contentsline {subsubsection}{Mono-processing}{11}
+\contentsline {subsubsection}{Unusual fears}{11}
+\contentsline {subsubsection}{Repetitive and restricted behaviours}{11}
+\contentsline {section}{\numberline {2.2}Impact and Prevalence}{12}
+\contentsline {section}{\numberline {2.3}Public perception of autism}{13}
+\contentsline {section}{\numberline {2.4}Previous work}{13}
+\contentsline {subsection}{\numberline {2.4.1}Education software}{13}
+\contentsline {subsection}{\numberline {2.4.2}Other simulators}{14}
+\contentsline {section}{\numberline {2.5}Other}{14}
+\contentsline {chapter}{\numberline {3}Design process}{15}
+\contentsline {section}{\numberline {3.1}Interviews}{15}
+\contentsline {section}{\numberline {3.2}Difficulties chosen}{16}
+\contentsline {section}{\numberline {3.3}Game design}{16}
+\contentsline {subsection}{\numberline {3.3.1}Autism aspects}{16}
+\contentsline {subsection}{\numberline {3.3.2}Design of sensory system}{16}
+\contentsline {subsection}{\numberline {3.3.3}Character}{16}
+\contentsline {subsection}{\numberline {3.3.4}Story boards}{17}
+\contentsline {subsection}{\numberline {3.3.5}Tool selection}{17}
+\contentsline {subsubsection}{Game engines}{17}
+\contentsline {chapter}{\numberline {4}Prototype}{19}
+\contentsline {section}{\numberline {4.1}Implementation}{19}
+\contentsline {subsection}{\numberline {4.1.1}Technical}{19}
+\contentsline {subsection}{\numberline {4.1.2}Autism aspects}{19}
+\contentsline {subsection}{\numberline {4.1.3}Sensory system}{19}
+\contentsline {subsection}{\numberline {4.1.4}Interface}{19}
+\contentsline {section}{\numberline {4.2}Evaluation}{19}
+\contentsline {subsection}{\numberline {4.2.1}Expert feedback}{19}
+\contentsline {subsection}{\numberline {4.2.2}User feedback}{19}
+\contentsline {section}{\numberline {4.3}Improvements planned}{19}
+\contentsline {chapter}{\numberline {5}First version}{20}
+\contentsline {section}{\numberline {5.1}Storyboards}{20}
+\contentsline {section}{\numberline {5.2}System changes}{20}
+\contentsline {subsection}{\numberline {5.2.1}Overview}{20}
+\contentsline {section}{\numberline {5.3}House design}{20}
+\contentsline {chapter}{\numberline {6}Formative evaluation}{21}
+\contentsline {chapter}{\numberline {7}Final version}{22}
+\contentsline {chapter}{\numberline {8}Summative evaluation}{23}
+\contentsline {chapter}{\numberline {9}Release}{24}
+\contentsline {chapter}{\numberline {10}Conclusion}{25}
