@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.25)  20 JAN 2014 21:02
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.25)  22 JAN 2014 18:41
 entering extended mode
 **dissertation.tex
 ("C:\Users\Ashley\University git\dissertation\dissertation\dissertation.tex"
@@ -31,6 +31,10 @@ File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\preprint\fullpage.sty"
+Package: fullpage 1999/02/23 1.1 (PWD)
+\FP@margin=\skip43
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count88
@@ -42,24 +46,24 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@every@table=\toks16
 
 ("C:\Users\Ashley\University git\dissertation\dissertation\dissertation.aux")
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 8.
+(Font)              <12> on input line 9.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 8.
+(Font)              <8> on input line 9.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 8.
+(Font)              <6> on input line 9.
 
 [1
 
@@ -74,118 +78,106 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write3
  [2]
 Chapter 1.
-
-Overfull \hbox (33.88582pt too wide) in paragraph at lines 17--33
-[][] 
- []
-
 [3
 
-]
-Overfull \hbox (5.43306pt too wide) in paragraph at lines 49--65
-[][] 
- []
-
-[4] [5]
+] [4] [5]
 Chapter 2.
 
-Overfull \hbox (15.09883pt too wide) in paragraph at lines 73--74
-\OT1/cmr/m/n/10.95 cur-rently di-ag-nosed by the pres-ence of atyp-i-cal-i-ties
- in three do-mains(collectively
- []
+LaTeX Warning: Citation `blah' on page 6 undefined on input line 74.
 
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
 [6
 
-]
-Overfull \hbox (4.36177pt too wide) in paragraph at lines 92--94
-[]\OT1/cmr/m/n/10.95 Autistic peo-ple have to un-der-stand sci-en-tif-i-cally w
-hat non-autistic
- []
-
-[7] [8]
-Underfull \hbox (badness 1448) in paragraph at lines 135--136
+] [7]
+Underfull \hbox (badness 1448) in paragraph at lines 144--145
 \OT1/cmr/m/n/10.95 pres-sure by crawl-ing un-der
  []
 
 
-Underfull \hbox (badness 4505) in paragraph at lines 139--139
+Underfull \hbox (badness 4505) in paragraph at lines 148--148
 []\OT1/cmr/m/n/10.95 Difficulty with walk-ing or
  []
 
+[8] [9]
 
-Overfull \hbox (26.59262pt too wide) in paragraph at lines 126--142
-[][] 
- []
-
-[9] [10] [11]
-
-LaTeX Warning: Citation `rssyouth' on page 12 undefined on input line 185.
+LaTeX Warning: Citation `rssyouth' on page 10 undefined on input line 194.
 
 
-LaTeX Warning: Citation `rss_ensory' on page 12 undefined on input line 185.
+LaTeX Warning: Citation `rss_ensory' on page 10 undefined on input line 194.
 
 
-LaTeX Warning: Citation `rss_sensory' on page 12 undefined on input line 185.
+LaTeX Warning: Citation `rss_sensory' on page 10 undefined on input line 194.
 
 
-LaTeX Warning: Citation `rssyouth' on page 12 undefined on input line 185.
+LaTeX Warning: Citation `rssyouth' on page 10 undefined on input line 194.
 
-[12] [13] [14]
+[10] [11] [12] [13]
 Chapter 3.
-[15
+[14
 
-] [16] [17] [18]
+] [15] [16]
 Chapter 4.
-[19
+[17
 
 ]
 Chapter 5.
-[20
+[18
 
 ]
 Chapter 6.
-[21
+[19
 
 ]
 Chapter 7.
-[22
+[20
 
 ]
 Chapter 8.
-[23
+[21
 
 ]
 Chapter 9.
-[24
+[22
 
 ]
 Chapter 10.
-[25
+[23
 
-] [26
+]
+Underfull \hbox (badness 2435) in paragraph at lines 422--423
+[]\OT1/cmr/m/n/10.95 Sensory cor-re-lates of dif-fi-cult tem-per-a-ment char-ac
+-ter-is-tics in preschool chil-dren with
+ []
 
-] [27]
+[24
+
+] [25]
 ("C:\Users\Ashley\University git\dissertation\dissertation\dissertation.aux")
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 347 strings out of 493921
- 4436 string characters out of 3147278
- 57362 words of memory out of 3000000
- 3707 multiletter control sequences out of 15000+200000
+ 368 strings out of 493921
+ 4793 string characters out of 3147278
+ 57251 words of memory out of 3000000
+ 3724 multiletter control sequences out of 15000+200000
  10023 words of font info for 35 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 23i,10n,19p,942b,207s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 23i,10n,19p,913b,207s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on dissertation.pdf (28 pages, 126603 bytes).
+Output written on dissertation.pdf (26 pages, 128071 bytes).
 PDF statistics:
- 112 PDF objects out of 1000 (max. 8388607)
+ 106 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
