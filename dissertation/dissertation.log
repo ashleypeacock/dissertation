@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.25)  22 JAN 2014 18:41
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.25)  26 JAN 2014 00:52
 entering extended mode
 **dissertation.tex
 ("C:\Users\Ashley\University git\dissertation\dissertation\dissertation.tex"
@@ -85,88 +85,496 @@ Chapter 2.
 
 LaTeX Warning: Citation `blah' on page 6 undefined on input line 74.
 
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no œ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no  in font cmr10!
 [6
 
 ] [7]
-Underfull \hbox (badness 1448) in paragraph at lines 144--145
+Underfull \hbox (badness 1448) in paragraph at lines 146--147
 \OT1/cmr/m/n/10.95 pres-sure by crawl-ing un-der
  []
 
 
-Underfull \hbox (badness 4505) in paragraph at lines 148--148
+Underfull \hbox (badness 4505) in paragraph at lines 150--150
 []\OT1/cmr/m/n/10.95 Difficulty with walk-ing or
  []
 
 [8] [9]
 
-LaTeX Warning: Citation `rssyouth' on page 10 undefined on input line 194.
+LaTeX Warning: Citation `rssyouth' on page 10 undefined on input line 196.
 
 
-LaTeX Warning: Citation `rss_ensory' on page 10 undefined on input line 194.
+LaTeX Warning: Citation `rss_ensory' on page 10 undefined on input line 196.
 
 
-LaTeX Warning: Citation `rss_sensory' on page 10 undefined on input line 194.
+LaTeX Warning: Citation `rss_sensory' on page 10 undefined on input line 196.
 
 
-LaTeX Warning: Citation `rssyouth' on page 10 undefined on input line 194.
+LaTeX Warning: Citation `rssyouth' on page 10 undefined on input line 196.
 
-[10] [11] [12] [13]
+[10] [11] [12] [13] [14]
 Chapter 3.
-[14
+[15
 
-] [15] [16]
+] [16]
+Underfull \hbox (badness 10000) in paragraph at lines 344--346
+
+ []
+
+[17]
 Chapter 4.
-[17
 
-]
-Chapter 5.
+Underfull \hbox (badness 10000) in paragraph at lines 363--370
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 375--379
+
+ []
+
 [18
 
-]
-Chapter 6.
-[19
+] [19]
+Chapter 5.
 
-]
-Chapter 7.
+Underfull \hbox (badness 4479) in paragraph at lines 401--401
+[]\OT1/cmr/m/n/10.95 Play: In-creases
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 401--401
+\OT1/cmr/m/n/10.95 con-tent-ment by
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 401--401
+[]\OT1/cmr/m/n/10.95 People with
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 401--401
+\OT1/cmr/m/n/10.95 autism have
+ []
+
+
+Underfull \hbox (badness 4872) in paragraph at lines 401--401
+\OT1/cmr/m/n/10.95 spe-cial in-ter-ests.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 401--401
+\OT1/cmr/m/n/10.95 These spe-cial
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 401--401
+\OT1/cmr/m/n/10.95 in-ter-ests help
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 403--403
+[]\OT1/cmr/m/n/10.95 Touchside
+ []
+
+
+Underfull \hbox (badness 4132) in paragraph at lines 403--403
+\OT1/cmr/m/n/10.95 go from on->off
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 403--404
+[]\OT1/cmr/m/n/10.95 If the light
+ []
+
+
+Underfull \hbox (badness 1968) in paragraph at lines 403--404
+\OT1/cmr/m/n/10.95 goes on->off too
+ []
+
+
+Underfull \hbox (badness 2393) in paragraph at lines 403--404
+\OT1/cmr/m/n/10.95 quickly, con-tent-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 403--404
+\OT1/cmr/m/n/10.95 ment in-creases
+ []
+
+
+Underfull \hbox (badness 7504) in paragraph at lines 403--404
+\OT1/cmr/m/n/10.95 rapidly de-clines.
+ []
+
+
+Underfull \hbox (badness 2134) in paragraph at lines 403--404
+\OT1/cmr/m/n/10.95 The room looks
+ []
+
+
+Underfull \hbox (badness 5504) in paragraph at lines 403--404
+\OT1/cmr/m/n/10.95 strange/scary as
+ []
+
+
+Underfull \hbox (badness 4108) in paragraph at lines 403--404
+\OT1/cmr/m/n/10.95 ad-justed and it
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 403--404
+\OT1/cmr/m/n/10.95 be-comes clearer
+ []
+
+
+Underfull \hbox (badness 1762) in paragraph at lines 403--404
+\OT1/cmr/m/n/10.95 and con-tent-ment
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 405--405
+[]\OT1/cmr/m/n/10.95 Collections
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 405--405
+\OT1/cmr/m/n/10.95 of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 405--405
+\OT1/cmr/m/n/10.95 items(could
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 405--405
+[]\OT1/cmr/m/n/10.95 Explains that
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 405--405
+\OT1/cmr/m/n/10.95 chil-dren with
+ []
+
+
+Underfull \hbox (badness 4108) in paragraph at lines 405--405
+\OT1/cmr/m/n/10.95 autism have an
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 405--405
+\OT1/cmr/m/n/10.95 ob-ses-sion/need
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 405--405
+\OT1/cmr/m/n/10.95 to com-plete
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 407--407
+[]\OT1/cmr/m/n/10.95 Action: get
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 407--408
+[]\OT1/cmr/m/n/10.95 "Ouch that
+ []
+
+
+Underfull \hbox (badness 2096) in paragraph at lines 407--408
+\OT1/cmr/m/n/10.95 hurts": sand-pa-
+ []
+
+
+Underfull \hbox (badness 2302) in paragraph at lines 409--409
+[]\OT1/cmr/m/n/10.95 Spinny ob-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 409--410
+[]\OT1/cmr/m/n/10.95 All noise blurs
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 411--411
+[]\OT1/cmr/m/n/10.95 Upstairs
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 411--411
+[]\OT1/cmr/m/n/10.95 Fluorescent
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 411--411
+[]\OT1/cmr/m/n/10.95 Turn on/off.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 411--411
+\OT1/cmr/m/n/10.95 Same ef-fect as
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 411--411
+[]\OT1/cmr/m/n/10.95 Explanation
+ []
+
+
+Underfull \hbox (badness 3849) in paragraph at lines 411--411
+\OT1/cmr/m/n/10.95 like ten cam-era
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 411--411
+\OT1/cmr/m/n/10.95 flashes in your
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 411--412
+\OT1/cmr/m/n/10.95 cause a 'high'
+ []
+
+
+Underfull \hbox (badness 2181) in paragraph at lines 411--412
+\OT1/cmr/m/n/10.95 too long. Put
+ []
+
+
+Underfull \hbox (badness 3271) in paragraph at lines 411--412
+\OT1/cmr/m/n/10.95 a plug next to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 411--412
+\OT1/cmr/m/n/10.95 it and prompt
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 413--413
+\OT1/cmr/m/n/10.95 nor-mal hav-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 413--413
+\OT1/cmr/m/n/10.95 your-self peer-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 413--414
+[]\OT1/cmr/m/n/10.95 Causes
+ []
+
+
+Overfull \hbox (10.24146pt too wide) in paragraph at lines 413--414
+\OT1/cmr/m/n/10.95 dizzy/disorientation
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 415--416
+[]\OT1/cmr/m/n/10.95 Make wall-pa-per
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 415--416
+\OT1/cmr/m/n/10.95 ma-te-rial move
+ []
+
+
+Underfull \hbox (badness 1629) in paragraph at lines 415--416
+\OT1/cmr/m/n/10.95 and cause dizzi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 415--416
+\OT1/cmr/m/n/10.95 ness/sensory
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 417--417
+[]\OT1/cmr/m/n/10.95 Downstairs
+ []
+
+
+Underfull \hbox (badness 1810) in paragraph at lines 417--418
+[]\OT1/cmr/m/n/10.95 They can ei-ther
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--419
+[]\OT1/cmr/m/n/10.95 Automated:
+ []
+
+
+Underfull \hbox (badness 3281) in paragraph at lines 419--419
+\OT1/cmr/m/n/10.95 sound 'thoughts'
+ []
+
+
+Underfull \hbox (badness 2744) in paragraph at lines 419--419
+\OT1/cmr/m/n/10.95 user to go and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--419
+\OT1/cmr/m/n/10.95 cause anx-i-ety
+ []
+
+
+Underfull \hbox (badness 3333) in paragraph at lines 419--419
+\OT1/cmr/m/n/10.95 be-cause door-bell
+ []
+
+
+Underfull \hbox (badness 3281) in paragraph at lines 419--419
+\OT1/cmr/m/n/10.95 causes un-wanted
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--421
+[]\OT1/cmr/m/n/10.95 If player rings
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--421
+\OT1/cmr/m/n/10.95 an-other per-son
+ []
+
+
+Underfull \hbox (badness 4467) in paragraph at lines 419--421
+\OT1/cmr/m/n/10.95 rings it, causes
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--421
+\OT1/cmr/m/n/10.95 prob-lems(fears
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--421
+\OT1/cmr/m/n/10.95 orig-i-nat-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--421
+\OT1/cmr/m/n/10.95 from dis-rup-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--421
+\OT1/cmr/m/n/10.95 tion of struc-
+ []
+
 [20
 
 ]
-Chapter 8.
-[21
+Overfull \vbox (266.77014pt too high) has occurred while \output is active []
 
-]
-Chapter 9.
-[22
 
-]
-Chapter 10.
+[21]
+Overfull \hbox (8.95981pt too wide) in paragraph at lines 431--431
+[]\OT1/cmr/m/n/10.95 Kitchen| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 431--431
+[]\OT1/cmr/m/n/10.95 Washing
+ []
+
+
+Underfull \hbox (badness 5954) in paragraph at lines 431--431
+[]\OT1/cmr/m/n/10.95 Could be-come trans-
+ []
+
+
+Underfull \hbox (badness 2617) in paragraph at lines 431--432
+[]\OT1/cmr/m/n/10.95 Noisy, need to move
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 433--433
+[]\OT1/cmr/m/n/10.95 Kitchen
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 433--433
+[]\OT1/cmr/m/n/10.95 Particle emit-ters to
+ []
+
+
+Overfull \hbox (1.8119pt too wide) in paragraph at lines 437--437
+[]\OT1/cmr/m/n/10.95 Living
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 437--437
+[]\OT1/cmr/m/n/10.95 Description in-di-cat-ing
+ []
+
+
+Underfull \hbox (badness 1910) in paragraph at lines 437--437
+\OT1/cmr/m/n/10.95 that child may think
+ []
+
+
+Overfull \hbox (19.78818pt too wide) in paragraph at lines 439--439
+[]\OT1/cmr/m/n/10.95 Bathroom| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 441--441
+[]\OT1/cmr/m/n/10.95 Tooth
+ []
+
+
+Underfull \hbox (badness 1552) in paragraph at lines 441--442
+[]\OT1/cmr/m/n/10.95 Brushing teeth causes
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 450--455
+
+ []
+
+[22]
+Chapter 6.
 [23
 
 ]
-Underfull \hbox (badness 2435) in paragraph at lines 422--423
+Chapter 7.
+[24
+
+]
+Chapter 8.
+[25
+
+]
+Chapter 9.
+[26
+
+]
+Underfull \hbox (badness 2435) in paragraph at lines 491--492
 []\OT1/cmr/m/n/10.95 Sensory cor-re-lates of dif-fi-cult tem-per-a-ment char-ac
 -ter-is-tics in preschool chil-dren with
  []
 
-[24
+[27
 
-] [25]
+]
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+ [28]
 ("C:\Users\Ashley\University git\dissertation\dissertation\dissertation.aux")
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 368 strings out of 493921
- 4793 string characters out of 3147278
- 57251 words of memory out of 3000000
- 3724 multiletter control sequences out of 15000+200000
+ 369 strings out of 493921
+ 4803 string characters out of 3147278
+ 59251 words of memory out of 3000000
+ 3725 multiletter control sequences out of 15000+200000
  10023 words of font info for 35 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  23i,10n,19p,913b,207s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -175,9 +583,9 @@ ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on dissertation.pdf (26 pages, 128071 bytes).
+Output written on dissertation.pdf (29 pages, 136542 bytes).
 PDF statistics:
- 106 PDF objects out of 1000 (max. 8388607)
+ 115 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
