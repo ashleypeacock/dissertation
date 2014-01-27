@@ -9,7 +9,9 @@
 \author{Ashley Peacock}
 \maketitle
 \tableofcontents
+
 \chapter{Introduction}
+For this report I will be giving the overview of my thesis thus far which includes work carried out this semester and some incomplete sections (with notes as to what will be in there or improvements)
 
 \section{Selecting a project}
 The project started with the purpose of creating software to benefit someone with autism or ADHD or those in contact with these conditions such as family members or carers. Owing this is a very broad topic it was important to create multiple proposals and select the most useful. All proposals were put on a website and a selection was made after considering results from an online survey, conversing with professionals and people with ASD and considering systems and research currently available.
@@ -101,7 +103,7 @@ Public perceptions of autism as discussed later in more detail greatly differs. 
 
 \section{Triad of Impairments}
 
-**** Ignore this section. Will rewrite it once I can get a hold of the DSM-V changes. \\
+**** This section needs to be re-written once I can find DSM-V changes. \\
 
 There are three key areas of difficulty that people with autism share.
 
@@ -134,7 +136,7 @@ It is suggested that people with autism process information holistically, a theo
 
 It is argued that people with autism perceive the world more accurately because their inferences are less dependent on previous experience but a negative consequence of this is being less able to filter irrelevant stimulus \cite{bayes}. Difficulties filtering information can cause problems differentiating between background and foreground noise and so in a room with many people talking it may be hard to tune into an individual conversation \cite{bayes}. 
 
-Delays in information processing are a common feature in autism. In extreme cases, it can take weeks, months or even years to process information and one of the reasons given to the cause lye in the theory of gestalt perception. Processing information as a whole leads to over-selectivity and thus even familiar environments are looked upon as entirely new and thus one small change to the environment can cause a large amount of distress\cite{olgab}. This would offer a suggestion as to why people with autism have a strong desire for strict routine. Questioned asked to a person with autism should be given ample time for a response, if their process of thought is interrupted it can cause a complete disruption and the individual has to start this process again\cite{olgab}. As a result of distorted perception, it may take someone with autism longer to adjust to their surroundings. 
+Delays in information processing are a common feature in autism. In extreme cases, it can take weeks, months or even years to process information and one of the reasons given to the cause lye in the theory of gestalt perception. Processing information as a whole leads to over-selectivity and thus even familiar environments are looked upon as entirely new and one small change to the environment can cause a large amount of distress\cite{olgab}. This would offer a suggestion as to why people with autism have a strong desire for strict routine. Questions asked to a person with autism should be given ample time for a response, if their process of thought is interrupted it can cause a complete disruption and the individual has to start this process again\cite{olgab}. As a result of distorted perception, it may take someone with autism longer to adjust to their surroundings. 
 
 Distortions are reported to become worse in the state of nervous over-arousal and information overloads\cite{olgab} and thus a cycle of problems occurs; the more stressed a person with autism may be, the more these distortions occur and the harder it is to make sense of the world, consequently resulting in even more stress.
 
@@ -226,9 +228,9 @@ Of course, one solution to aid those on the Autistic spectrum to fit into main-s
 
 \subsection{Effects on children with ASD}
 
-Notes on things you've written that should go here:
+Notes on things supervisor has suggested writing here:
 
-State what difficulties from what part of the spectrum and age group. At the moment am using examples and symptoms from the higher end of the spectrum when it should be more for young children/lower part of the spectrum. Social communication difficulties would therefore be more like eye-contact, responding to cues such as name being called and any use of language. Language delays are a huge feature of pre-school children with autism.\\
+State what difficulties from what part of the spectrum and age group. At the moment using examples and symptoms from the higher end of the spectrum when it should be more for young children/lower part of the spectrum. Social communication difficulties would therefore be more like eye-contact, responding to cues such as name being called and any use of language. Language delays are a huge feature of pre-school children with autism.\\
 Social interaction - emphasize child-level issues i.e taking turns, sharing enjoyment with others.\\
 Social imagination - Emphasize interests and repetitive behaviours here. I.e lining things up, limited play such as playing with parts of objects, obsessive fixations on specific toys and specific routines\\
 
@@ -452,14 +454,62 @@ The character the user will play as. What difficulties they have/ what age they 
 \section{Implementation}
 The program structure was built from scratch using JMonkey. The scene contains a model of a house which was produced in sketch-up and contains two bedrooms, a kitchen and a living room all on one door). More detailed furniture models were created in blender and some (such as the character model) were taken from free online repositories. Particle emitters were added to models that were a source of sound in order to visually represent the sound disturbances reported by those with autism(the more objects emitting sound that the player is near, the harder the environment will become to view and as such it should intuitively prompt them to move away).
 
-\subsection{Autism aspects}
-Which aspects of autism were conveyed and what the final results looked like.
+\section{Gameplay}
+The player moves around and explores a realistic home environment. They are able to interact with the environment, such as turning of lights, opening and closing doors. Their well-being is monitored at all times by a contentment gauge visible on screen. The players goal is to interact with the environment, and later perform specific tasks, while
+maintaining contentment at a high level. If contentment drops, this is represented by the gauge graphic and when it reaches zero, the player experiences a meltdown and restarts. When being affected by unpleasant sensory inputs
+such as light or sound there is an introduction of visual flters on screen which are uncomfortable to view and inhibit accurate navigation of the environment and task completion. The player can perform various activities to increase contentment again.
 
-\subsubsection{Sensory system}
-- meltdowns\\
-- contentment\\
-- sensory level\\
-- filters\\
+\subsection{Game modes}
+
+\subsubsection*{Task mode}
+In the task mode, the user is required to navigate around the environment
+whilst experiencing some of the sensory obstacles in order to complete tasks.
+In essence, this is the game or story mode of the program.
+
+The program structure is designed to allow flexibility when giving the
+user tasks to complete in the environment. "Tasks" are java classes which can be dropped into the system and loaded. These classes can define custom actions on objects which may only be applicable when the task is active, e.g,
+get a drink, get dressed, ask Mum for help. Task classes must also set the conditions for completion such as player is holding a drink, is dressed, spoke to mum and on completion the next task is selected and displayed to the
+user. One of the benefits of this comes with testing as specific tasks can be selected and it doesnt require going through a series of events to trigger the tasks that need to be checked or needing to comment out large portions of
+code.
+
+\subsubsection*{Exploration mode}
+In the exploration mode the user can navigate and explore the environment without the worry of the contentment bar reaching zero or meltdowns although sensory disturbances still occur.
+
+\subsection{Autism aspects}
+
+\subsubsection{Representing sensory overloads and meltdowns}
+The three sensory problems currently implemented are sensitivity to sound, light and tactile. The proximity and amount of objects around the player will firstly affect the sensory health. When this falls below a specified threshold
+the first level of a sensory overload occurs and the impact of surrounding objects become more prominent, lights becoming brighter for example. If the player does not move away, the second level is reached in which visual effects
+worsen making it harder to see, a representative of a sensory overload. When the first level is reached, the contentment bar is slowly reduced and when the second level is reached and a sensory overload occurs the reduction is quicker, reflecting the exponential impact of unpleasant sensory stimulus
+over time.
+
+The sensory system both effects and is affected by the contentment bar which is the equivalent of a players "health" or well-being. Interviews showed that if someone with autism is feeling particularly drained from their day or
+awakens feeling particularly anxious their tolerance to their surroundings is lower and hence when contentment is lower, a sensory overload is more likely to occur. Translating the information from interviews and readings to
+implementation proved challenging because of the amount of differing information. The specific triggers do require work and adjustment, for example having only certain types lighting causing problems as currently all of them
+are. Sound is currently represented by visual sound waves emitting from objects and these need to be made bigger and more dense so that the more sound-emitting objects around, the more disturbances occur and the harder
+it is to interact with surroundings. A final improvement is for contentment to slowly increase if not around any objects causing sensory problems and if not around people.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=110mm]{images/old_sensoryeffects.png}
+\caption{Light sensory effects: representing the impact of disliked bright
+light on the visual experience of a child with autism(right)}
+\label{old_sensoryeffects}
+\end{figure}
+
+\subsubsection{Effects on contentment}
+Contentment of the player reduces when experiencing sensory overload effects and will stop reducing after a period of time if the player moves away from them. There are other specific actions within the game that will also cause the
+contentment to reduce such as getting dressed(to represent tactile sensitivity) or being told off by the parent. Currently the contentment can replenish if the player engages with special interests which are represented in-game as playing with the dinosaur. More will be implemented later to reflect some of the other experiences that those with autism find soothing.
+
+\subsubsection{Other features}
+\textbf{Information processing delay}: The delay in information processing exhibited by someone with Autism is demonstrated by creating a options which represent in-game choices which constantly rotate, making it harder
+to read, choose and also select a response. The speed in which this occurs is dependent on the contentment level so that the less content the character is, the harder it becomes to make a choice as they rotate faster. \\
+
+\textbf{Description box}: Users can click on certain objects and obtain information in the form of pop up boxes on certain items that may cause problems or be of interest to someone with autism. I.e explaining that information on
+TV may be taken literally and a child may thus expect a toy to react in the same way as advertised or may not be able to identify that what is seen on TV is not real. This adds an extra layer to the system allowing a person
+to visually walk around an environment and learn about Autism which may alone be more effective and engaging than reading a textbook on the topic. \\
+
+\textbf{Special/repetitive interests}: Interactions with favourite objects such as a toy dinosaur cause contentment to slowly increase whilst reducing any sensory problems, reflecting one known real-world function of such repetitive interests.
 
 \subsection{Overcoming challenges}
 At the start of the project significant amounts of time were spent trying to import rather than create models. It was a tedious task because small changes to the models required the whole house scene to be remade in JMonkey or
@@ -473,6 +523,8 @@ further extensions to be created with ease without needing to change a large por
 continue to speed up.
 
 \subsection{Technical}
+More technical information of the programming. Class and system diagrams.
+
 - Explanation of missions interface \\
 - Scenes\\
 - object states\\
@@ -485,6 +537,8 @@ continue to speed up.
 \section{Evaluation}
 The current version of the simulator has been evaluated in two settings. The first was the presentation of the simulator to the LAERLab group(see below). The second was a questionnaire sent to some parents/family members of children with autism and adults with autism.
 
+TODO: More details information on the evaluations, specifically the LAER one.
+
 \subsection{Expert feedback}
 The LAER group consists of students and academics with an interest in the field of accessible and educational technology design. A focus group of 10 members provided comments and feedback. A short video demo was presented and narrated, showing exploration of the environment and then one task being completed (which was to obtain a drink from the kitchen) including demos of sensory overload effects, meltdown and information processing delay concepts.
 
@@ -493,9 +547,9 @@ A video was sent out with verbal instructions and descriptions along with a ques
 
 \begin{table}
 \caption{Questionnaire results. Participants responded giving an answer between 1 and 5. 5 being the highest rating}
-\begin{tabular}{| p{6cm} | c c c c c |}
+\begin{tabular}{| p{9cm} | c c c c c |}
 \hline
-Question & 1 & 2 & 3 & 4 & 5 \\
+\textbf{Question} & 1 & 2 & 3 & 4 & 5 \\
 \hline
 How likely would you be to play the simulator? & 0 & 0 & 1 & 2 & 4 \\
 \hline
@@ -526,32 +580,32 @@ Following constructive feedback from these sources, the following amendments to 
 \item Some viewers with autism commented they found it difficult to watch as it was causing them to have a sensory overload. Thus, one improvement is to allow certain effects/components to be turned on or off.
 \item Remove pop-up description boxes which users felt interrupted the simulation and instead represent this information in a side-bar.
 \item Improve game-play controls which are currently too sensitive and make viewing difficult.
-\item Adjust threshold for a meltdown occurring as these are happening too
-quickly.
+\item Adjust threshold for a meltdown occurring as these are happening too quickly.
 \item Certain objects should present more sensory problems than others i.e fire alarm causing a quicker reduction in contentment than the noise from the TV. Overall, comments in relation to the sensory overload effects were very positive.
 \end{enumerate}
 
 Interviews need to be further conducted with parents, teachers and carers to and more scenarios with which they commonly experience difficulty. Such information can be used to create a storyboard of scenarios and tasks. As
 well as gathering information from individual interviews, the simulator will also be presented at a workshop for a charity to an audience of carers of children with autism and other disabilities. This could be given in the form of a visual demo and/or allowing them to play.
 
-\chapter{First version}
-The first version underwent more substantial changes than previously planned. Large parts of the system were rewritten and improved upon such as the GUI and sensory manager. The benefits of having  done so resulted in simplification of use at the higher level (such as implementing storyboards).
+\chapter{First version: Latest work}
+The following includes the latest work carried out on the simulator over the semester which includes planning, changes and implementation. 
 
-Performance issues which although previously were not too severe required direct attention. The game requires a frame rate of 30fps(frame per second) or above in order to be fluent and played without lag. Scenes are required to have a maximum of 100k vertices(from models) with an average of 10-50k. Each pointlight used requires the scene to be rendered again and so the number of vertices double with each point light used. Thus, even when keeping within the limits, the amount of lights being used in the game was pushing it to well over a million and the frame frequently dropped below the desired threshold. This was occurring on a computer with a decent processor and graphics card, thus playing on a low-powered machine would not be a good experience.  
+The first version underwent more substantial changes than previously planned. Large parts of the system were rewritten and improved upon such as the GUI and sensory manager. The benefits resulted in simplification of use at the higher level (such as implementing storyboards) and a better representation of the causes of sensory overloads.
 
-Having originally taken a large amount of models from other websites and using programs such as sketchup to aid quicker development, these were found to be inefficient at runtime. Efforts therefore were spent on re-learning how to use blender but this time in more detail to create models that would better suit the environment. 
+Selecting actions to interact with objects is now less intrusive. Prior a menu would pop up and prompt the user to make a selection with their mouse which will now only happen if there are multiple options. With the removal of description boxes, thoughts are now displayed at the bottom of the screen when to user is looking at a specific object.
 
-Where previously the entire house modelled and then imported, the solution to the above problem was to split the house into individual rooms/scenes. When the user then clicks a door, the required scene is loaded very quickly. By doing this it allowed for more detailed models to be used within each scene as each scene was now only a small room. The issue of point lights is then reduced as it is only rendering a single room again, not the entire house. 
+Performance issues which were not previously too severe now required direct attention. The game requires a frame rate of 30fps(frame per second) or above in order to be fluent and played without lag. Scenes are required to have a maximum of 100k vertices(from models) with an average of 10-50k. Each pointlight(which is a light the user can turn on/off) used requires the scene to be rendered again and so the number of vertices double with each point light used. Thus, even when keeping within the limits, the amount of lights being used in the game was pushing it to well over a million and the frame frequently dropped below the desired threshold. This was occurring on a computer with a decent processor and graphics card, thus playing on a low-powered machine would not be a good experience.  
+
+Having originally taken a large amount of models from other websites and using programs such as sketchup to aid quicker development, these were found to be inefficient at runtime. Efforts therefore were spent on re-learning the details of blender and what is required to make lightweight game models. 
+
+Where previously the entire house modelled and then imported, the solution to the above problem was to split the house into individual rooms/scenes. When the user then clicks a door, the required scene is loaded very quickly. This approach allows for inclusion of more detailed models within each scene as each scene is only a small room. The problems to performance caused by point lights is then reduced as it is only rendering a single room again, not the entire house. 
 
 Further benefits from compartmentalising the house into rooms arose for dealing with the model pipeline. It became much easier to create individual models and link them into the scene, so if the model needed to be edited it could be without requiring the pain of reimporting and fixing textures or materials. 
 
 The result of the restructure meant the FPS improved tenfold, from an average of 30fps to 200-400fps. If any objects were found to be creating problems from being too detailed or not textures properly, they could be removed without impacting on the rest of the scene.
 
-Additional information of the improvements can be seen in the 'System changes section'.
-
 \section{Storyboards}
-
-For the initial story, the player will experience "The day in the life of a child with autism" within the house environment. This will be split up into several "Missions"(tasks).
+Following the prototype which had little story or goals a more in-depth story and set of tasks were created. The user will play as an example "Day in the life of a child with autism". This will be split up into several "Missions"(tasks).
 
 \subsection*{Mission 1: Complete morning routine}
 Complete your morning routine in the designated time(the more out of time, the more contentment drops). Player starts in the bedroom which is a designated safe place/sensory room. 
@@ -569,7 +623,7 @@ Routine to complete: eat breakfast, brush teeth, get dressed.
 \end{enumerate}
 
 \subsection*{Mission 2: Afternoon, find out the cause of stomach pain}
-Mission is to find out why the characters stomach may be hurting which also gives the user more of a chance to explore the home. Reasons for the pain could be:
+Mission is to find out why the characters stomach may be hurting which also gives the user a chance to explore. Contentment slowly drops until the solution is found. Reasons for the pain could be:
 
 \begin{itemize}
 \item Hunger/Thirsty
@@ -577,9 +631,7 @@ Mission is to find out why the characters stomach may be hurting which also give
 \item Toilet?
 \end{itemize}
 
-Attempt all above things with issues, could have the parent possibly probing for what they child is doing.
-
-Door bell unexpectedly rings. Mum's friend has come around, was meant to be meeting out but due to meltdown has come to the house instead. Mum tried to explain in advance but words weren't making sense. The person looks like a stranger and can't be recognised and contentment reduces(touch sensitivity occurring from this stranger?). 
+The user will be expected to attempt all of the above(the final one the user finds will always be the cause). During the above the door bell will unexpectedly ring and a new character will enter, the Mum's friend. The friend was meant to be meeting you both out but due to the earlier meltdown has come to the house instead. Mum tried to explain in advance but words weren't making sense. The person looks like a stranger and can't be recognised and contentment reduces(touch sensitivity occurring from this stranger?). 
 
 \subsection*{Mission 3: Evening, get to bed}
 Mission pops up that it is time to go to bed but mum stops you and says you can continue playing. Mum then approaches after an unknown amount of time and informs you to go to bed. Meltdown occurs as it's not the exact time and the characters bedtime routine has been broken.
@@ -642,24 +694,128 @@ Following a need to compartmentalise the previous house environment as a solutio
 
 
 \section{System changes}
+** TODO: Add diagrams and more in-depth information/diagrams. Quite a few of the technical system changes were made several months ago, so need to create diagrams of initial set ups and current to give a better comparison and details in final thesis.
 
-\subsection{Overview}
+\subsection{Rewrite of scenes}
+Most the the effort in the last few weeks of the semester were spend on re-writing the scene manager and remodelling the house. 
 
-Followed by more technical sections on:
-- rewrite of scenes. \\
-- introduction of gamestate manager. \\
-- rewrite of sensory system. \\
-- GUI changes \\
+\begin{figure}[H]
+\centering
+\includegraphics[width=90mm]{images/scenemanager.jpg}
+\caption{Overview of the previous house that was used}
+\label{old_house}
+\end{figure}
+
+SceneManager contains useful tools for the creation, deletion and changing of scenes. The "HomeScene" extends this and contains objects which are all instances of Scene and represent the individual rooms. By extending the SceneManager the HomeScene can listen to events occurring in the game and specify custom ones that are unique for that collection of scenes(or rooms), for example it can specify that doors require changing and loading of different rooms. 
+
+\subsubsection{House implementation}
+In addition to remodelling parts of the house a bathroom was created and added along with new actions such as being able to flush the toilet(with sounds to accompany this). Now being able to handle individual objects in rooms allows for easy addition animation, the clock's hands in the room move and will indicate the time of day. Below gives some screen shots of the new environment and it's accompanying frame-rates. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=90mm]{images/old_fullhouse.jpg}
+\caption{Overview of the previous house that was used}
+\label{old_house}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=90mm]{images/new_hallway1.png}
+\caption{Overview of the previous house that was used}
+\label{old_house}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=90mm]{images/new_hallway2.png}
+\caption{Overview of the previous house that was used}
+\label{old_house}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=90mm]{images/new_bathroom.png}
+\caption{Overview of the previous house that was used}
+\label{old_house}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=90mm]{images/new_livingroom.png}
+\caption{Overview of the previous house that was used}
+\label{old_house}
+\end{figure}
+
+\subsection{Game state manager}
+
+As the size of the system grew, one of the most important changes was the addition of a game state manager, enabling universal control and monitoring of the overall system. 
+
+The user can now change between "Explore mode"(the user has no tasks and can simply look around the environment) and "Mission mode"(given the tasks or story) without having to restart the simulator. From this came the addition of the start and help screen and ability for the user to pause the game.  
+
+The rest of the system can now request useful information from the GSM such as which mission is currently being run, which scene the player is currently in and what the state of the GUI is (if actions are being displayed, if the user is required to select an option). If the GUI needs to display information(such as selecting actions) it will notify the game state manager which will halt processes that may interfere. Having a central control made other parts of the simulator easier to develop and reuse since each part of the system only needs to worry about which state it is in rather than checking multiple conditions.
+
+\subsection{Sensory System improvements}
+Following the feedback on sensory overloads, improvements were required in how sensory overloads occurred rather than what was happening when they did. Previously, objects which could affect the sensory system were put into a Hashable which were then periodically checked for the distance to the player and if in proximity, would affect the sensory system depending on how far the object is. However, all objects would affect the user by the same weight and the effect on contentment would change depending on what threshold of objects were reached (i.e if 2 were in proximity the health reduction would be low, if more than two the reduction would be greater). Filters to mirror sensory overloads would then be applied depending on this level.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=90mm]{images/sensoryobjects.jpg}
+\caption{Diagram showing implementation of sensory system}
+\label{sensorysystem}
+\end{figure}
+
+The new implementation attempts to create a better less fragmented model of how objects affect the player and cause sensory overloads/meltdowns. This approach is more scalable and enables a flexible means to experiment by simply changing parameters, thus helping to address previous issues of meltdowns occurring too quickly.
+
+Each sensory object is given two properties (from the green boxes above) and from this a sensory function is applied and a weight for each object is calculated. The sensory function is simply an exponential: the higher the affecting level the higher the weight returned and if the object is set as a 'soothing object' a negative value will return instead. 
+
+The sensory manager then takes all the weights of the objects that are in proximity and sums them, taking the log of this. If the log is negative there are no objects and contentment replenishes. The result of the summation is then taken away from the players contentment. 
+
+Sounds were the final addition to the simulator. When acting on the toilet it now flushes and the alarm clock in the room rings. Sounds create a more immersive environment and an additional layer for creating sensory overloads(i.e making objects more high-pitched). 
 
 \chapter{Formative evaluation}
-
-\chapter{Final version}
+The formative evaluation will be carried out with 5 participants and will be predominantly testing usability, checking that accompanying materials such as help-guides and game controls.
 
 \chapter{Summative evaluation}
 
 \chapter{Conclusion}
-- Discussion, i.e things that could have been done better.
-- Future improvements
+
+\chapter{Plan and future work}
+
+Additions to simulator prioritised as required for the formative evaluation:
+
+\begin{enumerate}
+\item Change start screen to have an image behind it with a more informative help screen.
+\item Recording of sounds: Door bell, TV noise.
+\item Spinning soothing object in bedroom.
+\item GUI changes: Make thoughts more readable as they can be quite difficult with certain backgrounds.
+\item Completion of storyboard implementation: morning routine is complete as is the afternoon(except the doorbell and introduction of another character) but needs final touches.
+\item Tooltip: As the process of selecting actions was changed it is not obvious what will happen when the user interacts with other objects or what room they will walk into when clicking on a door. A tool-tip would be an easy addition that would not interfere with play.
+\end{enumerate}
+
+\begin{table}[H]
+\begin{tabular}{| p{8cm} | p{4cm} | }
+\hline
+Task & Deadline \\
+\hline
+Complete plan for formative evaluation & January 24th \\
+\hline
+Finishing additions and improvements to simulator & February 3rd \\
+\hline
+Start formative evaluation & February 4th \\
+\hline
+Finish formative evaluation & February 6th \\
+\hline
+Improvements to simulator based on feedback & February 17th \\
+\hline
+All sections of dissertation complete(except summative evaluation) & February 17th \\
+\hline
+Summative evaluation & February 21st(end of ILW) \\
+\hline
+Completion of dissertation writing & March 6th \\
+\hline
+\end{tabular}
+\end{table}
+
 
 \begin{thebibliography}{9}
 
