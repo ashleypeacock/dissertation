@@ -1,0 +1,2 @@
+\contentsline {chapter}{\numberline {1}Belief networks}{2}
+\contentsline {section}{\numberline {1.1}Questions}{2}
