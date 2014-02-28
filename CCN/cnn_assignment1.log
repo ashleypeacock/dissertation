@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.25)  24 FEB 2014 00:10
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.25)  24 FEB 2014 16:12
 entering extended mode
-**computational*neuroscience.tex
+**cnn_assignment1.tex
 
-("C:\Users\Ashley\University git\dissertation\dissertation\CCN\computational ne
-uroscience.tex"
+("C:\Users\Ashley\University git\dissertation\dissertation\CCN\cnn_assignment1.
+tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -78,8 +78,8 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 )
 \@float@every@table=\toks17
 
-("C:\Users\Ashley\University git\dissertation\dissertation\CCN\computational ne
-uroscience.aux")
+("C:\Users\Ashley\University git\dissertation\dissertation\CCN\cnn_assignment1.
+aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
@@ -105,62 +105,49 @@ LaTeX Font Info:    ... okay on input line 14.
 \MPnumerator=\count93
 \makeMPintoPDFobject=\count94
 \everyMPtoPDFconversion=\toks19
-)
+) <assignment1_images/31plot.jpg, id=1, 563.10374pt x 421.575pt>
+File: assignment1_images/31plot.jpg Graphic file (type jpg)
 
-LaTeX Warning: Citation `check' on page 1 undefined on input line 28.
+<use assignment1_images/31plot.jpg>
+Package pdftex.def Info: assignment1_images/31plot.jpg used on input line 20.
+(pdftex.def)             Requested size: 256.0748pt x 191.71399pt.
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 49.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 49.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 49.
-[1
+<assignment1_images/31hist.jpg, id=2, 563.10374pt x 421.575pt>
+File: assignment1_images/31hist.jpg Graphic file (type jpg)
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+<use assignment1_images/31hist.jpg>
+Package pdftex.def Info: assignment1_images/31hist.jpg used on input line 26.
+(pdftex.def)             Requested size: 256.0748pt x 191.71399pt.
 
-LaTeX Warning: File `images/gaussian_tuning curve.png' not found on input line 
-69.
+<assignment1_images/32angles.jpg, id=3, 563.10374pt x 421.575pt>
+File: assignment1_images/32angles.jpg Graphic file (type jpg)
 
-<images/gaussian_tuning curve.png, id=8, 524.71031pt x 338.01282pt>
-File: images/gaussian_tuning curve.png Graphic file (type png)
+<use assignment1_images/32angles.jpg>
+Package pdftex.def Info: assignment1_images/32angles.jpg used on input line 34.
 
-<use images/gaussian_tuning curve.png>
-Package pdftex.def Info: images/gaussian_tuning curve.png used on input line 69
-.
-(pdftex.def)             Requested size: 256.0748pt x 164.96239pt.
- [2 <C:/Users/Ashley/University git/dissertation/dissertation/CCN/images/gaussi
-an_tuning curve.png>] [3] [4]
-("C:\Users\Ashley\University git\dissertation\dissertation\CCN\computational ne
-uroscience.aux")
+(pdftex.def)             Requested size: 256.0748pt x 191.71399pt.
+ [1
 
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Ashley/Universit
+y git/dissertation/dissertation/CCN/assignment1_images/31plot.jpg> <C:/Users/As
+hley/University git/dissertation/dissertation/CCN/assignment1_images/31hist.jpg
+>] [2 <C:/Users/Ashley/University git/dissertation/dissertation/CCN/assignment1
+_images/32angles.jpg>]
+("C:\Users\Ashley\University git\dissertation\dissertation\CCN\cnn_assignment1.
+aux") ) 
 Here is how much of TeX's memory you used:
- 1218 strings out of 493921
- 16486 string characters out of 3147278
- 69490 words of memory out of 3000000
- 4546 multiletter control sequences out of 15000+200000
- 7897 words of font info for 28 fonts, out of 3000000 for 9000
+ 1206 strings out of 493921
+ 16408 string characters out of 3147278
+ 65490 words of memory out of 3000000
+ 4538 multiletter control sequences out of 15000+200000
+ 4545 words of font info for 17 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 27i,5n,21p,416b,209s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
-Output written on "computational neuroscience.pdf" (4 pages, 165497 bytes).
+ 27i,5n,19p,245b,217s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on cnn_assignment1.pdf (2 pages, 80024 bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
+ 20 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

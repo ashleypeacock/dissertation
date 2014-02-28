@@ -1,5 +1,10 @@
 \documentclass[11pt]{article}
 
+\usepackage{fullpage}
+\usepackage{graphicx}
+\usepackage{float}
+\restylefloat{table}
+
 \newcommand{\define}[2] {
   \textbf{Definition: #1}
   \begin{center} #2
@@ -35,19 +40,36 @@ A tool of neuroscience is mathmatical and computer models which are used to unde
 \item Make predictions - guide experiments and better data analysis
 \end{enumerate}
 
-\section{Lecture 2: Neurons}
+\section{Lecture 2: Encoding}
+
+\subsection{Neurons}
 \define{Dendrites}{receive inputs from other cells}
 \define{Axon}{transfers signal to other neurons}
 \define{Synapse}{Contact between pre and post synaptic cell. Efficiency of transmission can vary over time.}
-\define{Ion channels}{Ther are ion channels across the membrane, allowing ions to move in and out with selective permeability (mainly Na+ and K+, $Ca_2$ and Cl-)}
+\define{Ion channels}{There are ion channels across the membrane, allowing ions to move in and out with selective permeability (mainly Na+ and K+, $Ca_2$ and Cl-)}
 
-\subsection{Electrophysiological recordings}
+\subsubsection{Electrophysiological recordings}
 There are two types: intracellular recordings where a sharp electrode is placed inside the neuron patch electrode, sealed to the membrane and is used to view the $Vm$. $Extracellular$ where the electrode is placed near a neuron to view action potentials often in Vivo(possible awake animal). Was common to observe one neuron at a time, now use of arrays of electrodes is beginning. 
 
-\subsection{Describing neurons activity}
-One of the aims of neuroscience is to describe the activity of a neuron and what it responds to. For example, we can observe a neuron where visual stimuli is changing orientation. We can measure spike sequence, number of spikes or rate. The variability of this is large and thus needs to be averaged over many trials.
+\subsubsection{Describing neurons activity}
+One of the aims of neuroscience is to describe the activity of a neuron and what it responds to. For example, we can observe a neuron where visual stimuli is changing orientation. We can measure spike sequence, number of spikes or rate $r$. The variability of this is large and thus needs to be averaged over many trials.
+
+$p(t) = \sum lav(t - t_{i})$
+
+$r = \frac{no.spikes}{T}$
+
+\subsubsection{Modelling the average firing rate}
 
 \define{Tuning curves}{You modify an aspect of the stimulus and measure the r<s> (spike count rate)}
+
+V1 neurons: highly selective to the orientation of the stimulus (e.g bar) flashed in their receptive field. Bellshape tuning curves such as gaussian are common.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=90mm]{images/gaussian_tuning curve.png}
+\caption{Gaussian tuning curve}
+\label{old_house}
+\end{figure}
 
 \section{Lecture 3: Encoding}
 \define{Encoding problem}{What is the relationship between stimuli in the world and the activity of the brain? $P(r|s)$}
@@ -67,7 +89,7 @@ $P(n = k | s) = \frac{e^{-f(s)}f(s)^k}{k!}$
 Another model that is commonly used to describe the variability ot the spike count is the Guassian noise model,. The activity can be described as:
 $n = f(s) + n(s)$
 $n(s) = N(0, o^2(s))$
-To mimic Poisson process, we choose o^2(s) = f(s)
+To mimic Poisson process, we choose $o^2(s) = f(s)$
 
 \subsubsection{Where does the Noise come from?}
 Noise is commonly represented as a Poisson or Guassian distribution. Is the Poisson variability really noise? (unresolved, yet critical question)
@@ -94,12 +116,29 @@ Humans are attempting to advance themselves by looking closer at the human brain
 \section{Lecture 3: Overview of visual cortex}
 
 \section{Lecture 4: Encoding}
+I think most of the methods from this chapter are based on encoding?
+
 Encoding could be used to give people hearing or vision again. Cochlear implants provide a sense of sound. 
 
 \subsection{Decoding populations of neurons}
 An estimation problem (detecting signal in noise)
 Tools: Estimation theory, Bayesian inference, machine learning. 
 
+\subsection{Optimal decoding}
+Maximum likelihood
+Maximum posteriori
+
+\subsection{Simpler decoding strategies}
+
+\subsubsection{Winner Take All}
+
+\subsubsection{Population Vector}
+Take all the vector orientations of the neurons preferred orientations. Sum these together and obtain a resultant vector. 
+
+\section{Lab notes}
+
+\subsection{Lab 1}
+Effectively for question 1 part b, we are modelling the activation spikes when the orientation changes.
 
 \section{Coursera: Neurobiology}
 Dendrites: Inputs in ESPS: Exitatory post-synaptic potential. If you receive enough of these it creates a spike action potential.
@@ -108,6 +147,6 @@ Axons: output of neuron
 \section{Glossary}
 \define{Psychophysics}{Investigates the relationship between physical stimuli and sensations and the perceptions they affect}
 \define{Encoding:}{How does a stimulus cause a pattern of responses? P(response | stimulus)}
-\define{Decoding:}{What do these responses tell us about the stimulus? How can we reconstruct what the brain is doing? $P(stimulus | response)}$
+\define{Decoding:}{What do these responses tell us about the stimulus? How can we reconstruct what the brain is doing? $P(stimulus | response)$}
 
 \end{document}
