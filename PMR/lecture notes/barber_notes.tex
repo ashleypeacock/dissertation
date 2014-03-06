@@ -1,0 +1,52 @@
+\documentclass[11pt]{report}
+
+\usepackage{graphicx}
+\usepackage{fullpage}
+
+\newcommand{\define}[2] {
+  \textbf{Definition: #1}
+  \begin{center} #2
+\end{center}
+}
+
+\begin{document}
+
+\title{Probability notes: Barber}
+\maketitle
+
+\chapter{Probability refresher}
+
+The summation of probability over all the states is 1:
+
+$\sum{p(x = x)} = 1$
+
+This is called the $normalisation condition$.
+
+Two variables x and y can interact though:
+
+$p(x = a or y = b) = p(x) + p(y) - p(x = a and y = b)$
+
+Shorthand $p(x, y)$ is used for $p(x and y)$.
+
+\subsection*{Marginal}
+\define{Marginals}{A marginal gives the probabilities of various values within a set, without reference to other variable values. This is the opposite to conditional probability, where the values are dependent on other variables.}
+
+Given a joint distribution p(x, y) the distribution of a single variable is given by:
+$p(x) = \sum{p(x, y)}$
+
+Here, p(x) is termed a marginal of the joining probability distribution p(x, y). The process of computing a marginal from a joining distribution is called marginalisation.
+
+\subsection*{Conditional probability/Bayes rule}
+$p(a, b) = p(a|b)p(b)$ and thus $p(a | b) = \frac{p(a, b)}{p(b)}$ \\
+The probability of event x conditioned on knowing event y (or more shortly, the probability of x given y) is defined as:
+
+$p(x | y) = \frac{p(x, y)}{p(y)}$
+
+\chapter{Appendix}
+
+\section{Glossary}
+
+\define{Marginals}{A marginal gives the probabilities of various values within a set, without reference to other variable values. This is the opposite to conditional probability, where the values are dependent on other variables.}
+
+\end{document}
+

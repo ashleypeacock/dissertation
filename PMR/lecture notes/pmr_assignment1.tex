@@ -1,0 +1,35 @@
+\documentclass[11pt]{report}
+
+\usepackage{graphicx}
+\usepackage{fullpage}
+
+\newcommand{\define}[2] {
+  \textbf{Definition: #1}
+  \begin{center} #2
+\end{center}
+}
+
+\begin{document}
+
+\section{Question 1}
+\subsection{Part A}
+Joint distribution is: $P(D)P(S)P(C|D)P(I|C)P(V|C,S,J)P(J|D)P(T|J)$
+
+\subsection{Part B}
+
+\subsection{Part C}
+Found this question a bit confusing so I'll explain best I can...
+
+P(S|J) = J $\rightarrow$ V $\leftarrow$ (no blocking)
+P(S|D) = D $\rightarrow$ C $\rightarrow$ V $\leftarrow$ S (no blocking)
+P(S|I) = I $\leftarrow$ C $\rightarrow$ V $\leftarrow$ S (no blocking)
+P(S|C) = C $\rightarrow$ V $\leftarrow$ S (no blocking)
+
+For paths C $\rightarrow$ V $\leftarrow$ S and J $\rightarrow$ V $\leftarrow$ S both paths are always unblocked as V is conditioned on.
+
+By conditioning on the variables J, D, I, C, no blocking occurs and hence S is not conditionally independent on J, D, I or C and there is therefore no observation that would lead to no extra information(all would lead to an increase in information).
+
+If you could condition on both C and J, S would become conditionally independent of D but as we are limited to one additional variable, if you condition simply on C or J, there is still a path from D to S via the symmetric route and as such D is not independent. 
+
+
+\end{document}
