@@ -31,8 +31,7 @@
       </li>
     </ul>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <font NAME="SansSerif" SIZE="14"/>
 </node>
 <node COLOR="#990000" CREATED="1392565341096" ID="ID_329745135" MODIFIED="1392565472913" TEXT="Pedagogic Goals">
@@ -62,8 +61,7 @@
       </li>
     </ol>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <font NAME="SansSerif" SIZE="14"/>
 </node>
 </node>
@@ -83,8 +81,7 @@
       Systems include LISP tutor, algebra tutor, geometry explanation tutor.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1392562976643" ID="ID_190992454" MODIFIED="1392563608833" TEXT="Family of systems based on ACT/ACT-R">
@@ -101,8 +98,7 @@
       Autotutor
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -132,8 +128,7 @@
       Autotutor is trying to imitate &quot;best&quot; features of human tutorial dialogue
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1392564496794" ID="ID_1922165648" MODIFIED="1392564502542" TEXT="Constructivist">
@@ -160,8 +155,7 @@
       To go with these goals, the tutor is embodied onscreen: as a semi-realistic virtual character(not just text)
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <font NAME="SansSerif" SIZE="14"/>
 </node>
 <node COLOR="#990000" CREATED="1392565124811" ID="ID_150123353" MODIFIED="1392565230515" TEXT="Affect">
@@ -185,8 +179,7 @@
       </li>
     </ul>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <font NAME="SansSerif" SIZE="14"/>
 </node>
 </node>
@@ -219,8 +212,7 @@
       </li>
     </ul>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="18"/>
 <node COLOR="#00b439" CREATED="1392561848992" ID="ID_425200850" MODIFIED="1392564127840">
@@ -233,8 +225,7 @@
       1. Definition
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -261,8 +252,7 @@
       </li>
     </ul>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 </node>
@@ -276,8 +266,7 @@
       2.&#160;Synthesis
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <richcontent TYPE="NOTE"><html>
   <head>
     
@@ -287,8 +276,7 @@
       How, why and when do ALE/ITS projects draw on multipledisciplines, theoretical positions, and types of expertise?
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 </node>
@@ -305,8 +293,7 @@
       Question 3b: To what extend has this research are made progress toward overarching goals? (and what is the evidence for that assessment of progress?)
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 </node>
@@ -320,13 +307,12 @@
       Why arn't we building a new system this semester, or modifying an existing one?
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 </node>
 </node>
-<node COLOR="#0033ff" CREATED="1392566088311" FOLDED="true" ID="ID_1815910372" MODIFIED="1392566110714" POSITION="left" TEXT="Concepts">
+<node COLOR="#0033ff" CREATED="1392566088311" FOLDED="true" ID="ID_1815910372" MODIFIED="1394569712937" POSITION="left" TEXT="Concepts">
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="18"/>
 <node COLOR="#00b439" CREATED="1392564667800" ID="ID_620064905" MODIFIED="1392566092581" TEXT="Constructivism">

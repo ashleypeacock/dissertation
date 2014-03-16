@@ -1,0 +1,20 @@
+\contentsline {chapter}{\numberline {1}Introduction}{3}
+\contentsline {section}{\numberline {1.1}Selecting a project}{3}
+\contentsline {chapter}{\numberline {2}Literature review}{7}
+\contentsline {section}{\numberline {2.1}What is Autism?}{7}
+\contentsline {subsection}{\numberline {2.1.1}DSM-5}{7}
+\contentsline {subsection}{\numberline {2.1.2}Public perception}{7}
+\contentsline {section}{\numberline {2.2}Sensory processing}{7}
+\contentsline {subsection}{\numberline {2.2.1}Resulting behaviours}{8}
+\contentsline {subsubsection}{Meltdowns}{8}
+\contentsline {subsubsection}{Sensory overloads}{8}
+\contentsline {subsubsection}{Unusual fears}{8}
+\contentsline {section}{\numberline {2.3}Coping mechanisms}{9}
+\contentsline {section}{\numberline {2.4}Theoretical models}{9}
+\contentsline {subsection}{\numberline {2.4.1}Information processing}{9}
+\contentsline {subsection}{\numberline {2.4.2}Perceptual models}{9}
+\contentsline {section}{\numberline {2.5}Impact of Autism}{9}
+\contentsline {subsection}{\numberline {2.5.1}Impact of Autism in Schools}{9}
+\contentsline {subsection}{\numberline {2.5.2}Impact of Autism on Home}{10}
+\contentsline {chapter}{\numberline {3}Conclusions}{11}
+\contentsline {section}{\numberline {3.1}Future work}{11}
