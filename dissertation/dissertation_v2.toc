@@ -2,9 +2,8 @@
 \contentsline {section}{\numberline {1.1}Selecting a project}{3}
 \contentsline {chapter}{\numberline {2}Literature review}{7}
 \contentsline {section}{\numberline {2.1}What is Autism?}{7}
-\contentsline {subsection}{\numberline {2.1.1}DSM-5}{7}
-\contentsline {subsection}{\numberline {2.1.2}Public perception}{7}
-\contentsline {section}{\numberline {2.2}Sensory processing}{7}
+\contentsline {subsection}{\numberline {2.1.1}DSM-5}{8}
+\contentsline {section}{\numberline {2.2}Sensory processing}{8}
 \contentsline {subsection}{\numberline {2.2.1}Resulting behaviours}{8}
 \contentsline {subsubsection}{Meltdowns}{8}
 \contentsline {subsubsection}{Sensory overloads}{8}
@@ -14,7 +13,28 @@
 \contentsline {subsection}{\numberline {2.4.1}Information processing}{9}
 \contentsline {subsection}{\numberline {2.4.2}Perceptual models}{9}
 \contentsline {section}{\numberline {2.5}Impact of Autism}{9}
-\contentsline {subsection}{\numberline {2.5.1}Impact of Autism in Schools}{9}
+\contentsline {subsection}{\numberline {2.5.1}Impact of Autism in Schools}{10}
 \contentsline {subsection}{\numberline {2.5.2}Impact of Autism on Home}{10}
-\contentsline {chapter}{\numberline {3}Conclusions}{11}
-\contentsline {section}{\numberline {3.1}Future work}{11}
+\contentsline {section}{\numberline {2.6}Previous work}{11}
+\contentsline {subsection}{\numberline {2.6.1}Education software}{11}
+\contentsline {subsection}{\numberline {2.6.2}Other disability simulations simulations}{11}
+\contentsline {subsection}{\numberline {2.6.3}Other Autism simulations}{11}
+\contentsline {section}{\numberline {2.7}Other}{12}
+\contentsline {chapter}{\numberline {3}Design process}{13}
+\contentsline {section}{\numberline {3.1}Preliminary design}{13}
+\contentsline {subsection}{\numberline {3.1.1}Interviews}{13}
+\contentsline {subsection}{\numberline {3.1.2}Difficulties chosen}{13}
+\contentsline {section}{\numberline {3.2}Simulator design}{14}
+\contentsline {subsection}{\numberline {3.2.1}Story boards}{14}
+\contentsline {subsection}{\numberline {3.2.2}Autism aspects}{14}
+\contentsline {subsubsection}{Meltdowns}{15}
+\contentsline {subsubsection}{Sensory overloads}{15}
+\contentsline {subsubsection}{Special interests}{17}
+\contentsline {subsubsection}{Information processing delay}{17}
+\contentsline {subsection}{\numberline {3.2.3}Tool selection}{18}
+\contentsline {subsubsection}{Game engines}{18}
+\contentsline {subsubsection}{Modelling tools}{19}
+\contentsline {subsection}{\numberline {3.2.4}Character}{19}
+\contentsline {chapter}{\numberline {4}Formative evaluation}{20}
+\contentsline {chapter}{\numberline {5}Conclusions}{21}
+\contentsline {section}{\numberline {5.1}Future work}{21}

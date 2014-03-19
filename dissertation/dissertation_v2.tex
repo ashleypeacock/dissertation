@@ -5,7 +5,7 @@
 \restylefloat{table}
 \begin{document}
 
-\title{Increasing perception and understanding of Autism by visual experience}
+\title{Developing a tool to increasing perception and understanding of Autism}
 \author{Ashley Peacock}
 \maketitle
 
@@ -19,6 +19,8 @@
 \tableofcontents
 
 \chapter{Introduction}
+
+The projected started by firstly creating and considering various project proposals that may benefit people with ADHD or Autism. Following this, research and feedback aided the selection of the project an "Autism Simulator" whereby the user plays as a child with Autism and gets to experience some of the difficulties, specifically sensory related difficulties through their eyes. Interviews were conducted with people on the Autistic spectrum, professionals and school teachers as to inform this choice and give further clarity of the challenges faced as well as consultation from the LAER group. Following goal selection, a prototype of the simulator was created using a Game Engine for speedy development and evaluated by the LAER group with an additional evaluation in the form of an on-line survey where participants were able to view a video demo of the simulator and give feedback. The first playable version was subsequently created after an extensive re-write of the system due to performance issues and then evaluated by various students as a formative evaluation to aid game-play decisions and improvements before a summative evaluation was completed by various members of the university involved in education. 
 
 \section{Selecting a project}
 The project started with the purpose of creating software to benefit someone with Autism, ADHD or those in contact with these conditions such as family members or carers. Both Autism and ADHD are developmental disorders that start from birth and affect the individual's attention, concentrations and ability to fit into mainstream society.
@@ -133,16 +135,21 @@ From the results of the questionnaire it became obvious which of the three conce
 
 \section{What is Autism?}
 
-\subsection{DSM-5}
+Autism is a life-long condition which affects how an individual may perceive and communicate to the world around\cite{nas}. It is currently diagnosed by the presence of atypicalities in three domains(collectively known as the triad of impairments): social imagination, social communication, social interaction. In addition to these are non-diagnostic but highly prevalent features such as sensory abnormalities, information processing difficulties and prosopagnosia\cite{blah}. 
 
-\subsection{Public perception}
-Figures drawn from the 2011 census estimate that 1.1\% of the population have Autism\cite{nas} and as this figure has greatly risen\cite{increasingprevalence} so too has the need for greater understanding\cite{autism_awareness}. Consequently, millions of pounds have been spent on campaigns across the globs such as World Autism Awareness Day and Light it up blue organised by Autism speaks(2013)\cite{autism_awareness}.
+As a spectrum disorder, the range and severity of symptoms are unique to each person. For those on the low-functioning end of the spectrum, they may have little to no verbal language and prefer to communicate using visual mediums such as PECS. For those with autism on the high-functioning side of the spectrum(i.e Aspergers) their difficulties can be less obvious; they may develop superb language skills but have difficulty using these in a social context, leading to unintentional social offence or ridicule. Deficits with social imagination and theory of mind create difficulty in seeing another person's perspective and can lead to miscommunication and misinterpretation. Understanding the causes of these misinterpretations can also be challenging and as such there is a need for clear unambiguous language.  
+
+With some of the disadvantages that may come with having autism, there are reported strengths that arise from their unique cognitive style, for example a talent for spotting details\cite{bayes} or having an impeccable memory of facts in relation to their 'special interests'. This further gives rise to the notion that Autism is not a disability, but simply a cognitive difference with it's own set of positives and negatives. 
+
+Inspite of growing knowledge and acceptance, even for those with late diagnosis it was still difficult for their own parents to accept their Autism diagnosis it as a genuine condition and not simply an excuse for previous "bad behaviour". In the last decade there has appeared to be improvements in public perception and understanding of autism and other cognitive differences such as Dyslexia and ADHD, but there is still much left to be desired. Figures drawn from the 2011 census estimate that 1.1\% of the population have Autism\cite{nas} and as this figure has greatly risen\cite{increasingprevalence} so too has the need for greater public awareness and understanding\cite{autism_awareness} resulting in millions of pounds being spent on campaigns across the globs, such as World Autism Awareness Day and Light it up blue organised by Autism speaks(2013)\cite{autism_awareness}. (Simulator is freee :))
 
 A survey published by the National Autistic Society revealed that 92\% of respondents had heard of Autism but only 48\% had heard of Aspergers syndrome which has less obvious difficulties. Research has indicated that general members of the public are aware of communication and social issues that come with autism\cite{autismmisconception}, but little are aware of sensory difficulties\cite{autism_awareness}. In \cite{autism_awareness}, of 1204 people surveyed, 293 were aware of communication difficulties, 131 social but only 12 were aware of sensory difficulties. These is alarming owing "Many people with Asperger syndrome/High functioning autism define their sensory processing problems as more disabling than the deficits in communication/social behaviour\cite{olgab}.
 
 \begin{quote}
 If I could make one change... every person who comes into contact with my daughter would have some form of training in autism.\cite{nasschool}
 \end{quote}
+
+\subsection{DSM-5}
 
 
 \section{Sensory processing}
@@ -201,7 +208,7 @@ One person with Aspergers syndrome(a form of high-functioning autism) described 
 Of course, one solution to aid those on the Autistic spectrum to fit into main-stream society would be increase public awareness, acceptance and understanding. However, for people with Autism, explaining emotions and feelings with words was described as painful and thus giving others this understanding is difficult \cite{aspieway}. 
 
 \subsection{Impact of Autism in Schools}
-It is estimated that only 22\% of teachers have been trained specifically in autism and the majority of training given is typically one to four hours. 54\% of all teachers in England do not feel they have had adequate training to teach children with autism.\cite{statsandfacts} 30\% of parents of children with autism in mainstream education are satisfied with the level of understanding of autism across the school\cite{nasschool}. 23\% of parents are dissatisfied with SENCO's level of understanding of autism. 
+It is estimated that only 22\% of teachers have been trained specifically in autism and the majority of training given is typically one to four hours\cite{nasschool}. 54\% of all teachers in England do not feel they have had adequate training to teach children with autism.\cite{statsandfacts} 30\% of parents of children with autism in mainstream education are satisfied with the level of understanding of autism across the school\cite{nasschool}. 23\% of parents are dissatisfied with SENCO's level of understanding of autism. Teachers whom had more training was shown to have more positive attitudes towards the inclusion of children in main-stream school and research suggests this is not due to a resistance, but lack of knowledge, experience and self-efficacy\cite{teachersinclusion}.
 
 Figures obtained show that approximately 40\% of children with autism have been bullied at school. 1 in 5 children with autism have been excluded from school \cite{nasschool} and only 24.4\% of pupils with autism achieved 5A*-C GCSEs in 2010/2011 in comparison to 58.2\% of the overall population\cite{statsandfacts}, a surprising figure owing people with autism are deemed to have above average intelligence, indicating difficulties at school may be a reason for not for-filling potential. 
 
@@ -209,7 +216,7 @@ Figures obtained show that approximately 40\% of children with autism have been 
 If I could make one change...I would ensure compulsory, thorough training about autism and how it affects learning is given to all school staff. \cite{nasschool}
 \end{quote}
 
--- need to write here about the more detail of what it's like being affected in school and how schools struggle with challenging behaviours. 
+Hmm, more here here about the more detail of what it's like being affected in school and how schools struggle with challenging behaviours. 
 
 
 \begin{quote}
@@ -225,6 +232,196 @@ To support children with autism when going out and about, parents found that giv
 
 Lack of understanding applies not only to the outside world, but even with family members\cite{meltdowns_goingout}. Parents may be unable to go to special occasions such as Birthdays due to fear of meltdowns and disapproval. If no-one can be found to baby-sit, it means they too cannot attend and can be left feeling further isolated.
 
+\section{Previous work}
+
+\subsection{Education software}
+How other education software can be used to help children with understanding autism or general learning. Include information from the paper Alyssa sent.
+
+
+\subsection{Other disability simulations simulations}
+Previous computer simulations have aimed at conveying experiences of other conditions such as dyslexia and schizophrenia have been created however there is no formal research that could be found to indicate the success or failure of these. 
+Physical simulator experiences have been previously trailed, for example blind-folding to enable a person to experience being blind although such attempts have not proven to be effective\cite{dd} as the user is unable to see the hidden cognitive differences or use coping mechanisms developed such as heightened hearing(in the case of being blind) and such can lead to misconceptions. In this context a computer simulation may hold an advantage over physical simulators by virtue of having tools which would enable depiction of aspects like heightened hearing or senses. A further advantage of a computer simulation is the ability to highlight thinking differences by visualising the in-game character's thoughts and feelings when approached by various obstacles. \\
+
+*** Perhaps offering an argument as to why simulators may not be a good idea/useful. For example it could give misinformation if people take them too literally and think that all people with autism experience things in this way.
+
+\subsection{Other Autism simulations}
+
+In February 2013 a playable 3D virtual environment depicting sensory difficulties in autism was released. The simulation allowed the user to navigate around a playground with other children who are all identical and if the user gets too close to them, visual distortions occur and high-pitched sounds are played. The simulator from the public perspective was well received and thought as a good step in increasing awareness and understanding of autism. From those with autism the feedback was mixed with some commenting that the portrayal was not an accurate representation whereas to some it was which highlights the breath of experiences these individuals have.
+
+In addition to the above, some autistic individuals have created short videos to demonstrate the impact of sensory problems on their day to day lives and these have been very well received(Gary G. Porter). One great benefit of conveying difficulties visually is that it helps obviate, to some extent, the ever-present language barrier. Owing the communication obstacles faced by those with autism this seems a realistic approach. // ** Do I put video links to these? Or write a brief explanation of each with 1-2 pictures?
+
+\section{Other}
+Just for now, some information that might be of use to put somewhere, not sure where.
+
+Not sure whether to use this...or where, but it's quite a powerful quote...
+\begin{quote}
+The overriding theme was a desire to fit into mainstream society and 'get' its tacit rules. Given this desire and the
+efforts participants described to try to achieve this, future research might explore or question the moral obligation of the rest of society to facilitate and support the inclusion of people with AS in mainstream life. \cite{aspieway}
+\end{quote}
+
+\begin{quote}
+Action to increase understanding of autism across the whole school and to provide support with social activities can make a huge difference to whether a child with autism feels included at school.\cite{nasschool}
+\end{quote}
+
+
+\begin{quote}
+It doesn't appear that mainstream teachers have had access to training. The fundamental issues relating to communication, behaviour and language disorder continue to be misinterpreted as 'bad behaviour', 'not listening' and so on.\cite{nasschool}
+\end{quote}
+
+\chapter{Design process}
+Autism as previously described comes with a vast array of difficulties, some of which may be too complex or time consuming to convey(such as social difficulties). It was consequently important to select the most important aspects of autism to convey and the context. Children are exposed to a plethora of different environment on a day to day basis(school, work, parks, etc), however, the most common location for a child is the home and thus by understanding the pitfalls and hazards around the house knowledge should be transferable to other environments. Once this goal was identified, preliminary design research focused on identifying which aspects of autism felt were most important and a conclusion was reached on the basis of literature, interviews and a consultation from the LAER group.
+
+\section{Preliminary design}
+\subsection{Interviews}
+
+Interviews were carried out with five people from varying backgrounds and exposure to autism:
+**** what is the best way to convey interview information? Do you know if the previous method used in a prior report was acceptable?
+
+\begin{enumerate}
+\item Candidate one: teacher of a school for autistic children
+\item Candidate two: special needs teacher of a school with varying disabilities.
+\item Candidate three: parent of a teenager with Aspergers syndrome and ADD. Described themselves as neurodiverse having severe sensory difficulties but less social ones.
+\item Candidate four: parent of a child with Aspergers syndrome and is themselves neurodiverse. Candidate describes having high sensory issues and less social ones.
+\item Candidate five: person with high-functioning autism whom has higher social difficulties and less sensory.
+\end{enumerate}
+
+\subsection{Difficulties chosen}
+Following interviews and reviewing literature available, the following aspects of autism selected are:
+
+\begin{enumerate}
+\item Sensory atypicalities: selected as the primary difficulty to convey due to their prevalence and hidden nature which is less known to the public
+\item Meltdowns: As these can be caused by sensory atypicalities and it is important to convey to the user the impact of difficulties, not just the difficulties themselves.
+\item Special interests: A means in the game to 'soothe' the character and counteract meltdowns.
+\item Ambiguous instructions and processing delays: commented as a problem in the classroom.
+\end{enumerate}
+
+\section{Simulator design}
+The following is the initial game design which was heavily used in the prototype simulation. Following this, a more in-depth plan was created for the first version as experience and knowledge of the system grew and allowed for this.
+
+\subsection{Story boards}
+As a way to navigate and prompt the user to inspect and learn about their environment the concept of "Missions" arose. Missions are tasks given to the user which they are required to complete whilst circumventing any obstacles which may cause a sensory overload or meltdown. For example:
+
+'User attempts to get a drink from the kitchen and is overwhelmed by the noise from the washing machine'
+
+From here the player will experience sensory overload problems when entering the room and persistent attempts to force themselves to overcome the effects will trigger a meltdown. After 2 attempts, the parent in the environment will turn off the washing machine which will allow the user to complete the task.
+
+"Inner thoughts" of the character will be displayed to act as prompts and give hints. Inner thoughts will be construed on the basis of descriptions provided by people with autism, taken from scenarios they felt were difficult.
+
+For the prototype version of the game, two tasks will be given: To get dressed and then proceed to obtaining a drink from the kitchen. For the first complete version a more in depth storyboard will be created. 
+
+\subsection{Autism aspects}
+Due to the complexity of conveying social and communication problems it was decided not to include this in the first version despite its prevalence in autism life. Sensory processing problems were instead selected as "Many people with Asperger's syndrome/high functioning autism define their sensory processing problems as more disabling than the deficits in social communication/social behaviours"\cite{olgab}.
+
+As the scope and range of difficulties within autism is broad the prototype version will be restricted to three/four difficulties:
+
+\begin{itemize}
+\item Sensory processing difficulties (sound, touch, visual)   
+\item Meltdowns
+\item "Special interests"
+\item Instructions being ambiguous/processing delay.
+\end{itemize}
+
+Consultation for the selection came by attending the Universities Learning And Environments Research lab which was attended by other students working on autism related projects and gave ample opportunity for feedback; interviews and finally consideration of time and difficulty to implement.  
+
+To start with the user will have minimal guidance on exploring the environment and will be expected to discover what environmental aspects are attributing to difficulties when completing tasks. This highlights interview-obtained information that children with high-functioning autism were unable to pinpoint what was causing them to meltdown until they were older and able to verbalise. After an attempt or two if meltdowns keep occurring, prompts, hints and information will be given.
+
+\subsubsection{Meltdowns}
+Meltdowns occur when someone with Autism becomes stressed or overwhelmed. This will be represented as 'Contentment' instead of a health bar, commonly seen in games. There have been multiple suggestions to convey this:
+
+\begin{itemize}
+\item During a meltdown, make the character harder to control. When pushing "right" the character instead moves left and vice versa.
+\item Make the screen blackout and reopen with items in the house destroyed.
+\end{itemize}
+
+The first option was selected and moulded for the prototype. As contentment gets closer to zero, the camera will shake, giving the player a few seconds to attempt to prevent the meltdown. The closer contentment gets to zero, the more the camera will shake. When contentment reaches zero, a meltdown will occur and the player will restart in the bedroom. One of the interviewees also specified that for them, contentment could be affected by factors such as the weather or previous days success. 
+
+\subsubsection{Sensory overloads}
+Following interviews, reviewing literature and observing on-line materials designed to visually simulate sensory overloads, several concepts for conveying this emerged. One of the effects of sensory overloads was for lights to get brighter which can be easily conveyed in JMonkey using filters. A Guassian filter is suggested to make the overall environment harder to navigate and to mirror dizziness described. 
+
+Interviewees specified that when one sense is overloaded more senses can be affected hence problems with sound can cause hyper sensitivity to lights and vice versa.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=90mm]{images/GD_basic.jpg}
+\caption{Room with one object generating sound}
+\label{sensorymockup1}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=90mm]{images/GD_moresound.jpg}
+\caption{Effects of multiple objects creating sound}
+\label{sensorymockup2}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=90mm]{images/GD_overload.jpg}
+\caption{Sensory overload. Lights have become brighter and environment is harder to see. Gaussian filter applied}
+\label{sensoryoverloadmockup}
+\end{figure}
+
+2 of the 3 people interviewed specified that found the below image uncomfortable to view and was quite accurate. This demonstrates again that a sensory overload differs for each individual and indicates more should be consulted as 3 is a small sample. However, the projects core aim is to raise awareness of these problems rather than attempting to give an identical experience of having autism and thus this approach will be used unless feedback in the formative evaluation indicates changes are required. 
+
+Sensory overloads will affect and be affected by the players contentment. If the player does not move away from troublesome objects quick enough, contentment will drop, which, if not addressed quick enough can lead to a meltdown. In addition, if contentment is low sensory overloads will occur quicker. 
+
+\subsubsection{Special interests}
+'Special interests' were chosen as a way to alleviate some of the difficulties within the environment and as a means to replenish energy or contentment. When engaging with a special interest, troublesome sounds will be reduced and if experiencing a sensory overload or meltdown the effects will subsidise. The special interest selected will be a Dinosaur toy which the user can interact with.
+
+\subsubsection{Information processing delay}
+Information processing delay was highlighted in interviews by a teacher as one of the main causes of meltdowns in school. When the user clicks on an object to interact or is expected to give a response, actions will be made harder to select by moving around. If the character has lower contentment the selections will move even quicker which should result in a greater delay from the player. Such delays could affect responses from other characters in the game. 
+
+\subsection{Tool selection}
+It was decided to use a game engine to allow time and focus to be directed onto the higher level concepts. Suitable game engine candidates were identified by looking at those highly rated on gamedev.net (extensive online resource for game developers), whilst taking some previous knowledge into account. Blender will be used as the modelling tool as it is freely available, powerful and well supported with lots of tutorials and documentation.
+
+\subsubsection{Game engines}
+
+** Put this in a table
+
+\textbf{Unity}\\
+Unity is one of the most popular game engines available with good support for models. Unfortunately the licence costs 1500 and the free version comes with limitations.
+
+Advantages: popular game engine to use. Quick development with scripting. Phone app support.\\
+Disadvantages: Interface heavy, limited to just scripting, costs, good computer required to run it efficiently.
+
+\textbf{JMonkey}\\
+JMonkey is a java 3d game engine that has been in development around for a few years. It has an extremely active and helpful community, allows complete customisation and holds little limitation being open source.
+
+Advantages: Provides development environment with scene graph. Active community where you often get responses from developers themselves. Java is quick to develop in. Support for online use and phone apps. \\
+Disadvantages: Java is not seen as the preferred language for graphics or games.
+
+\textbf{Panda3D}\\
+Originally created by Disney, Panda3D is an engine which can be used via python or C++ although support is mostly for python.
+
+Advantages: Quick to develop for with a choice in language. Good community with lots of tools.\\
+Disadvantages: No phone app and limited online support. Lack of documentation. 
+
+\textbf{Ogre3D}\\
+Ogre3d is primarily a graphics rendering engine and but it does have additional plugins such as 'physics' or drawing interfaces.
+
+Advantages: Lots of modules and plugins. Powerful and used commercially. Active support community.\\
+Disadvantages: Longer development process. Lack of tools such as a scene graph. No support for putting online.\\
+
+JMonkey was chosen for its active community, development environment, because its programmed in Java and open-source. Although Java is not seen as the programming language of choice for graphics it allows quicker development than C++ counterparts. Unity allows very quick development with great results but the pro version would be required for some features, which is very expensive. As JMonkey is in Java it can be easily transferred to both an online game and an Android app which increases accessibility. Although an Android app may not be possible during the project timeline, converting the game to online should be straightforward. Finally there were no foreseen limitations with using JMonkey.
+
+\subsubsection{Modelling tools}
+For modelling there several options:
+\begin{itemize}
+\item Maya
+\item 3DSMax
+\item Blender
+\item Sketchup
+\end{itemize}
+
+Blender was the primary 3D modelling tool of choice as it is free, open source, widely used for various game developers and professionals and the tool JMonkey is most built to accommodate.
+
+
+\subsection{Character}
+The character the user will play as. What difficulties they have/ what age they are.
+
+\chapter{Formative evaluation}
+- people mentioned that some of the effects were causing them sensory overloads
+
 \chapter{Conclusions}
 
 \section{Future work}
@@ -233,7 +430,8 @@ Lack of understanding applies not only to the outside world, but even with famil
 \item Occulus rift
 \item Mind headset
 \item Supporting others using system to build their own experiences
-\item Research tool.
+\item Research tool for how autism effects people in a different way.
+\item Modelling people with autism and their difficulties and being able to see in what way the world effects them. 
 \end{enumerate}
 
 \begin{thebibliography}{9}
@@ -305,11 +503,17 @@ Disability awareness: Beyond the day: http://www.serviceandinclusion.org/index.p
 \bibitem{autism_awareness}
 Awareness and knowledge of autism and autism interventions: A general population survey. Karola Dillenburger(2013). Julie Ann Jordan, Lyn McKerr, Paula Devine, Mickey Keenan
 
+\bibitem{teachersinclusion}
+Factors relating to education professionals' classroom practices for the inclusion of students with ASD. Matthew J Segall, Jonathon M. Campbell. 
+
 \bibitem{meltdowns_goingout}
 'Meltdowns', surveillance and managing emotions: going out with children with autism(2010). Sara Ryan.
 
 \bibitem{sensory_overview}
 Sensory issues in Autism(2007). East sussex county council. 
+
+\bibitem{rss_anxiety}
+Relations amoung restricted and repetitive behaviours, anxiety and sensory features in children with autism spectrum disorders(2004)
 
 \end{thebibliography}
 
