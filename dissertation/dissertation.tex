@@ -100,28 +100,7 @@ if focus was directed onto conveying just the sensory differences within autism 
 
 There are three key areas of difficulty that people with autism share.
 
-\subsubsection*{Social communication}
-People with autism have difficulty with verbal and non-verbal language such as body language or tone of voice. Language tends to be interpreted literally and thus metaphors, sarcasm and jokes can be difficult to understand\cite{nas}. An example of literal interpretation is where a person with autism misunderstood the question "What's up?" and proceeded to look up at the ceiling. Other communication difficulties include echolalic language(repeating language said to them) or speaking excessively about their 'Special interests' without detecting that the other party may be bored\cite{nas}. Although people with autism will usually understand what is being said to them they may prefer to use visual symbols such as PECS(Picture Exchange Communication System). 
 
-Due to literal language interpretation, it is important that language communicated is clear, concise and unambiguous, one of the needs the public were most unaware of\cite{autismmisconception}.
-
-\begin{quote}
-Most things I take at face value, without judgement or interpreting them. I look at them in a concrete, literal and very individual way. \cite{olgab}
-\end{quote}
-
-\subsubsection*{Social interaction}
-
-\begin{quote}
-Autistic people have to understand scientifically what non-autistic people already understand instinctively 
-- Mark Segar, Autistic Survival Guide.
-\end{quote}
-
-Many people with autism have difficulty giving eye contact, one person described eye contact as "physically painful". By not giving eye contact, it may cause social queues such as facial expressions to be missed, potentially leading to inappropriate responses. Lack of eye contact could be perceived as rude or not paying attention to the speaker, causing possible unintentional offence. Other social interaction difficulties reported include trouble understanding social rules\cite{nas}, for example why people say 'thankyou'.
-
-\subsubsection*{Social imagination}
-Social imagination deficits result in difficulties 'Putting themselves in another person's shoes', also known as 'Theory of mind'. Other resulting difficulties include problems predicting events or identifying possible dangers such as running across a road and consequently, new situations can be difficult.\cite{nas}
-
-Social imagination difficulties can make it hard for a child with autism to engage in imaginative play, preferring to act out scenes from films identically which can make it difficult for other children interacting with them if they prefer to deviate or explore a new plot.\cite{nas}
 
 \section{Information processing}
 
@@ -205,7 +184,7 @@ Repetitive and restrictive behaviours are highly prevalent in people with autism
 \item As a reaction to sensory stimulation\cite{rrsyouth}.
 \end{enumerate}
 
-Repetitive behaviours and sensory issues have been found to be positive correlated\cite{rrs_sensory}\cite{rssyouth}. High levels of restricted behaviours were associated with less severe levels of depression, indicating that such behaviours may act as a mechanism to protect against or be a direct cause\cite{rss_ensory}. Those with low-functioning autism were more likely to engage in repetitive behaviours such as 'stimming', repetitive manipulation of objects and self-injurious behaviour in contrast to high-functioning autism having restricted interests, language or attachment to objects\cite{rss_sensory}. People with high-functioning autism were reported to have higher levels of anxiety with restrictive behaviours thought to a developed coping mechanism\cite{rssyouth}.
+Repetitive behaviours and sensory issues have been found to be positive correlated\cite{rrs_sensory}\cite{rrsyouth}. High levels of restricted behaviours were associated with less severe levels of depression, indicating that such behaviours may act as a mechanism to protect against or be a direct cause\cite{rrs_sensory}. Those with low-functioning autism were more likely to engage in repetitive behaviours such as 'stimming', repetitive manipulation of objects and self-injurious behaviour in contrast to high-functioning autism having restricted interests, language or attachment to objects\cite{rrs_sensory}. People with high-functioning autism were reported to have higher levels of anxiety with restrictive behaviours thought to a developed coping mechanism\cite{rrsyouth}.
 
 93\% of children with autism were reported to be distressed by change \cite{fears}. With an ever changing perceptions of the environment, routine can be their only sense of familiarity and reassurance. Interestingly it is reported that people with autism can have more problems with small changes in a familiar environment in comparison to entirely new situations\cite{bayes}.  
 
@@ -334,26 +313,6 @@ Following interviews, reviewing literature and observing on-line materials desig
 
 Interviewees specified that when one sense is overloaded more senses can be affected hence problems with sound can cause hyper sensitivity to lights and vice versa.
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=90mm]{images/GD_basic.jpg}
-\caption{Room with one object generating sound}
-\label{sensorymockup1}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=90mm]{images/GD_moresound.jpg}
-\caption{Effects of multiple objects creating sound}
-\label{sensorymockup2}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=90mm]{images/GD_overload.jpg}
-\caption{Sensory overload. Lights have become brighter and environment is harder to see. Gaussian filter applied}
-\label{sensoryoverloadmockup}
-\end{figure}
 
 2 of the 3 people interviewed specified that found the below image uncomfortable to view and was quite accurate. This demonstrates again that a sensory overload differs for each individual and indicates more should be consulted as 3 is a small sample. However, the projects core aim is to raise awareness of these problems rather than attempting to give an identical experience of having autism and thus this approach will be used unless feedback in the formative evaluation indicates changes are required. 
 
@@ -454,13 +413,6 @@ implementation proved challenging because of the amount of differing information
 are. Sound is currently represented by visual sound waves emitting from objects and these need to be made bigger and more dense so that the more sound-emitting objects around, the more disturbances occur and the harder
 it is to interact with surroundings. A final improvement is for contentment to slowly increase if not around any objects causing sensory problems and if not around people.
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=110mm]{images/old_sensoryeffects.png}
-\caption{Light sensory effects: representing the impact of disliked bright
-light on the visual experience of a child with autism(right)}
-\label{old_sensoryeffects}
-\end{figure}
 
 \subsubsection{Effects on contentment}
 Contentment of the player reduces when experiencing sensory overload effects and will stop reducing after a period of time if the player moves away from them. There are other specific actions within the game that will also cause the
@@ -552,199 +504,7 @@ Following constructive feedback from these sources, the following amendments to 
 Interviews need to be further conducted with parents, teachers and carers to and more scenarios with which they commonly experience difficulty. Such information can be used to create a storyboard of scenarios and tasks. As
 well as gathering information from individual interviews, the simulator will also be presented at a workshop for a charity to an audience of carers of children with autism and other disabilities. This could be given in the form of a visual demo and/or allowing them to play.
 
-\chapter{First version}
-The following includes the latest work carried out on the simulator over the semester which includes planning, changes and implementation. 
 
-The first version underwent more substantial changes than previously planned. Large parts of the system were rewritten and improved upon such as the GUI and sensory manager. The benefits resulted in simplification of use at the higher level (such as implementing storyboards) and a better representation of the causes of sensory overloads.
-
-Selecting actions to interact with objects is now less intrusive. Prior a menu would pop up and prompt the user to make a selection with their mouse which will now only happen if there are multiple options. With the removal of description boxes, thoughts are now displayed at the bottom of the screen when to user is looking at a specific object.
-
-Performance issues which were not previously too severe now required direct attention. The game requires a frame rate of 30fps(frame per second) or above in order to be fluent and played without lag. Scenes are required to have a maximum of 100k vertices(from models) with an average of 10-50k. Each pointlight(which is a light the user can turn on/off) used requires the scene to be rendered again and so the number of vertices double with each point light used. Thus, even when keeping within the limits, the amount of lights being used in the game was pushing it to well over a million and the frame frequently dropped below the desired threshold. This was occurring on a computer with a decent processor and graphics card, thus playing on a low-powered machine would not be a good experience.  
-
-Having originally taken a large amount of models from other websites and using programs such as sketchup to aid quicker development, these were found to be inefficient at runtime. Efforts therefore were spent on re-learning the details of blender and what is required to make lightweight game models. 
-
-Where previously the entire house modelled and then imported, the solution to the above problem was to split the house into individual rooms/scenes. When the user then clicks a door, the required scene is loaded very quickly. This approach allows for inclusion of more detailed models within each scene as each scene is only a small room. The problems to performance caused by point lights is then reduced as it is only rendering a single room again, not the entire house. 
-
-Further benefits from compartmentalising the house into rooms arose for dealing with the model pipeline. It became much easier to create individual models and link them into the scene, so if the model needed to be edited it could be without requiring the pain of reimporting and fixing textures or materials. 
-
-The result of the restructure meant the FPS improved tenfold, from an average of 30fps to 200-400fps. If any objects were found to be creating problems from being too detailed or not textures properly, they could be removed without impacting on the rest of the scene.
-
-\section{Storyboards}
-Following the prototype which had little story or goals a more in-depth story and set of tasks were created. The user will play as an example "Day in the life of a child with autism". This will be split up into several "Missions"(tasks).
-
-\subsection*{Mission 1: Complete morning routine}
-Complete your morning routine in the designated time(the more out of time, the more contentment drops). Player starts in the bedroom which is a designated safe place/sensory room. 
-
-Routine to complete: eat breakfast, brush teeth, get dressed.
-
-\textbf{Game points}
-\begin{enumerate}
-\item User progresses to the kitchen for breakfast. Possibly use a particle emitter to make lots of ‘germs’ appear in the kitchen.
-\item After breakfast the user must go to the bathroom and brush teeth which reduces contentment due to bristles harsh texture. Noise from the toilet scares and prompts the the user to run out of bathroom into the hallway.
-\item The lamp in the hallway however has now been turned on and the hallway looks different, the light causes discomfort. The character freezes and the player is unable to move forward but can move backwards. The user can turn the lamp off at the plug but at this point may not be aware of this. If a meltdown occurs, start back in the bedroom with a message that you can turn the lamp off at the plug. When the user returns from a meltdown contentment will not be at its maximum.
-\item User clicks wardrobe to get dressed, information displays explaining that certain clothing can feel extremely uncomfortable for someone with autism and can be compared to sandpaper.
-\item Morning ends in the bedroom with player not wanting to leave (the plug to the lamp is away from the bedroom so the player has to pass lamp to turn it off) and trying to play/recuperate. Parent then comes in and says “Cmon, we need to go out!”.
-\item Child has a meltdown, thoughts flood the screen with fears and anxieties. Where are we going? Are we taking the car? When will I be back? Stomach hurts, stomach hurts - words become even more jumbled. They weren't warned and thought they could replenish energy levels in their room, the change means the rest of the day could be faced with countless unprepared fears.
-\end{enumerate}
-
-\subsection*{Mission 2: Afternoon, find out the cause of stomach pain}
-Mission is to find out why the characters stomach may be hurting which also gives the user a chance to explore. Contentment slowly drops until the solution is found. Reasons for the pain could be:
-
-\begin{itemize}
-\item Hunger/Thirsty
-\item Upset stomach or cramps
-\item Toilet?
-\end{itemize}
-
-The user will be expected to attempt all of the above(the final one the user finds will always be the cause). During the above the door bell will unexpectedly ring and a new character will enter, the Mum's friend. The friend was meant to be meeting you both out but due to the earlier meltdown has come to the house instead. Mum tried to explain in advance but words weren't making sense. The person looks like a stranger and can't be recognised and contentment reduces(touch sensitivity occurring from this stranger?). 
-
-\subsection*{Mission 3: Evening, get to bed}
-Mission pops up that it is time to go to bed but mum stops you and says you can continue playing. Mum then approaches after an unknown amount of time and informs you to go to bed. Meltdown occurs as it's not the exact time and the characters bedtime routine has been broken.
-
-\section{House design}
-Following a need to compartmentalise the previous house environment as a solution to performance issues, a new and more structured plan of the house was created. The game description column of the table is information the user will see when they interact with the object and will be displayed as "thoughts":
-
-\begin{table}[H]
-    \begin{tabular}{| p{2cm} | p{2cm} | p{3cm} | p{3cm} | p{4cm} |}
-    \hline
-    Room & Object & Action & Game description & Effects                                                                  \\
-    \hline
-    \hline
-     Bedroom & Dinosaur & Play: Increases contentment by playing with it & People with autism have special interests. These special interests help with xyz &                   \\
-    \hline
-    & Touchside lamp & On/off: slowly adjust the light so it does not turn off rapidly. Contentment goes up when light turned off slowly & & If the light goes off too quickly, contentment increases slightly but then rapidly declines. Room looks strange/scary as eyes not yet adjusted    \\
-    \hline
-    & Collections of items & & Explains that children with autism have an obsession/need to complete collections &  \\
-    \hline
-    & Wardrobe & Get dressed & Explanation that clothes can be compared to feeling sandpaper & Contentment reduces  \\
-    \hline
-   & Spinny object & & & All noise blurs out. Contentment increases \\
-    \hline 
-    Upstairs hallway & Fluorescent light & Turn on/off. Same effect as bedside lamp & Explanation about fluorescent lights. Effects are like ten camera flashes in your eyes & Lights flicker and cause a 'high' effect on sensory system. Disorientation if exposed too long. \\
-    \hline
-    & Mirror & "Look into" & I don't recognise this person. Not normal having yourself peering back at you & Causes dizzy/disorientation because it is an odd image to see. \\
-    \hline
-    & Wallpaper & & & Make wallpaper material move and cause dizziness/sensory effects. \\
-    \hline
-        Downstairs hallway & Flowers & & & They can either smell good or bad. \\
-    \hline
-    & Door bell & Automated: on/off & Nicer sound could prompt the user to play with it. Can cause anxiety as doorbell may mean unwanted people in safe space & If player rings it is fine. If another person, causes problems.
-    \\
-    \hline
-    \end{tabular}
-\end{table}
-
-\begin{table}[H]
-    \begin{tabular}{| p{2cm} | p{2cm} | p{3cm} | p{3cm} | p{4cm} | }
-    \hline
-    Room & Object & Action & Game Description & Effects                                                                  \\
-    \hline
-    \hline
-        Kitchen & Washing machine & Turn on/off & Could become transfixed with spinning nature & Noisy, need to move away. \\
-    \hline
-    & Kitchen sides & & Particle emitters to show germs/smells & Reduces contentment \\
-    \hline
-    & Frying pan & & & Sounds, smells, contentment reduction \\
-    \hline
-    Living room & TV & Turn on/off & Description indicating that child may think items on TV are identical to what they will get & TV being too loud may hurt. \\
-    \hline
-    & Hoover & & Description indicating that the noise from Hoovers can be painful & Sensory problems when turned on \\
-    \hline
-    Bathroom & Bath & Empty bath & & Horrible/scary noises. \\
-    \hline
-    & Tooth brush & & & Brushing teeth causes contentment to reduce. \\
-    \hline
-    \end{tabular}
-\end{table}
-
-\subsection{Sounds}
-One of the most important goals in moving from the prototype to the first version was adding more of a sense of realism to the simulation and for this, sounds were important.
-
-To start with research was conducted in order to find which sounds may be problematic for someone with autism, this was proving slow and it is difficult to entirely put yourself into the shoes of someone with autism, to listen to the details of what they hear. The solution to this was to find adults with autism who would be willing to record sounds around their house that they personally find annoying. This actually gave far more information that words "I find the bath a problem" was misinterpreted as I thought it was the noise of the bath plug when pulled that was causing problems but for one adult it was actually the running of the bath itself which was also the problem for her son.
-
-By asking people with autism to record the sounds themselves, it gave me personally the full experience in 3 dimensional rather than needing to guess what exactly they mean.
-
-- sounds/pipes
-
-
-\section{System changes}
-** TODO: Add diagrams and more in-depth information/diagrams. Quite a few of the technical system changes were made several months ago, so need to create diagrams of initial set ups and current to give a better comparison and details in final thesis.
-
-\subsection{Rewrite of scenes}
-Most the the effort in the last few weeks of the semester were spend on re-writing the scene manager and remodelling the house. 
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=90mm]{images/scenemanager.jpg}
-\caption{Overview of the previous house that was used}
-\label{old_house}
-\end{figure}
-
-SceneManager contains useful tools for the creation, deletion and changing of scenes. The "HomeScene" extends this and contains objects which are all instances of Scene and represent the individual rooms. By extending the SceneManager the HomeScene can listen to events occurring in the game and specify custom ones that are unique for that collection of scenes(or rooms), for example it can specify that doors require changing and loading of different rooms. 
-
-\subsubsection{House implementation}
-In addition to remodelling parts of the house a bathroom was created and added along with new actions such as being able to flush the toilet(with sounds to accompany this). Now being able to handle individual objects in rooms allows for easy addition animation, the clock's hands in the room move and will indicate the time of day. Below gives some screen shots of the new environment and it's accompanying frame-rates. 
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=90mm]{images/old_fullhouse.jpg}
-\caption{Overview of the previous house that was used}
-\label{old_house}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=90mm]{images/new_hallway1.png}
-\caption{Overview of the previous house that was used}
-\label{old_house}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=90mm]{images/new_hallway2.png}
-\caption{Overview of the previous house that was used}
-\label{old_house}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=90mm]{images/new_bathroom.png}
-\caption{Overview of the previous house that was used}
-\label{old_house}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=90mm]{images/new_livingroom.png}
-\caption{Overview of the previous house that was used}
-\label{old_house}
-\end{figure}
-
-\subsection{Game state manager}
-
-As the size of the system grew, one of the most important changes was the addition of a game state manager, enabling universal control and monitoring of the overall system. 
-
-The user can now change between "Explore mode"(the user has no tasks and can simply look around the environment) and "Mission mode"(given the tasks or story) without having to restart the simulator. From this came the addition of the start and help screen and ability for the user to pause the game.  
-
-The rest of the system can now request useful information from the GSM such as which mission is currently being run, which scene the player is currently in and what the state of the GUI is (if actions are being displayed, if the user is required to select an option). If the GUI needs to display information(such as selecting actions) it will notify the game state manager which will halt processes that may interfere. Having a central control made other parts of the simulator easier to develop and reuse since each part of the system only needs to worry about which state it is in rather than checking multiple conditions.
-
-\subsection{Sensory System improvements}
-Following the feedback on sensory overloads, improvements were required in how sensory overloads occurred rather than what was happening when they did. Previously, objects which could affect the sensory system were put into a Hashable which were then periodically checked for the distance to the player and if in proximity, would affect the sensory system depending on how far the object is. However, all objects would affect the user by the same weight and the effect on contentment would change depending on what threshold of objects were reached (i.e if 2 were in proximity the health reduction would be low, if more than two the reduction would be greater). Filters to mirror sensory overloads would then be applied depending on this level.
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=90mm]{images/sensoryobjects.jpg}
-\caption{Diagram showing implementation of sensory system}
-\label{sensorysystem}
-\end{figure}
-
-The new implementation attempts to create a better less fragmented model of how objects affect the player and cause sensory overloads/meltdowns. This approach is more scalable and enables a flexible means to experiment by simply changing parameters, thus helping to address previous issues of meltdowns occurring too quickly.
-
-Each sensory object is given two properties (from the green boxes above) and from this a sensory function is applied and a weight for each object is calculated. The sensory function is simply an exponential: the higher the affecting level the higher the weight returned and if the object is set as a 'soothing object' a negative value will return instead. 
-
-The sensory manager then takes all the weights of the objects that are in proximity and sums them, taking the log of this. If the log is negative there are no objects and contentment replenishes. The result of the summation is then taken away from the players contentment. 
-
-Sounds were the final addition to the simulator. When acting on the toilet it now flushes and the alarm clock in the room rings. Sounds create a more immersive environment and an additional layer for creating sensory overloads(i.e making objects more high-pitched). 
 
 \chapter{Formative evaluation}
 The formative evaluation will be carried out with 5 participants and will be predominantly testing usability, checking that accompanying materials such as help-guides and game controls.

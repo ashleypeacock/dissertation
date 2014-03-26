@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.25)  19 MAR 2014 16:41
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.25)  26 MAR 2014 01:35
 entering extended mode
 **dissertation_v2.tex
 
@@ -80,7 +80,32 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@every@table=\toks17
 
 ("C:\Users\Ashley\University git\dissertation\dissertation\dissertation\dissert
-ation_v2.aux")
+ation_v2.aux"
+
+LaTeX Warning: Label `autisim1' multiply defined.
+
+
+LaTeX Warning: Label `autisim1' multiply defined.
+
+
+LaTeX Warning: Label `autisim1' multiply defined.
+
+
+LaTeX Warning: Label `old_house' multiply defined.
+
+
+LaTeX Warning: Label `old_house' multiply defined.
+
+
+LaTeX Warning: Label `old_house' multiply defined.
+
+
+LaTeX Warning: Label `old_house' multiply defined.
+
+
+LaTeX Warning: Label `old_house' multiply defined.
+
+)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
@@ -120,11 +145,11 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 ation_v2.toc"
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 2.
-)
-\tf@toc=\write3
  [2
 
-]
+])
+\tf@toc=\write3
+ [3]
 Chapter 1.
 
 Underfull \hbox (badness 10000) in paragraph at lines 34--34
@@ -217,209 +242,858 @@ Overfull \hbox (5.0229pt too wide) in paragraph at lines 64--64
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--75
+Overfull \hbox (61.9418pt too wide) in paragraph at lines 32--76
+[][] 
+ []
+
+[4
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 81--81
+[]\OT1/cmr/m/n/10.95 Proposal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--84
 []\OT1/cmr/m/n/10.95 Autism
  []
 
 
-Underfull \hbox (badness 3525) in paragraph at lines 75--75
+Underfull \hbox (badness 3525) in paragraph at lines 84--84
 []\OT1/cmr/m/n/10.95 A 3D vir-tual en-vi-ron-ment
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--81
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
 []\OT1/cmr/m/n/10.95 Misunderstanding
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
 []\OT1/cmr/m/n/10.95 Could be ex-
  []
 
 
-Underfull \hbox (badness 5388) in paragraph at lines 81--82
+Underfull \hbox (badness 5388) in paragraph at lines 90--91
 \OT1/cmr/m/n/10.95 as-pects such as
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
 \OT1/cmr/m/n/10.95 teacher's train-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
 \OT1/cmr/m/n/10.95 ing which is
  []
 
 
-Underfull \hbox (badness 1571) in paragraph at lines 88--89
+Underfull \hbox (badness 1571) in paragraph at lines 97--98
 []\OT1/cmr/m/n/10.95 Big project given the
  []
 
 
-Overfull \hbox (61.9418pt too wide) in paragraph at lines 32--95
+Overfull \hbox (61.9418pt too wide) in paragraph at lines 79--104
 [][] 
  []
 
-[3
-
-]
-Overfull \vbox (149.81607pt too high) has occurred while \output is active []
-
-
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 109--109
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 121--121
 []\OT1/cmr/m/n/10.95 PHD stu-dent and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--109
+Underfull \hbox (badness 10000) in paragraph at lines 121--121
 \OT1/cmr/m/n/10.95 project su-per-vi-sor
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--109
+Underfull \hbox (badness 10000) in paragraph at lines 121--121
 \OT1/cmr/m/n/10.95 for in-for-mat-ics UG4
  []
 
 
-Underfull \hbox (badness 1173) in paragraph at lines 109--109
+Underfull \hbox (badness 1173) in paragraph at lines 121--121
 \OT1/cmr/m/n/10.95 projects at Ed-in-burgh
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--110
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
 \OT1/cmr/m/n/10.95 with ASD/ADHD.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--110
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
 \OT1/cmr/m/n/10.95 Works pro-fes-sion-ally
  []
 
 
-Underfull \hbox (badness 7963) in paragraph at lines 110--110
+Underfull \hbox (badness 7963) in paragraph at lines 122--122
 \OT1/cmr/m/n/10.95 dis-abil-i-ties and their
  []
 
 
-Overfull \hbox (17.03629pt too wide) in paragraph at lines 106--115
+Overfull \hbox (17.03629pt too wide) in paragraph at lines 118--127
 [][] 
  []
 
-[5] [6]
+[6] [7] [8]
 Chapter 2.
-
-LaTeX Warning: Citation `blah' on page 7 undefined on input line 138.
-
-[7
+[9
 
 ]
-Underfull \hbox (badness 1448) in paragraph at lines 172--173
+Underfull \hbox (badness 1448) in paragraph at lines 188--189
 \OT1/cmr/m/n/10.95 pres-sure by crawl-ing un-der
  []
 
 
-Underfull \hbox (badness 4505) in paragraph at lines 176--176
+Underfull \hbox (badness 4505) in paragraph at lines 192--192
 []\OT1/cmr/m/n/10.95 Difficulty with walk-ing or
  []
 
-[8] [9] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 242--244
+[10] [11] [12] [13]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+ [14]
+<images/litreview/dsim1.png, id=54, 286.06876pt x 235.63031pt>
+File: images/litreview/dsim1.png Graphic file (type png)
 
+<use images/litreview/dsim1.png>
+Package pdftex.def Info: images/litreview/dsim1.png used on input line 290.
+(pdftex.def)             Requested size: 256.0748pt x 210.92557pt.
+
+<images/litreview/dsim2.png, id=55, 289.83281pt x 201.75375pt>
+File: images/litreview/dsim2.png Graphic file (type png)
+
+<use images/litreview/dsim2.png>
+Package pdftex.def Info: images/litreview/dsim2.png used on input line 297.
+(pdftex.def)             Requested size: 256.0748pt x 178.2642pt.
+ [15 <C:/Users/Ashley/University git/dissertation/dissertation/dissertation/ima
+ges/litreview/dsim1.png>]
+<images/litreview/dsimresults.png, id=59, 295.1025pt x 239.39438pt>
+File: images/litreview/dsimresults.png Graphic file (type png)
+
+<use images/litreview/dsimresults.png>
+Package pdftex.def Info: images/litreview/dsimresults.png used on input line 30
+6.
+(pdftex.def)             Requested size: 256.0748pt x 207.7381pt.
+ [16 <C:/Users/Ashley/University git/dissertation/dissertation/dissertation/ima
+ges/litreview/dsim2.png> <C:/Users/Ashley/University git/dissertation/dissertat
+ion/dissertation/images/litreview/dsimresults.png>] <images/litreview/autisim1.
+png, id=63, 359.09157pt x 264.99pt>
+File: images/litreview/autisim1.png Graphic file (type png)
+
+<use images/litreview/autisim1.png>
+Package pdftex.def Info: images/litreview/autisim1.png used on input line 324.
+(pdftex.def)             Requested size: 256.0748pt x 188.9812pt.
+
+<images/litreview/autisim2.png, id=64, 360.59718pt x 263.48438pt>
+File: images/litreview/autisim2.png Graphic file (type png)
+
+<use images/litreview/autisim2.png>
+Package pdftex.def Info: images/litreview/autisim2.png used on input line 331.
+(pdftex.def)             Requested size: 256.0748pt x 187.11139pt.
+ [17 <C:/Users/Ashley/University git/dissertation/dissertation/dissertation/ima
+ges/litreview/autisim1.png>]
+Overfull \hbox (5.59732pt too wide) in paragraph at lines 341--342
+\OT1/cmr/m/n/10.95 un-der-stand autism: http://www.interactingwithautism.com/se
+ction/understanding/sensory/1 
  []
 
-[11] [12]
+[18 <C:/Users/Ashley/University git/dissertation/dissertation/dissertation/imag
+es/litreview/autisim2.png>]
 Chapter 3.
-[13
+[19
 
-]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 318.
+] <images/design/GD_basic.jpg, id=75, 900.36375pt x 647.41875pt>
+File: images/design/GD_basic.jpg Graphic file (type jpg)
+
+<use images/design/GD_basic.jpg>
+Package pdftex.def Info: images/design/GD_basic.jpg used on input line 395.
+(pdftex.def)             Requested size: 256.0748pt x 184.13098pt.
+ [20]
+<images/design/GD_moresound.jpg, id=79, 900.36375pt x 647.41875pt>
+File: images/design/GD_moresound.jpg Graphic file (type jpg)
+
+<use images/design/GD_moresound.jpg>
+Package pdftex.def Info: images/design/GD_moresound.jpg used on input line 402.
+
+(pdftex.def)             Requested size: 256.0748pt x 184.13098pt.
+
+<images/design/GD_overload.jpg, id=80, 900.36375pt x 647.41875pt>
+File: images/design/GD_overload.jpg Graphic file (type jpg)
+
+<use images/design/GD_overload.jpg>
+Package pdftex.def Info: images/design/GD_overload.jpg used on input line 409.
+(pdftex.def)             Requested size: 256.0748pt x 184.13098pt.
+ [21 <C:/Users/Ashley/University git/dissertation/dissertation/dissertation/ima
+ges/design/GD_basic.jpg> <C:/Users/Ashley/University git/dissertation/dissertat
+ion/dissertation/images/design/GD_moresound.jpg>]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+ [22 <C:/Users/Ashley/University git/dissertation/dissertation/dissertation/ima
+ges/design/GD_overload.jpg>] [23]
+Chapter 4.
+<images/design/interface_actions.jpg, id=90, 401.5pt x 401.5pt>
+File: images/design/interface_actions.jpg Graphic file (type jpg)
+
+<use images/design/interface_actions.jpg>
+Package pdftex.def Info: images/design/interface_actions.jpg used on input line
+ 459.
+(pdftex.def)             Requested size: 200.7495pt x 200.7495pt.
+ [24
+
+] [25 <C:/Users/Ashley/University git/dissertation/dissertation/dissertation/im
+ages/design/interface_actions.jpg>] [26]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 500.
 
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 318.
- [14]
-<images/GD_basic.jpg, id=55, 900.36375pt x 647.41875pt>
-File: images/GD_basic.jpg Graphic file (type jpg)
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 500.
 
-<use images/GD_basic.jpg>
-Package pdftex.def Info: images/GD_basic.jpg used on input line 345.
-(pdftex.def)             Requested size: 256.0748pt x 184.13098pt.
- [15]
-<images/GD_moresound.jpg, id=59, 900.36375pt x 647.41875pt>
-File: images/GD_moresound.jpg Graphic file (type jpg)
-
-<use images/GD_moresound.jpg>
-Package pdftex.def Info: images/GD_moresound.jpg used on input line 352.
-(pdftex.def)             Requested size: 256.0748pt x 184.13098pt.
-
-<images/GD_overload.jpg, id=60, 900.36375pt x 647.41875pt>
-File: images/GD_overload.jpg Graphic file (type jpg)
-
-<use images/GD_overload.jpg>
-Package pdftex.def Info: images/GD_overload.jpg used on input line 359.
-(pdftex.def)             Requested size: 256.0748pt x 184.13098pt.
- [16 <C:/Users/Ashley/University git/dissertation/dissertation/dissertation/ima
-ges/GD_basic.jpg> <C:/Users/Ashley/University git/dissertation/dissertation/dis
-sertation/images/GD_moresound.jpg>] [17 <C:/Users/Ashley/University git/dissert
-ation/dissertation/dissertation/images/GD_overload.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 402--404
-
+Underfull \hbox (badness 2050) in paragraph at lines 521--521
+\OT1/cmr/m/n/10.95 pop-u-lar game en-gines
  []
 
-[18] [19]
-Chapter 4.
-[20
 
-]
+Underfull \hbox (badness 10000) in paragraph at lines 525--526
+[]\OT1/cmr/m/n/10.95 Quick de-vel-op-ment with
+ []
+
+
+Underfull \hbox (badness 1540) in paragraph at lines 525--526
+\OT1/cmr/m/n/10.95 sive graph-ics can be made
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 534--535
+[]\OT1/cmr/m/n/10.95 Limited to script-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 534--535
+\OT1/cmr/m/n/10.95 rather than hav-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 536--537
+[]\OT1/cmr/m/n/10.95 Good com-puter re-
+ []
+
+
+Underfull \hbox (badness 1762) in paragraph at lines 536--537
+\OT1/cmr/m/n/10.95 quired to run it ef-fi-
+ []
+
+
+Underfull \hbox (badness 7291) in paragraph at lines 541--541
+\OT1/cmr/m/n/10.95 been in de-vel-op-ment
+ []
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 541--541
+\OT1/cmr/m/n/10.95 tive and help-ful com-
+ []
+
+
+Underfull \hbox (badness 2970) in paragraph at lines 541--541
+\OT1/cmr/m/n/10.95 lit-tle lim-i-ta-tion be-ing
+ []
+
+
+Underfull \hbox (badness 3547) in paragraph at lines 545--546
+[]\OT1/cmr/m/n/10.95 Provides de-vel-op-ment en-vi-
+ []
+
+
+Underfull \hbox (badness 1776) in paragraph at lines 556--557
+\OT1/cmr/m/n/10.95 pre-ferred lan-guage for
+ []
+
+
+Underfull \hbox (badness 3977) in paragraph at lines 560--560
+[]\OT1/cmr/m/n/10.95 Originally cre-ated by
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 560--560
+\OT1/cmr/m/n/10.95 Dis-ney, Panda3D is
+ []
+
+
+Underfull \hbox (badness 2875) in paragraph at lines 560--560
+\OT1/cmr/m/n/10.95 an en-gine which can
+ []
+
+
+Underfull \hbox (badness 1337) in paragraph at lines 576--576
+\OT1/cmr/m/n/10.95 gine and but it does
+ []
+
+
+Underfull \hbox (badness 4036) in paragraph at lines 576--576
+\OT1/cmr/m/n/10.95 have ad-di-tional plu-g-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 588--589
+[]\OT1/cmr/m/n/10.95 Longer de-vel-op-ment
+ []
+
+
+Overfull \hbox (61.9418pt too wide) in paragraph at lines 518--595
+[][] 
+ []
+
+[27]
+Overfull \vbox (94.14752pt too high) has occurred while \output is active []
+
+
+[28]
+Missing character: There is no ¬ in font cmr10!
+Missing character: There is no £ in font cmr10!
+ [29]
 Chapter 5.
-[21
+<images/prototype/old_fullhouse.jpg, id=112, 605.26125pt x 273.27094pt>
+File: images/prototype/old_fullhouse.jpg Graphic file (type jpg)
+
+<use images/prototype/old_fullhouse.jpg>
+Package pdftex.def Info: images/prototype/old_fullhouse.jpg used on input line 
+622.
+(pdftex.def)             Requested size: 256.0748pt x 115.6153pt.
+
+<images/prototype/livingroom.png, id=113, 599.23875pt x 450.18187pt>
+File: images/prototype/livingroom.png Graphic file (type png)
+
+<use images/prototype/livingroom.png>
+Package pdftex.def Info: images/prototype/livingroom.png used on input line 631
+.
+(pdftex.def)             Requested size: 284.52756pt x 213.75618pt.
+ [30
+
+ <C:/Users/Ashley/University git/dissertation/dissertation/dissertation/images/
+prototype/old_fullhouse.jpg>]
+<images/prototype/bedroom.png, id=119, 599.23875pt x 439.6425pt>
+File: images/prototype/bedroom.png Graphic file (type png)
+
+<use images/prototype/bedroom.png>
+Package pdftex.def Info: images/prototype/bedroom.png used on input line 640.
+(pdftex.def)             Requested size: 284.52756pt x 208.75185pt.
+
+<images/prototype/kitchen_washingm.png, id=120, 801.99625pt x 603.25375pt>
+File: images/prototype/kitchen_washingm.png Graphic file (type png)
+
+<use images/prototype/kitchen_washingm.png>
+Package pdftex.def Info: images/prototype/kitchen_washingm.png used on input li
+ne 649.
+(pdftex.def)             Requested size: 284.52756pt x 214.0231pt.
+ [31 <C:/Users/Ashley/University git/dissertation/dissertation/dissertation/ima
+ges/prototype/livingroom.png> <C:/Users/Ashley/University git/dissertation/diss
+ertation/dissertation/images/prototype/bedroom.png>]
+<images/prototype/outside.png, id=125, 808.01875pt x 606.265pt>
+File: images/prototype/outside.png Graphic file (type png)
+
+<use images/prototype/outside.png>
+Package pdftex.def Info: images/prototype/outside.png used on input line 658.
+(pdftex.def)             Requested size: 284.52756pt x 213.4818pt.
+
+<images/prototype/si.png, id=126, 608.2725pt x 459.96844pt>
+File: images/prototype/si.png Graphic file (type png)
+
+<use images/prototype/si.png>
+Package pdftex.def Info: images/prototype/si.png used on input line 669.
+(pdftex.def)             Requested size: 284.52756pt x 215.16049pt.
+ [32 <C:/Users/Ashley/University git/dissertation/dissertation/dissertation/ima
+ges/prototype/kitchen_washingm.png> <C:/Users/Ashley/University git/dissertatio
+n/dissertation/dissertation/images/prototype/outside.png>]
+<images/prototype/tvdescription.png, id=130, 601.4972pt x 454.69875pt>
+File: images/prototype/tvdescription.png Graphic file (type png)
+
+<use images/prototype/tvdescription.png>
+Package pdftex.def Info: images/prototype/tvdescription.png used on input line 
+678.
+(pdftex.def)             Requested size: 284.52756pt x 215.09605pt.
+ [33 <C:/Users/Ashley/University git/dissertation/dissertation/dissertation/ima
+ges/prototype/si.png> <C:/Users/Ashley/University git/dissertation/dissertation
+/dissertation/images/prototype/tvdescription.png>]
+<images/prototype/old_sensoryeffects.png, id=134, 520.19344pt x 201.00093pt>
+File: images/prototype/old_sensoryeffects.png Graphic file (type png)
+
+<use images/prototype/old_sensoryeffects.png>
+Package pdftex.def Info: images/prototype/old_sensoryeffects.png used on input 
+line 691.
+(pdftex.def)             Requested size: 284.52756pt x 109.9405pt.
+
+<images/prototype/hallway_so1.png, id=135, 611.28375pt x 465.99094pt>
+File: images/prototype/hallway_so1.png Graphic file (type png)
+
+<use images/prototype/hallway_so1.png>
+Package pdftex.def Info: images/prototype/hallway_so1.png used on input line 69
+8.
+(pdftex.def)             Requested size: 284.52756pt x 216.89685pt.
+
+<images/prototype/bedroom_lightsensory.png, id=136, 797.98125pt x 600.2425pt>
+File: images/prototype/bedroom_lightsensory.png Graphic file (type png)
+
+<use images/prototype/bedroom_lightsensory.png>
+Package pdftex.def Info: images/prototype/bedroom_lightsensory.png used on inpu
+t line 707.
+(pdftex.def)             Requested size: 284.52756pt x 214.01721pt.
+ [34 <C:/Users/Ashley/University git/dissertation/dissertation/dissertation/ima
+ges/prototype/old_sensoryeffects.png> <C:/Users/Ashley/University git/dissertat
+ion/dissertation/dissertation/images/prototype/hallway_so1.png>]
+<images/prototype/so_kitchen.png, id=140, 610.53094pt x 424.58624pt>
+File: images/prototype/so_kitchen.png Graphic file (type png)
+
+<use images/prototype/so_kitchen.png>
+Package pdftex.def Info: images/prototype/so_kitchen.png used on input line 714
+.
+(pdftex.def)             Requested size: 284.52756pt x 197.87758pt.
+ [35 <C:/Users/Ashley/University git/dissertation/dissertation/dissertation/ima
+ges/prototype/bedroom_lightsensory.png> <C:/Users/Ashley/University git/dissert
+ation/dissertation/dissertation/images/prototype/so_kitchen.png>]
+<images/prototype/actionindicator.png, id=144, 615.80063pt x 452.4403pt>
+File: images/prototype/actionindicator.png Graphic file (type png)
+
+<use images/prototype/actionindicator.png>
+Package pdftex.def Info: images/prototype/actionindicator.png used on input lin
+e 730.
+(pdftex.def)             Requested size: 284.52756pt x 209.05016pt.
+ [36 <C:/Users/Ashley/University git/dissertation/dissertation/dissertation/ima
+ges/prototype/actionindicator.png>]
+[37] [38] [39] [40] [41] [42]
+Chapter 6.
+[43
 
 ]
-Underfull \hbox (badness 2435) in paragraph at lines 462--463
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ò in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+ [44]
+Underfull \hbox (badness 4479) in paragraph at lines 947--947
+[]\OT1/cmr/m/n/10.95 Play: In-creases
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 947--947
+\OT1/cmr/m/n/10.95 con-tent-ment by
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 947--947
+[]\OT1/cmr/m/n/10.95 People with
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 947--947
+\OT1/cmr/m/n/10.95 autism have
+ []
+
+
+Underfull \hbox (badness 4872) in paragraph at lines 947--947
+\OT1/cmr/m/n/10.95 spe-cial in-ter-ests.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 947--947
+\OT1/cmr/m/n/10.95 These spe-cial
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 947--947
+\OT1/cmr/m/n/10.95 in-ter-ests help
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 949--949
+[]\OT1/cmr/m/n/10.95 Touchside
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 949--949
+[]\OT1/cmr/m/n/10.95 On/off: slowly
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 951--951
+[]\OT1/cmr/m/n/10.95 Collections
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 951--951
+[]\OT1/cmr/m/n/10.95 Explains that
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 951--951
+\OT1/cmr/m/n/10.95 chil-dren with
+ []
+
+
+Underfull \hbox (badness 4108) in paragraph at lines 951--951
+\OT1/cmr/m/n/10.95 autism have an
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 951--951
+\OT1/cmr/m/n/10.95 ob-ses-sion/need
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 951--951
+\OT1/cmr/m/n/10.95 to com-plete
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 953--953
+\OT1/cmr/m/n/10.95 clothes can be
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 953--953
+\OT1/cmr/m/n/10.95 com-pared to
+ []
+
+
+Underfull \hbox (badness 2302) in paragraph at lines 955--955
+[]\OT1/cmr/m/n/10.95 Spinny ob-
+ []
+
+
+Underfull \hbox (badness 6575) in paragraph at lines 955--956
+[]\OT1/cmr/m/n/10.95 All noise blurs out.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 957--957
+[]\OT1/cmr/m/n/10.95 Upstairs
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 957--957
+[]\OT1/cmr/m/n/10.95 Fluorescent
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 957--957
+[]\OT1/cmr/m/n/10.95 Turn on/off.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 957--957
+\OT1/cmr/m/n/10.95 Same ef-fect as
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 957--957
+[]\OT1/cmr/m/n/10.95 Explanation
+ []
+
+
+Underfull \hbox (badness 3849) in paragraph at lines 957--957
+\OT1/cmr/m/n/10.95 like ten cam-era
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 957--957
+\OT1/cmr/m/n/10.95 flashes in your
+ []
+
+
+Underfull \hbox (badness 1383) in paragraph at lines 957--958
+\OT1/cmr/m/n/10.95 sory sys-tem. Dis-ori-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 959--959
+\OT1/cmr/m/n/10.95 nor-mal hav-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 959--959
+\OT1/cmr/m/n/10.95 your-self peer-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 959--960
+[]\OT1/cmr/m/n/10.95 Causes
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 959--960
+\OT1/cmr/m/n/10.95 dizzy/disorientation
+ []
+
+
+Underfull \hbox (badness 1540) in paragraph at lines 959--960
+\OT1/cmr/m/n/10.95 be-cause it is an odd
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 961--962
+[]\OT1/cmr/m/n/10.95 Make wall-pa-per ma-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 961--962
+\OT1/cmr/m/n/10.95 dizzi-ness/sensory ef-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 963--963
+[]\OT1/cmr/m/n/10.95 Downstairs
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 965--965
+[]\OT1/cmr/m/n/10.95 Automated:
+ []
+
+
+Underfull \hbox (badness 1043) in paragraph at lines 965--965
+\OT1/cmr/m/n/10.95 prompt the user
+ []
+
+
+Underfull \hbox (badness 1325) in paragraph at lines 965--965
+\OT1/cmr/m/n/10.95 to play with it.
+ []
+
+
+Underfull \hbox (badness 1609) in paragraph at lines 965--965
+\OT1/cmr/m/n/10.95 as door-bell may
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 965--965
+\OT1/cmr/m/n/10.95 mean un-wanted
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 965--965
+\OT1/cmr/m/n/10.95 peo-ple in safe
+ []
+
+
+Underfull \hbox (badness 4060) in paragraph at lines 965--967
+[]\OT1/cmr/m/n/10.95 If player rings it is
+ []
+
+[45]
+Overfull \vbox (89.97006pt too high) has occurred while \output is active []
+
+
+[46]
+Underfull \hbox (badness 10000) in paragraph at lines 977--977
+[]\OT1/cmr/m/n/10.95 Washing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 977--977
+[]\OT1/cmr/m/n/10.95 Could be-come
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 977--977
+\OT1/cmr/m/n/10.95 trans-fixed with
+ []
+
+
+Underfull \hbox (badness 2617) in paragraph at lines 977--978
+[]\OT1/cmr/m/n/10.95 Noisy, need to move
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 979--979
+[]\OT1/cmr/m/n/10.95 Kitchen
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 979--979
+[]\OT1/cmr/m/n/10.95 Particle emit-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 979--979
+\OT1/cmr/m/n/10.95 ters to show
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 983--983
+[]\OT1/cmr/m/n/10.95 Living
+ []
+
+
+Underfull \hbox (badness 2205) in paragraph at lines 983--983
+[]\OT1/cmr/m/n/10.95 Description in-di-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 985--985
+[]\OT1/cmr/m/n/10.95 Description in-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 985--985
+\OT1/cmr/m/n/10.95 di-cat-ing that
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 985--985
+\OT1/cmr/m/n/10.95 the noise from
+ []
+
+
+Underfull \hbox (badness 3792) in paragraph at lines 985--985
+\OT1/cmr/m/n/10.95 Hoovers can be
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 989--989
+[]\OT1/cmr/m/n/10.95 Tooth
+ []
+
+
+Underfull \hbox (badness 1552) in paragraph at lines 989--990
+[]\OT1/cmr/m/n/10.95 Brushing teeth causes
+ []
+
+[47] <images/scenemanager.jpg, id=183, 383.18156pt x 231.11343pt>
+File: images/scenemanager.jpg Graphic file (type jpg)
+
+<use images/scenemanager.jpg>
+Package pdftex.def Info: images/scenemanager.jpg used on input line 1029.
+(pdftex.def)             Requested size: 256.0748pt x 154.45728pt.
+ [48 <C:/Users/Ashley/University git/dissertation/dissertation/dissertation/ima
+ges/scenemanager.jpg>]
+<images/new_hallway1.png, id=188, 627.84563pt x 476.53032pt>
+File: images/new_hallway1.png Graphic file (type png)
+
+<use images/new_hallway1.png>
+Package pdftex.def Info: images/new_hallway1.png used on input line 1042.
+(pdftex.def)             Requested size: 256.0748pt x 194.35344pt.
+
+<images/new_hallway2.png, id=189, 612.78937pt x 484.05844pt>
+File: images/new_hallway2.png Graphic file (type png)
+
+<use images/new_hallway2.png>
+Package pdftex.def Info: images/new_hallway2.png used on input line 1049.
+(pdftex.def)             Requested size: 256.0748pt x 202.27647pt.
+ [49 <C:/Users/Ashley/University git/dissertation/dissertation/dissertation/ima
+ges/new_hallway1.png>]
+<images/new_bathroom.png, id=193, 611.28375pt x 484.81125pt>
+File: images/new_bathroom.png Graphic file (type png)
+
+<use images/new_bathroom.png>
+Package pdftex.def Info: images/new_bathroom.png used on input line 1056.
+(pdftex.def)             Requested size: 256.0748pt x 203.0941pt.
+
+<images/new_livingroom.png, id=194, 626.34pt x 481.8pt>
+File: images/new_livingroom.png Graphic file (type png)
+
+<use images/new_livingroom.png>
+Package pdftex.def Info: images/new_livingroom.png used on input line 1063.
+(pdftex.def)             Requested size: 256.0748pt x 196.9879pt.
+ [50 <C:/Users/Ashley/University git/dissertation/dissertation/dissertation/ima
+ges/new_hallway2.png> <C:/Users/Ashley/University git/dissertation/dissertation
+/dissertation/images/new_bathroom.png>]
+<images/sensoryobjects.jpg, id=198, 513.41812pt x 454.69875pt>
+File: images/sensoryobjects.jpg Graphic file (type jpg)
+
+<use images/sensoryobjects.jpg>
+Package pdftex.def Info: images/sensoryobjects.jpg used on input line 1081.
+(pdftex.def)             Requested size: 256.0748pt x 226.78682pt.
+ [51 <C:/Users/Ashley/University git/dissertation/dissertation/dissertation/ima
+ges/new_livingroom.png>] [52 <C:/Users/Ashley/University git/dissertation/disse
+rtation/dissertation/images/sensoryobjects.jpg>]
+Chapter 7.
+[53
+
+]
+Chapter 8.
+[54
+
+]
+Chapter 9.
+[55
+
+]
+Chapter 10.
+[56
+
+] [57]
+Chapter 11.
+[58
+
+]
+Underfull \hbox (badness 2435) in paragraph at lines 1171--1172
 []\OT1/cmr/m/n/10.95 Sensory cor-re-lates of dif-fi-cult tem-per-a-ment char-ac
 -ter-is-tics in preschool chil-dren with
  []
 
-[22
+[59
 
 ]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
 
-Overfull \hbox (52.1044pt too wide) in paragraph at lines 501--502
+Overfull \hbox (52.1044pt too wide) in paragraph at lines 1210--1211
 []\OT1/cmr/m/n/10.95 Disability aware-ness: Be-yond the day: http://www.service
 andinclusion.org/index.php?page=simulations.
  []
 
-[23]
+
+Underfull \hbox (badness 10000) in paragraph at lines 1228--1229
+[]\OT1/cmr/m/n/10.95 DSM-5: http://crackingtheenigma.blogspot.co.uk/2014/01/the
+-evolution-of-autism-
+ []
+
+[60]
 ("C:\Users\Ashley\University git\dissertation\dissertation\dissertation\dissert
 ation_v2.aux")
 
-LaTeX Warning: There were undefined references.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 1304 strings out of 493921
- 17837 string characters out of 3147278
- 75921 words of memory out of 3000000
- 4621 multiletter control sequences out of 15000+200000
+ 1448 strings out of 493921
+ 21977 string characters out of 3147278
+ 77159 words of memory out of 3000000
+ 4737 multiletter control sequences out of 15000+200000
  10023 words of font info for 35 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 27i,13n,19p,1245b,299s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,13n,19p,1884b,299s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmsy10.pfb>
-Output written on dissertation_v2.pdf (24 pages, 342317 bytes).
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmsy10.pfb>
+Output written on dissertation_v2.pdf (61 pages, 9737554 bytes).
 PDF statistics:
- 106 PDF objects out of 1000 (max. 8388607)
+ 256 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 136 words of extra memory for PDF output out of 10000 (max. 10000000)
 
