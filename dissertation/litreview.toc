@@ -1,0 +1,12 @@
+\contentsline {chapter}{\numberline {1}Literature review}{2}
+\contentsline {section}{\numberline {1.1}What is Autism?}{2}
+\contentsline {section}{\numberline {1.2}Sensory Experiences}{3}
+\contentsline {section}{\numberline {1.3}Theoretical models}{5}
+\contentsline {subsection}{\numberline {1.3.1}Information processing}{5}
+\contentsline {subsection}{\numberline {1.3.2}Perceptual models}{6}
+\contentsline {section}{\numberline {1.4}Impact of Autism}{7}
+\contentsline {subsection}{\numberline {1.4.1}Impact of Autism in Schools}{7}
+\contentsline {subsection}{\numberline {1.4.2}Impact of Autism on Home}{8}
+\contentsline {section}{\numberline {1.5}Previous work}{8}
+\contentsline {subsection}{\numberline {1.5.1}Disability and mental health simulations}{8}
+\contentsline {subsection}{\numberline {1.5.2}Autism simulation and tools}{11}
