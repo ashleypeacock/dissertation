@@ -4,6 +4,8 @@
 \usepackage{float}
 \restylefloat{table}
 \usepackage{url}
+\usepackage[toc, page]{appendix}
+\usepackage{listings}
 \begin{document}
 \title{Developing a tool for teachers to increase awareness and understanding of Autism}
 \author{Ashley Peacock}
@@ -452,7 +454,7 @@ From the interviews conducted, the choice of project was solidified as well as t
 Due to the complexity of conveying social and communication problems it was decided not to include this in the first version despite its prevalence in autism life. Sensory processing problems were selected as as this was a prominent theme in interviews and listening to individuals speaking of the trauma, the inability to communicate and seek help was really heart-felt. Information processing was selected as teachers highlighted this as a main cause to meltdowns in the classroom. 
 
 
-\chapter{Prototype Design}
+\chapter{Prototype: Design}
 The role of the user will be to play as a child with autism and experience the world through their eyes, obtaining valuable insight and understanding as to what it may feel like to have these difficulties reducing inference and guess-work from literature(probably better explained what I mean in the sound part of "Redesign").
 
 The primary target audience selected are teachers however, it should be developed such that anyone with little knowledge on autism and computer game experience can play and learn. To further achieve this, accessibility is an important consideration and where possible it should be made freely available on-line, making autism training a fun and interactive possibility for all, regardless of budget.  
@@ -622,7 +624,7 @@ Both Maya and 3DSMax are considered the industries leaders in modelling, animati
 
 Blender was selected as the primary modelling tool for the creation of game assets, as there is little lost in using it in-spite of being free. It is widely used by game developers and professionals and is the tool JMonkey is most built to accommodate.
 
-\chapter{Prototype}
+\chapter{Prototype: Implementation}
 The prototype was created as previously described and was followed by two formative evaluations. One with LAER Lab and the second in the form of an on-line questionnaire after participants watched a video demo. 
 
 \section{Game play}
@@ -745,17 +747,37 @@ Next to the sink as in \ref{prototype_kitchenwash} is the washing machine which 
 \label{prototype_actionindicator}
 \end{figure}
 
-\section{Implementation architecture}
-At the time the prototype was developed, a new GUI package became available for JMonkey although it is still in beta with little documentation. 
+\section{Implementation: technical}
+\subsection{Overview}
+The project has several packages and parts:
+\begin{enumerate}
+\item Main: Initialis
+\item Entity: Contains the Sensory manager and Player classes
+\end{enumerate}
 
-I'm not entire sure what is needed in this part and to what level of detail???
+\subsection{Game loop}
+The main game loop controls large portions of the game and managers. 
 
-- scenes
-- object states
-- player class
-- gui
-- action manager
-- class diagrams
+-- still need a class diagram but netbeans(jmonkey is built on it) is being shit with this for no reason at all. 3 hours of messing around i'll go back to intellij idea. 
+\subsection{GUI}
+At the time the prototype was developed a new GUI package became available for JMonkey. Although it is still in beta with little documentation it provided a faster method of creating the GUI and and required components. 
+
+Missions, Action manager and the main game loop make calls to the GUIManager which draws, updates and reports on user interactions. The two methods used by external packages are 
+
+\subsection{Meltdowns}
+
+\subsection{Player}
+
+\subsubsection{Sensory Manager}
+The sensory manager calculates and creates the effects of the sensory overloads.
+
+Sensory objects are added to an array list from the scene class.
+
+\subsubsection{Meltdowns}
+
+
+\subsection{Mission manager and missions}
+
 
 \subsection{Missions}
 "Missions" are represented as java classes and as such can be individually dropped into the system and loaded. These classes can define custom actions on objects which may only be applicable when the task is active, e.g, get a drink, get dressed, ask Mum for help. Task classes set the conditions for completion such as player is holding a drink, is dressed, spoke to mum and on completion the next task is selected and displayed to the user. One of the benefits of this comes with testing as specific tasks can be selected and it doesn't require going through a series of events to trigger the tasks that need to be checked or needing to comment out large portions of code.
@@ -777,15 +799,15 @@ continue to speed up.
 \chapter{Formative evaluation: Prototype}
 The current version of the simulator has been evaluated in two settings. The first was the presentation of the simulator to LAERLab. The second was a questionnaire sent to some parents/family members of children with autism and adults with autism.
 
-\subsection{Expert feedback: LAERLab}
+\section{Expert feedback: LAERLab}
 The LAER group consists of students and academics with an interest in the field of accessible and educational technology design and 10 members provided comments and feedback.
 
 A short video demo was presented and narrated showing exploration of the environment followed by one task being completed (obtain a drink from the kitchen). The demo included sensory overload effects, meltdown and information processing delay concepts. (**linux died on my laptop that I had used on the day and I'm pretty sure don't have this video!! Unless I sent it to other people via email. Should I just make another? )
 
-\subsubsection{Results}
+\subsection{Results}
 
 \begin{enumerate}
-\item Lab members disliked the popup information boxes as they felt it interrupted the simulation. It was suggested information may be better put as a sidebar or bottom bar.
+\item Lab members disliked the pop-up information boxes as they felt it interrupted the simulation. It was suggested information may be better put as a sidebar or bottom bar.
 \item Made clear that the simulation information provided in the description boxes are just samples of things known to present problems to children with autism and do not represent all children with autism.
 \item Idea put forward to allow the user to select the different issues relating to autism and then to test the consequences of this in the environment. 
 \item Demo was a bit too quick, one of the problems being the camera is controlled by the mouse and the video was recorded on a laptop (so camera motion was not smooth). The general controls are quite sensitive.
@@ -793,12 +815,12 @@ A short video demo was presented and narrated showing exploration of the environ
 \end{enumerate}
 
 
-\subsection{User feedback}
+\section{User feedback}
 A video demo was briefly put on-line with verbal narration of what was happening in the simulator. No information on goals or target audience was given as users were asked whom they felt it would be useful for. The questionnaire which was completed by 1 family member of someone with autism, 3 parents of children with autism and 3 adults with autism. It contained both qualitative and quantitative questions. Some users chose not to respond using the questionnaire but gave comments. 
 
 *** Reminder to self. Think I saved a massive amount of feedback on this where people didn't use the questionnaire; get from desktop.
 
-\subsubsection{Results}
+\subsection{Results}
 
 \begin{table}[H]
 \caption{Questionnaire results. Participants responded giving an answer between 1 and 5. 5 being the highest rating}
@@ -898,10 +920,9 @@ Game play: remove mouse for controlling the camera and allow simple arrow direct
 
 Interface: User instructions for the start of the game need to be implemented as well as menu's and options for enabling or disabling certain sensory effects as viewers with autism commented they found it difficult to watch as it was causing them to have a sensory overload. 
 
+\chapter{Redesign and Implementation}
 
-\chapter{Redesign}
-// this part isn't really done or changed apart from the "Sounds section". At the moment it has both implementation and design stuff.
-
+\chapter{Redesign and Implementation}
 Large parts of the system were rewritten and improved upon such as the GUI and sensory manager. The benefits resulted in simplification of use at the higher level (such as implementing storyboards) and a better representation of the causes of sensory overloads.
 
 Selecting actions to interact with objects is now less intrusive. Prior a menu would pop up and prompt the user to make a selection with their mouse which will now only happen if there are multiple options. With the removal of description boxes, thoughts are now displayed at the bottom of the screen when to user is looking at a specific object.
@@ -1105,58 +1126,252 @@ The sensory manager then takes all the weights of the objects that are in proxim
 Sounds were the final addition to the simulator. When acting on the toilet it now flushes and the alarm clock in the room rings. Sounds create a more immersive environment and an additional layer for creating sensory overloads(i.e making objects more high-pitched). 
 
 \chapter{First version}
+- evening routine was dropped as it was felt not to add any specific value within the time left and was in some ways a reiteration of the morning routine but backwards. This could be an interesting later addition to see if people improve; for example if they have 3-4 meltdowns in the morning routine but when completing the evening routine this is reduced to 1-2. The simulator would literally be able to see if people improve based on their actions, rather than knowledge; acquired from questionnaires and information. 
 
-\chapter{Formative evaluation}
-- people mentioned that some of the effects were causing them sensory overloads
-- Type types. Video for feedback as well as in-person. 
-- People who were in the formative evaluation. Need to include Markus and James. Focus on game-play. 
-- Video sent out to various people.
+\chapter{Formative evaluation: First version}
+The formative evaluation primarily focused on user experience and game play with a latter goal of making sure the simulation was successful in teaching awareness of at least one attribute of autism. 
+
+Three goals key goals identified for the formative evaluation: 
+\begin{enumerate}
+\item Check that the game play controls were intuitive with no obvious problems. 
+\item Ensure users can complete the first mission without getting bored or too frustrated. 
+\item See if user could learn at least one new thing about autism they didn't previously know and ideally what they would learn about or become aware of would be the sensory problems.
+\end{enumerate}
+
+Additional goals expected to be obtained through iteration:
+\begin{enumerate}
+\item Identify areas a user may need help or prompts
+\item Obtain qualitative information on how the user was interacting and playing the game rather than their thoughts on the project.
+\item Improve users ability to understand the simulator and environment with minimal materials and instructions such future users would be able simply "pick up and play"
+\end{enumerate}
+
+Participants were recruited from friends whom although most was aware of the project had not played or previously seen it. The following table gives background information on participants involved in the evaluation and represents the order in which this occurred
+
+\begin{table}[H]
+    \begin{tabular}{| p{2cm} | p{9cm} | p{3cm} | p{3cm} |}
+    \hline
+    Name & Background information & O=Online. P = in person & Location \\
+    \hline
+    \hline
+    Kirstie & Final year chemistry student. Minimal game experience & P & My home\\ \hline
+    Robyn & Graduated with a degree in Philosophy and Economics. Minimal gaming experience & P & Own home \\ \hline
+    Chris & Final year Masters of Informatics student. Designing an app for visually impaired. Studied HCI & P & Own home \\ \hline
+    Ollie & 4th year Social sciences. Medium game experience & P & Own home \\ \hline
+    Spyros & Final year Computer science. Studied HCI and was taking Adaptive Learning Environments course and had taken the graphics course. Large game experience & P & My home \\ \hline
+    Markus & Final year Computer science and has ADHD. Spent a year abroad working in graphics. Took courses in HCI. Large game experience & P & My home \\ \hline
+    Erica & Final year chemistry student & O & -\\ \hline
+    Francais & Final year chemistry student & O & - \\ \hline
+    \end{tabular}
+    \caption{Test}
+\end{table}
+
+Participants chosen come from a variety of backgrounds and courses and were felt to be able to give an all round picture of user expectations. With three users being from a computer science background having taken courses in Graphics and HCI they would be more aware of the theoretical pitfalls in interaction and interface design, thinking not only from their own perspective but from multiple users and thus in a good position to offer criticisms and suggestions for solving these problems.
+
+\section{Methods}
+
+Evaluations took approximately 30-45 minutes each depending on the game experience of the user and this time included before and after questions. Qualitative information from participants was extracted owing the small sample statistics. All evaluations took place at either my own home, the participants home. The process was iterative and the system was improved based on feedback depending on the time restraints in between the evaluations.  
+
+Users were asked for their prior experience with computer games in addition to prior knowledge of autism. The first 6 participants were completed in person. The first four participants were verbally asked their their previous knowledge which was written. This was found to be inefficient with some information being lost and thus the later 4 participants completed a before and after questionnaire with the same questions. The final two participants were conducted solely on-line and were sent the questionnaires with instructions and a link to download it. 
+
+Formative pre-questionnaire questions:
+\begin{enumerate}
+\item What can you tell me about Autism and their difficulties?
+\item What is your current skill with computer games?
+\end{enumerate}
+
+After questionnaire 
+\begin{enumerate}
+\item What can you tell me about autism and their difficulties?
+\item Did you find the game controls intuitive?
+\item Please include any additional feedback or suggestions such as parts you may have found difficult or what you feel could be improved.
+\end{enumerate}
+
+No materials were given and users were only told "This is an autism simulator". One of the goals is to ensure the simulator can be played without needing to read instructions and sit through tutorials. This is due to awareness that some individuals will often skip instruction manuals and opt to learn first by experience, later seeking help or consulting guides if they run into difficulty and cannot solve problems out on their own.
+
+Users were directed and encouraged to verbalise their thinking process whilst being observed and given directions such as "Go to the kitchen" or "Go to the bathroom and click on the tooth brush". At a later stage this is expected to change as less directions should be required and will thus be were given on request. If not requested by the user but is was evidence of difficulty the user would be asked "I see you trying to open the door but it is not working. Can you explain how you are trying to do that". Prompts and directions given were recorded on pen-paper for two reasons 1. It could give indication of in-game prompts required for users and 2. difficulties may shed light on alternative ways of doing things or be indication general game-play problems if they arose for other users.
+
+\section{Results}
+The system was iterated upon after participant 1, participants 2, 3-4(inclusive), participants 5-6 and again after 7 and 8.
+
+\subsection*{Participant 1}
+
+For the first evaluations the user was just asked to play the "Mission mode" however in-spite of information and instructions at the beginning which were displayed as a description box the participant was finding it extremely difficult and explicit instructions needed to be given. Further problems were quickly identified with entering and leaving rooms; the door model was split into both "handle" and "door" and the user was clicking the handle rather than the door itself which is the norm for most first person games. They were offered to play the explore mode first to become familiar with the environment but still encountered some problems with moving around and quickly experienced meltdowns with some confusion. Once it was indicated that there was a tool-tip explaining actions available when you mouse over objects in the scene, this process became easier. 
+
+For all later formative evaluations users were asked to play the "Explore mode" followed by the "Mission mode" which encompassed just the morning routine as the part that was most tested and ready and could be conducted within the evaluation time-frame. This choice indicated an improvement and users were less confused and were able to all complete the missions. Participants were given additional information that they were to play an "Autism simulator. Use the explore mode and then the mission mode"
+
+Finally key problem identified  was identified; when descriptions and alerts popped up contentment could still reduce so whilst the user would be reading information a meltdown could occur making it further difficult to learn about the environment itself.
+
+Suggested improvements:
+\begin{enumerate}
+\item Change door model so handle and door are no longer separate spatials. 
+\item When hovering over the door with the cross-hair, make the tool-tip change to indicate what the room they will be moving into. 
+\item Additional messages explaining causes of meltdowns.
+\item Game automatically pauses when description boxes are up
+\end{enumerate}
+
+\subsection*{Participant 2} 
+Participant 2 was able to comment on some features of autism. Throughout the process they were frequently experiencing sensory overloads and meltdowns and were given prompts on how to avoid these.
+
+Prompts/questions:
+\begin{enumerate}
+\item To watch the contentment
+\item Interact with dinosaur
+\item Watch the tool tip to see available actions
+\item Needed reminder what the morning routine was
+\item Unsure of causes of meltdowns at times
+\end{enumerate}
+
+Suggested improvements:
+\begin{enumerate}
+\item Move contentment bar to middle of screen and make it larger/more obvious. 
+\item Put morning routine on the wall for user to look at/observe. 
+\item Additional messages on cause of meltdowns or sensory overloads. Messages will change giving a new piece of information each time.
+\item Morning routine timer doesn't start until after the description box has been pressed. 
+\end{enumerate}
+
+Meltdowns were happening far too quickly to give the user time to think about the cause although it was commented they were really attempting to in an attempt to "prevent that horrible noise". User commented that they felt game play controls were intuitive in-spite of not often playing first-person computer games. 
+
+All suggested improvements were implemented. The rate in which contentment drops was reduced by 20%.
+
+\subsection*{Participant 3 and 4}
+P4 went through the simulator extremely quickly and is still to date the only known participant to completed the morning routine without a single meltdown although still commented that this was occurring too quickly. No prompts were required apart from to look at the mill in the livingroom. 
+
+Prompts/questions/comments(P3):
+\begin{enumerate}
+\item Asking what was causing sensory overloads in specific situations (livingroom where there is a light extremely high up and not obvious)
+\item Wasn't clear could interact with dinosaur
+\item Wasn't clear when mission was complete with next "Afternoon" routine starting straight away
+\item Where is that radio sound coming from?
+\item Pointed out that top right were objectives for morning routine
+\end{enumerate}
+
+Suggested improvements:
+\begin{enumerate}
+\item Fix the problem in relation to light objects not on the screen causing overloads.
+\item Big, pretty "Mission complete" after each mission with a delay before the next one starts
+\item Reduce how quickly contentment drops
+\item Increase size of tool tip as not being aware of bedroom object interaction has arisen a few times and this should be the room users should have the most ease. 
+\item Adding a drop shadow to thoughts might make them easier to improve.
+\item Change meltdown sound from a radio to tv static. 
+\item Add text "Objectives" about images for morning routine. 
+\end{enumerate}
+
+The first of these was not implemented until after consultation with someone who had Autism and severe sensory difficulties.
+
+The drop shadow could not be added without some difficulty so was left for a later improvement. Contentment was still seen to be be occurring too quickly and the threshold was reduced by a further 30%. 
+
+Finally, it was chosen to include one additional improvement not commented on: a fluorescent light. As contentment was no longer dropping as quickly, and with the removal of sensory "light" sensory objects not being a problem if they were not on screen more "hazardous" objects needed to be added that would be problematic if they were not on screen in order to maintain difficulty. A fluorescent light was selected as they are a highly prevalent difficulty for people with autism. 
+
+\subsection*{Participant 5 and 6}
+
+Participant 6 whom has ADHD offered a good opportunity to test 3 of "additional goals" as they did not to read any of the description boxes or information. Inspite of this very little questions were asked and most difficulties encountered were quickly solved without a need for prompts. P6 was extremely vocal, indicating their understanding of the simulation throughout.
+
+Prompts/questions/comments(P6):
+\begin{enumerate}
+\item Prompted to move closer to objects when initially couldn't click (thoughts of "I can't reach that wasn't seen")
+\item Why don't I like cheese in the kitchen but I like grapes?
+\item Prompt to check the routine on the wall.
+\end{enumerate}
+
+Prompts/questions/comments(P7):
+\begin{enumerate}
+\item Why is the tooth brush causing a problem?
+\item Didn't notice the mill in the living room could be interacted with which could increase contentment and lesson sensory problems
+\item Thoughts still not clear however the JMonkey app statistics were in view which made it difficult to see thoughts.
+\item Why is the light flicking in the kitchen?
+\item Difficulty clicking on the toothbrush in the bathroom and had to be prompted that it was possible to click.
+\end{enumerate}
+
+Suggested improvements:
+\begin{enumerate}
+\item Information on the tooth brush causing tactile sensory issues. 
+\item Add a thought for the mill in the livingroom to hopefully make this more obvious that it can be interacted with. 
+\item Description box in explore mode for when the user first goes into the kitchen explaining about Fluorescent lights. 
+\item Adjust so that user does not have to directly click on object with cross hair
+\item Sizes of thoughts increased in an attempt to combat this without the use a text shadow. 
+\end{enumerate}
+
+Option 4 was not implemented and left for a later improvement as it was uncertain how to do this with ease. 
+
+\subsection*{Participant 7 and 8}
+Due to not being conducted in person feedback was based purely on answers to the questionnaire and a few general questions afterwards. 
+
+Comments from questionnaires(both participants):
+\begin{enumerate}
+\item Hadn't noticed mill in living room although commented "I just wanted to get out of there because of the hoover!"
+\item Had issues with controls and trying to click in stead of pressing space bar.
+\item Trouble clicking toothbrush
+\item Visual effects making it difficult to find stimming objects
+\end{enumerate}
+
+As the last option is thought to be desirable this wont be a suggested improvement. 
+
+Suggested improvements:
+\begin{enumerate}
+\item Increase size of tool tip/make it more obvious.
+\item Have thoughts as "Boxes" at the bottom
+\end{enumerate}
+
+\subsection*{Results summary}
+Results for goals 1-3:
+
+\begin{table}[H]
+\begin{tabular}{|p{1cm} | p{2cm} | p{3cm} | p{3cm} | p{2cm} | p{4cm}|}
+\hline
+Name & Controls & Prior autism knowledge & Later autism knowledge & Complete & Comments \\
+\hline
+\hline
+    K & Y & Social difficulties & Meltdowns & N & Controls intuitive but difficulty interacting with environment \\ \hline
+    R & Y & Social difficulties & Sensory overloads caused by light and sounds. Meltdowns result in a loss of control & Y & Found myself thinking about the ways to approach the situations and what I could do to prevent that horrible noise \\ \hline
+    C & Y & Social difficulties. Special interests & Sensory difficulties. Routine & Y & Thoughts hard to see, add a drop shadow. \\ \hline
+    O & Y & Social difficulties & Sensory overloads. Meltdowns. & Y &  \\ \hline
+    S & Y & Makes it hard to feel empathy thus hard to understand others feelings and needs &  & Y & Add ability to interact with small objects such as toothbrush without having to aim cross hair exactly at is.  \\ \hline
+    M & Y  & Difficulty with social skills. Special interests in maths and a good memory & Routine. Uncomfortable around people, loud noises, bright lights & Y   & Reminder about routine helpful \\ \hline
+    E & N  & Affects ability to focus for long periods of time. Social difficulties. People might act in a way that causes them to feel anxious. & Sensor overloads caused by visual, auditory or tactile. String routine required and must not be deviated from & Y  & Wanted to use direction keys to move instead of 'W' key \\ \hline
+    F & Y & Aspergers is a form of autism & Visual disturbances due to sensory overloads. Affects emotional response of a person. & Y & Trouble brushing teeth. Visual effect can scupper changes of finding stimming since it is difficult to see what is going on around you \\
+     \hline    
+\end{tabular}
+\end{table}
+
+Full responses from participants 4-8 are included in the appendix. 
+
+\section{Conclusions}
+As as consistent with previous research on public knowledge of Autism no-one was able to comment on the sensory issues related although this is a very small sample. Most commented on social or that they knew of the existence of autism and the isolation felt. Clear indication of improved knowledge in each participant is seen by playing the simulator and thus the first goal was achieved. 
+
+Improvements to the process would have been to have verbally recorded the exchange and unfortunately it is felt that some information was lost and a possible cause of some of these issues appearing again in the summative evaluation. By using the on-line questionnaire, information acquired was much more detailed in relation to the goals and feedback was better documented. Most peoples responses after playing the simulator were related to sensory problems and no-one particularly commented on information in description boxes. From this it can be inferred that direct experience is shown to be a better teacher than conveying knowledge in description boxes even though it was in an virtual and hopefully fun environment. Thus a good later addition would be to add more "experience" scenarios such as contending with weather changes or literal language interpretation.  
+
+Game controls were generally found to be intuitive in-spite of having some novice game players. One participant commented on using direction buttons instead but it was chosen not to change this as many games use the game controls used and 1/8 wasn't enough to warrant a change. If similar problems are found later for other users this will be done. 
+
+In-spite of a change in methodology and asking users to play the explore mode with in-game hints offered, users were still finding the task of completing the morning routine difficult; it was found the environment was too harsh and participants were finding it difficult to get become accustomed to controls, think about what was happening, why and develop strategies to avoid, effectively there was too great a cognitive load to be able to direct attention to simply learning and exploring. Contentment was reducing too quickly and meltdowns were occurring too quickly - sometimes the cause could not be identified. The latter part(confusion of the causes) was improved although consultation was required as interviews had specified overloads occurred sometimes without knowing why and it took experience to learn. It was solve by heightening the effects of lights when the user looked at them rather than just being near them.
+
+** dont quite know how to explain this: However, it is felt a degree of difficulty is required to give an incentive for people to find new strategies for overcoming problems facilitating thinking from the perspective of someone with autism, i.e "Ok, i'm faced with these difficulties, but how do I solve them?". By the need to problem solve and find new strategies it is hoped this could further aid teaching as long as there was the understanding that any strategies derived should not be enforced. 
+
+With each iteration of the system it was observed that the types of questions from users were changing and different problems came to light. Instead of asking questions related to "What do I do here?" users were asking questions such as "What's the problem the person with autism has with cheese?", "Why does the tooth brush hurt?". The transition in the way questions were asked can be deduced that the game-play has been greatly improved although more formative evaluations would need to be conducted to see if this is indeed the case. Owing time constraints minimal further improvements were implemented before the summative evaluation. 
+
+It has become clear that not all details and aspects can be necessarily given to users and there were small details such as the mill that some picked up on and others did not. One suggestion was to improve "Explore mode" with an additional tutorial mode potentially with a list of simple tasks that will be ticked off when complete. This will is left as potentially future work.
+
 
 \chapter{Summative evaluation}
-- Users tended to use different strategies.
-- One of the users was deaf, and the message was conveyed to her very accurately. Asked good questions such as "Does this mean if someone with autism comes to visit, I should offer them a quiet room?". 
+
+
+\section{Methods: In person}
+
+
+\section{Methods: On-line}
+
+\section{Results}
+
+\section{Conclusions}
 
 \chapter{Conclusions}
 
-- response from people, quotes etc. 
-- being in a fortunate position of having a supervisor who was well knowledge in the field as well as family members with autism put me in an extremely idea position to build this project. As described in the lit review, it can be very difficult for peopel with autism to explain their problems, thus its very hard to be able to draw conclusions about what to convey.
-- multiple evaluations used which was vital. each gave differing information, but even still, more would have been better. 
-- big project; it required being a researcher, a creator to represent the varying difficulties, a graphics designer to create the 3d models, an artist for the gui's and images, and a programmer; skills that are usually separate in the game programming industry
-- having members of the family with difficulties meant I was aware of how difficult it can be to understand them, no matter how much help and explanation was given. 
-- when it was first taken there was a lot of trepidation on whether it was possible given the time restraints, but not only has it proven to be possible; a project has been created where research has shown, albeit unfortunately on the small scale, to be successful in raising knowledge about autism. 
-- there was not much research into the success of using simulations to aid understanding of neurological conditions, but this project has shown that visual simulations can aid as a successful tool. 
-- depicting sensory overloads and designing and algorithm to do this was extremely difficult. The ere is a vast amount of differing literature on the topic, vast amount of different experiences and even then as people with autism have expressed, sensory differences can be extremely difficult to express. Interviews allowed some insight into this, videos and feedback helped with more, and later feedback given will help develop future improvements. But, still more research is required. There were features from the prototype which are preferred to the first version design such as the delay in sensory overload occurring and delay in coming back to normality. Lights were treated in a better way however by using the first version and getting feedback is was found that the depiction of sounds was extremely accurate. Thus, combining the two preferences on both versions should aid a better result. 
-There is still much to be learnt about autism, there is still much research and understanding to acquire, but the tool developed has proven to be useful not only aiding other's understanding of autism and giving an experience which has proven to aid understanding but potentially being used as a platform to aid people with autism being able to explain their difficulties and differences in a less painful way than words. 
 
-\section{Time plan}
-- too much time in the first year on pulling things together rather than learning how to use them. This had later repercussions when I had to redo all the scenes and not having forsight of the potential problems involved.
 
-\section{Discussion of tools}
-Jmonkey
-- offered a lot for importing models
-- only really used the scene graph and some other features
-- couldn't focus on higher level concepts until the last month of the project
-- unity may have been a better choice in regards to being able to focus on that but it wouldn't have allowed the flexibility. It has better model importing. But now I can build and allow others to make their own scenarios
-- couldnt focus on higher level until scene rewrite was done which took a good 4 weeks
-- didn't use too much of engine. project still ended up being 4k lines of code.
-- time spend exploring and learning the different options would have been good
-- book for jmonkey didn't come out until december
-- doesn't have many ai options
-- blender was awesome but should have spent more time at the beginning learning to use the tool rather than focusing on advise to find other models to use. Far too much time was spend on importing and finding suitable models when I could have just created them. Likewise, sketchup was used for this reason which although offered some assistance in the final product no sketchup models were used. It is not idea game asset creation.
 
 \section{Future work}
 
-As the tool created is effectively a platform for more, there are many future possibilities. 
-\begin{enumerate}
-\item Occulus rift
-\item Neurosky portable eeg headset(no, not ridiculous, this is better than it sounds...)
-\item Supporting others using system to build their own experiences. This is actually mostly done but would requires better documentation(on the code and on how to create the individual scenarios) and more abstraction if it is required to be obfuscated. Platform needs to be built to aid people developing their own stuffs. 
-\item Modelling people with autism and their difficulties and being able to see in what way the world effects them. 
-\item Additional stories and scenarios in order to convey other already implemented features such as odd body language. 
-\item could be used as a tool for people to use to try out different strategies in environments. 
-\end{enumerate}
 
-\chapter{Appendix}
+
 
 \begin{thebibliography}{9}
 

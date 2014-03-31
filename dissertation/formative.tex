@@ -1,0 +1,233 @@
+\documentclass[11pt]{report}
+\usepackage{fullpage}
+\usepackage{graphicx}
+\usepackage{float}
+\restylefloat{table}
+\usepackage{url}
+\usepackage[toc, page]{appendix}
+\usepackage{listings}
+\begin{document}
+
+\chapter{Formative evaluation: First version}
+The formative evaluation primarily focused on user experience and game play with a latter goal of making sure the simulation was successful in teaching awareness of at least one attribute of autism. 
+
+Three goals key goals identified for the formative evaluation: 
+\begin{enumerate}
+\item Check that the game play controls were intuitive with no obvious problems. 
+\item Ensure users can complete the first mission without getting bored or too frustrated. 
+\item See if user could learn at least one new thing about autism they didn't previously know and ideally what they would learn about or become aware of would be the sensory problems.
+\end{enumerate}
+
+Additional goals expected to be obtained through iteration:
+\begin{enumerate}
+\item Identify areas a user may need help or prompts
+\item Obtain qualitative information on how the user was interacting and playing the game rather than their thoughts on the project.
+\item Improve users ability to understand the simulator and environment with minimal materials and instructions such future users would be able simply "pick up and play"
+\end{enumerate}
+
+Participants were recruited from friends whom although most was aware of the project had not played or previously seen it. The following table gives background information on participants involved in the evaluation and represents the order in which this occurred
+
+\begin{table}[H]
+    \begin{tabular}{| p{2cm} | p{9cm} | p{3cm} | p{3cm} |}
+    \hline
+    Name & Background information & O=Online. P = in person & Location \\
+    \hline
+    \hline
+    Kirstie & Final year chemistry student. Minimal game experience & P & My home\\ \hline
+    Robyn & Graduated with a degree in Philosophy and Economics. Minimal gaming experience & P & Own home \\ \hline
+    Chris & Final year Masters of Informatics student. Designing an app for visually impaired. Studied HCI & P & Own home \\ \hline
+    Ollie & 4th year Social sciences. Medium game experience & P & Own home \\ \hline
+    Spyros & Final year Computer science. Studied HCI and was taking Adaptive Learning Environments course and had taken the graphics course. Large game experience & P & My home \\ \hline
+    Markus & Final year Computer science and has ADHD. Spent a year abroad working in graphics. Took courses in HCI. Large game experience & P & My home \\ \hline
+    Erica & Final year chemistry student & O & -\\ \hline
+    Francais & Final year chemistry student & O & - \\ \hline
+    \end{tabular}
+    \caption{Test}
+\end{table}
+
+Participants chosen come from a variety of backgrounds and courses and were felt to be able to give an all round picture of user expectations. With three users being from a computer science background having taken courses in Graphics and HCI they would be more aware of the theoretical pitfalls in interaction and interface design, thinking not only from their own perspective but from multiple users and thus in a good position to offer criticisms and suggestions for solving these problems.
+
+\section{Methods}
+
+Evaluations took approximately 30-45 minutes each depending on the game experience of the user and this time included before and after questions. Qualitative information from participants was extracted owing the small sample statistics. All evaluations took place at either my own home, the participants home. The process was iterative and the system was improved based on feedback depending on the time restraints in between the evaluations.  
+
+Users were asked for their prior experience with computer games in addition to prior knowledge of autism. The first 6 participants were completed in person. The first four participants were verbally asked their their previous knowledge which was written. This was found to be inefficient with some information being lost and thus the later 4 participants completed a before and after questionnaire with the same questions. The final two participants were conducted solely on-line and were sent the questionnaires with instructions and a link to download it. 
+
+Formative pre-questionnaire questions:
+\begin{enumerate}
+\item What can you tell me about Autism and their difficulties?
+\item What is your current skill with computer games?
+\end{enumerate}
+
+After questionnaire 
+\begin{enumerate}
+\item What can you tell me about autism and their difficulties?
+\item Did you find the game controls intuitive?
+\item Please include any additional feedback or suggestions such as parts you may have found difficult or what you feel could be improved.
+\end{enumerate}
+
+No materials were given and users were only told "This is an autism simulator". One of the goals is to ensure the simulator can be played without needing to read instructions and sit through tutorials. This is due to awareness that some individuals will often skip instruction manuals and opt to learn first by experience, later seeking help or consulting guides if they run into difficulty and cannot solve problems out on their own.
+
+Users were directed and encouraged to verbalise their thinking process whilst being observed and given directions such as "Go to the kitchen" or "Go to the bathroom and click on the tooth brush". At a later stage this is expected to change as less directions should be required and will thus be were given on request. If not requested by the user but is was evidence of difficulty the user would be asked "I see you trying to open the door but it is not working. Can you explain how you are trying to do that". Prompts and directions given were recorded on pen-paper for two reasons 1. It could give indication of in-game prompts required for users and 2. difficulties may shed light on alternative ways of doing things or be indication general game-play problems if they arose for other users.
+
+\section{Results}
+The system was iterated upon after participant 1, participants 2, 3-4(inclusive), participants 5-6 and again after 7 and 8.
+
+\subsection*{Participant 1}
+
+For the first evaluations the user was just asked to play the "Mission mode" however in-spite of information and instructions at the beginning which were displayed as a description box the participant was finding it extremely difficult and explicit instructions needed to be given. Further problems were quickly identified with entering and leaving rooms; the door model was split into both "handle" and "door" and the user was clicking the handle rather than the door itself which is the norm for most first person games. They were offered to play the explore mode first to become familiar with the environment but still encountered some problems with moving around and quickly experienced meltdowns with some confusion. Once it was indicated that there was a tool-tip explaining actions available when you mouse over objects in the scene, this process became easier. 
+
+For all later formative evaluations users were asked to play the "Explore mode" followed by the "Mission mode" which encompassed just the morning routine as the part that was most tested and ready and could be conducted within the evaluation time-frame. This choice indicated an improvement and users were less confused and were able to all complete the missions. Participants were given additional information that they were to play an "Autism simulator. Use the explore mode and then the mission mode"
+
+Finally key problem identified  was identified; when descriptions and alerts popped up contentment could still reduce so whilst the user would be reading information a meltdown could occur making it further difficult to learn about the environment itself.
+
+Suggested improvements:
+\begin{enumerate}
+\item Change door model so handle and door are no longer separate spatials. 
+\item When hovering over the door with the cross-hair, make the tool-tip change to indicate what the room they will be moving into. 
+\item Additional messages explaining causes of meltdowns.
+\item Game automatically pauses when description boxes are up
+\end{enumerate}
+
+\subsection*{Participant 2} 
+Participant 2 was able to comment on some features of autism. Throughout the process they were frequently experiencing sensory overloads and meltdowns and were given prompts on how to avoid these.
+
+Prompts/questions:
+\begin{enumerate}
+\item To watch the contentment
+\item Interact with dinosaur
+\item Watch the tool tip to see available actions
+\item Needed reminder what the morning routine was
+\item Unsure of causes of meltdowns at times
+\end{enumerate}
+
+Suggested improvements:
+\begin{enumerate}
+\item Move contentment bar to middle of screen and make it larger/more obvious. 
+\item Put morning routine on the wall for user to look at/observe. 
+\item Additional messages on cause of meltdowns or sensory overloads. Messages will change giving a new piece of information each time.
+\item Morning routine timer doesn't start until after the description box has been pressed. 
+\end{enumerate}
+
+Meltdowns were happening far too quickly to give the user time to think about the cause although it was commented they were really attempting to in an attempt to "prevent that horrible noise". User commented that they felt game play controls were intuitive in-spite of not often playing first-person computer games. 
+
+All suggested improvements were implemented. The rate in which contentment drops was reduced by 20%.
+
+\subsection*{Participant 3 and 4}
+P4 went through the simulator extremely quickly and is still to date the only known participant to completed the morning routine without a single meltdown although still commented that this was occurring too quickly. No prompts were required apart from to look at the mill in the livingroom. 
+
+Prompts/questions/comments(P3):
+\begin{enumerate}
+\item Asking what was causing sensory overloads in specific situations (livingroom where there is a light extremely high up and not obvious)
+\item Wasn't clear could interact with dinosaur
+\item Wasn't clear when mission was complete with next "Afternoon" routine starting straight away
+\item Where is that radio sound coming from?
+\item Pointed out that top right were objectives for morning routine
+\end{enumerate}
+
+Suggested improvements:
+\begin{enumerate}
+\item Fix the problem in relation to light objects not on the screen causing overloads.
+\item Big, pretty "Mission complete" after each mission with a delay before the next one starts
+\item Reduce how quickly contentment drops
+\item Increase size of tool tip as not being aware of bedroom object interaction has arisen a few times and this should be the room users should have the most ease. 
+\item Adding a drop shadow to thoughts might make them easier to improve.
+\item Change meltdown sound from a radio to tv static. 
+\item Add text "Objectives" about images for morning routine. 
+\end{enumerate}
+
+The first of these was not implemented until after consultation with someone who had Autism and severe sensory difficulties.
+
+The drop shadow could not be added without some difficulty so was left for a later improvement. Contentment was still seen to be be occurring too quickly and the threshold was reduced by a further 30%. 
+
+Finally, it was chosen to include one additional improvement not commented on: a fluorescent light. As contentment was no longer dropping as quickly, and with the removal of sensory "light" sensory objects not being a problem if they were not on screen more "hazardous" objects needed to be added that would be problematic if they were not on screen in order to maintain difficulty. A fluorescent light was selected as they are a highly prevalent difficulty for people with autism. 
+
+\subsection*{Participant 5 and 6}
+
+Participant 6 whom has ADHD offered a good opportunity to test 3 of "additional goals" as they did not to read any of the description boxes or information. Inspite of this very little questions were asked and most difficulties encountered were quickly solved without a need for prompts. P6 was extremely vocal, indicating their understanding of the simulation throughout.
+
+Prompts/questions/comments(P6):
+\begin{enumerate}
+\item Prompted to move closer to objects when initially couldn't click (thoughts of "I can't reach that wasn't seen")
+\item Why don't I like cheese in the kitchen but I like grapes?
+\item Prompt to check the routine on the wall.
+\end{enumerate}
+
+Prompts/questions/comments(P7):
+\begin{enumerate}
+\item Why is the tooth brush causing a problem?
+\item Didn't notice the mill in the living room could be interacted with which could increase contentment and lesson sensory problems
+\item Thoughts still not clear however the JMonkey app statistics were in view which made it difficult to see thoughts.
+\item Why is the light flicking in the kitchen?
+\item Difficulty clicking on the toothbrush in the bathroom and had to be prompted that it was possible to click.
+\end{enumerate}
+
+Suggested improvements:
+\begin{enumerate}
+\item Information on the tooth brush causing tactile sensory issues. 
+\item Add a thought for the mill in the livingroom to hopefully make this more obvious that it can be interacted with. 
+\item Description box in explore mode for when the user first goes into the kitchen explaining about Fluorescent lights. 
+\item Adjust so that user does not have to directly click on object with cross hair
+\item Sizes of thoughts increased in an attempt to combat this without the use a text shadow. 
+\end{enumerate}
+
+Option 4 was not implemented and left for a later improvement as it was uncertain how to do this with ease. 
+
+\subsection*{Participant 7 and 8}
+Due to not being conducted in person feedback was based purely on answers to the questionnaire and a few general questions afterwards. 
+
+Comments from questionnaires(both participants):
+\begin{enumerate}
+\item Hadn't noticed mill in living room although commented "I just wanted to get out of there because of the hoover!"
+\item Had issues with controls and trying to click in stead of pressing space bar.
+\item Trouble clicking toothbrush
+\item Visual effects making it difficult to find stimming objects
+\end{enumerate}
+
+As the last option is thought to be desirable this wont be a suggested improvement. 
+
+Suggested improvements:
+\begin{enumerate}
+\item Increase size of tool tip/make it more obvious.
+\item Have thoughts as "Boxes" at the bottom
+\end{enumerate}
+
+\subsection*{Results summary}
+Results for goals 1-3:
+
+\begin{table}[H]
+\begin{tabular}{|p{1cm} | p{2cm} | p{3cm} | p{3cm} | p{2cm} | p{4cm}|}
+\hline
+Name & Controls & Prior autism knowledge & Later autism knowledge & Complete & Comments \\
+\hline
+\hline
+    K & Y & Social difficulties & Meltdowns & N & Controls intuitive but difficulty interacting with environment \\ \hline
+    R & Y & Social difficulties & Sensory overloads caused by light and sounds. Meltdowns result in a loss of control & Y & Found myself thinking about the ways to approach the situations and what I could do to prevent that horrible noise \\ \hline
+    C & Y & Social difficulties. Special interests & Sensory difficulties. Routine & Y & Thoughts hard to see, add a drop shadow. \\ \hline
+    O & Y & Social difficulties & Sensory overloads. Meltdowns. & Y &  \\ \hline
+    S & Y & Makes it hard to feel empathy thus hard to understand others feelings and needs &  & Y & Add ability to interact with small objects such as toothbrush without having to aim cross hair exactly at is.  \\ \hline
+    M & Y  & Difficulty with social skills. Special interests in maths and a good memory & Routine. Uncomfortable around people, loud noises, bright lights & Y   & Reminder about routine helpful \\ \hline
+    E & N  & Affects ability to focus for long periods of time. Social difficulties. People might act in a way that causes them to feel anxious. & Sensor overloads caused by visual, auditory or tactile. String routine required and must not be deviated from & Y  & Wanted to use direction keys to move instead of 'W' key \\ \hline
+    F & Y & Aspergers is a form of autism & Visual disturbances due to sensory overloads. Affects emotional response of a person. & Y & Trouble brushing teeth. Visual effect can scupper changes of finding stimming since it is difficult to see what is going on around you \\
+     \hline    
+\end{tabular}
+\end{table}
+
+Full responses from participants 4-8 are included in the appendix. 
+
+\section{Conclusions}
+As as consistent with previous research on public knowledge of Autism no-one was able to comment on the sensory issues related although this is a very small sample. Most commented on social or that they knew of the existence of autism and the isolation felt. Clear indication of improved knowledge in each participant is seen by playing the simulator and thus the first goal was achieved. 
+
+Improvements to the process would have been to have verbally recorded the exchange and unfortunately it is felt that some information was lost and a possible cause of some of these issues appearing again in the summative evaluation. By using the on-line questionnaire, information acquired was much more detailed in relation to the goals and feedback was better documented. Most peoples responses after playing the simulator were related to sensory problems and no-one particularly commented on information in description boxes. From this it can be inferred that direct experience is shown to be a better teacher than conveying knowledge in description boxes even though it was in an virtual and hopefully fun environment. Thus a good later addition would be to add more "experience" scenarios such as contending with weather changes or literal language interpretation.  
+
+Game controls were generally found to be intuitive in-spite of having some novice game players. One participant commented on using direction buttons instead but it was chosen not to change this as many games use the game controls used and 1/8 wasn't enough to warrant a change. If similar problems are found later for other users this will be done. 
+
+In-spite of a change in methodology and asking users to play the explore mode with in-game hints offered, users were still finding the task of completing the morning routine difficult; it was found the environment was too harsh and participants were finding it difficult to get become accustomed to controls, think about what was happening, why and develop strategies to avoid, effectively there was too great a cognitive load to be able to direct attention to simply learning and exploring. Contentment was reducing too quickly and meltdowns were occurring too quickly - sometimes the cause could not be identified. The latter part(confusion of the causes) was improved although consultation was required as interviews had specified overloads occurred sometimes without knowing why and it took experience to learn. It was solve by heightening the effects of lights when the user looked at them rather than just being near them.
+
+** dont quite know how to explain this: However, it is felt a degree of difficulty is required to give an incentive for people to find new strategies for overcoming problems facilitating thinking from the perspective of someone with autism, i.e "Ok, i'm faced with these difficulties, but how do I solve them?". By the need to problem solve and find new strategies it is hoped this could further aid teaching as long as there was the understanding that any strategies derived should not be enforced. 
+
+With each iteration of the system it was observed that the types of questions from users were changing and different problems came to light. Instead of asking questions related to "What do I do here?" users were asking questions such as "What's the problem the person with autism has with cheese?", "Why does the tooth brush hurt?". The transition in the way questions were asked can be deduced that the game-play has been greatly improved although more formative evaluations would need to be conducted to see if this is indeed the case. Owing time constraints minimal further improvements were implemented before the summative evaluation. 
+
+It has become clear that not all details and aspects can be necessarily given to users and there were small details such as the mill that some picked up on and others did not. One suggestion was to improve "Explore mode" with an additional tutorial mode potentially with a list of simple tasks that will be ticked off when complete. This will is left as potentially future work.
+
+\end{document}
