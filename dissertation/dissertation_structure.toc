@@ -1,0 +1,69 @@
+\contentsline {chapter}{\numberline {1}Overview}{3}
+\contentsline {section}{\numberline {1.1}Selecting a project}{3}
+\contentsline {subsection}{\numberline {1.1.1}Results}{5}
+\contentsline {subsection}{\numberline {1.1.2}Conclusions}{7}
+\contentsline {chapter}{\numberline {2}Literature review}{8}
+\contentsline {section}{\numberline {2.1}What is Autism?}{8}
+\contentsline {section}{\numberline {2.2}Sensory Experiences}{9}
+\contentsline {section}{\numberline {2.3}Theoretical models}{11}
+\contentsline {subsection}{\numberline {2.3.1}Information processing}{11}
+\contentsline {subsection}{\numberline {2.3.2}Perceptual models}{12}
+\contentsline {section}{\numberline {2.4}Impact of Autism}{13}
+\contentsline {subsection}{\numberline {2.4.1}Impact of Autism in Schools}{13}
+\contentsline {subsection}{\numberline {2.4.2}Impact of Autism on Home}{14}
+\contentsline {section}{\numberline {2.5}Previous work}{14}
+\contentsline {subsection}{\numberline {2.5.1}Disability and mental health simulations}{14}
+\contentsline {subsection}{\numberline {2.5.2}Autism simulation and tools}{17}
+\contentsline {chapter}{\numberline {3}Participatory Design}{20}
+\contentsline {section}{\numberline {3.1}LAER Lab}{20}
+\contentsline {section}{\numberline {3.2}Interviews}{20}
+\contentsline {subsection}{\numberline {3.2.1}Methods}{21}
+\contentsline {section}{\numberline {3.3}Results}{23}
+\contentsline {section}{\numberline {3.4}Conclusions: Goals and restrictions identified}{24}
+\contentsline {chapter}{\numberline {4}Prototype: Design}{25}
+\contentsline {section}{\numberline {4.1}Game play}{25}
+\contentsline {subsection}{\numberline {4.1.1}Interface and Controls}{25}
+\contentsline {subsection}{\numberline {4.1.2}User tasks: Mission and Explore mode}{26}
+\contentsline {section}{\numberline {4.2}Simulator features}{27}
+\contentsline {subsection}{\numberline {4.2.1}Description boxes}{27}
+\contentsline {subsection}{\numberline {4.2.2}Sensory overloads}{27}
+\contentsline {subsection}{\numberline {4.2.3}Meltdowns}{28}
+\contentsline {subsection}{\numberline {4.2.4}Special interests}{28}
+\contentsline {subsection}{\numberline {4.2.5}Information processing delay}{28}
+\contentsline {section}{\numberline {4.3}Tool selection}{28}
+\contentsline {subsection}{\numberline {4.3.1}Game engines}{29}
+\contentsline {subsection}{\numberline {4.3.2}Modelling tools}{30}
+\contentsline {chapter}{\numberline {5}Prototype: Implementation}{31}
+\contentsline {section}{\numberline {5.1}Game play}{31}
+\contentsline {section}{\numberline {5.2}Implementation: technical}{38}
+\contentsline {subsection}{\numberline {5.2.1}ActionManager}{39}
+\contentsline {subsection}{\numberline {5.2.2}Player}{39}
+\contentsline {subsection}{\numberline {5.2.3}GUIManager}{39}
+\contentsline {subsection}{\numberline {5.2.4}Sensory Manager}{39}
+\contentsline {subsection}{\numberline {5.2.5}Meltdowns}{39}
+\contentsline {subsection}{\numberline {5.2.6}Mission manager}{39}
+\contentsline {section}{\numberline {5.3}Overcoming challenges}{40}
+\contentsline {chapter}{\numberline {6}Formative evaluation: First version}{41}
+\contentsline {section}{\numberline {6.1}Methods}{42}
+\contentsline {section}{\numberline {6.2}Results}{43}
+\contentsline {section}{\numberline {6.3}Conclusions}{49}
+\contentsline {chapter}{\numberline {7}Redesign and Implementation}{51}
+\contentsline {section}{\numberline {7.1}Storyboards}{52}
+\contentsline {section}{\numberline {7.2}House design}{53}
+\contentsline {subsection}{\numberline {7.2.1}Sounds}{55}
+\contentsline {subsection}{\numberline {7.2.2}Rewrite of scenes}{56}
+\contentsline {subsubsection}{House implementation}{57}
+\contentsline {subsection}{\numberline {7.2.3}Game state manager}{59}
+\contentsline {subsection}{\numberline {7.2.4}Sensory System improvements}{59}
+\contentsline {chapter}{\numberline {8}Formative evaluation: First version}{61}
+\contentsline {section}{\numberline {8.1}Methods}{62}
+\contentsline {section}{\numberline {8.2}Results}{63}
+\contentsline {section}{\numberline {8.3}Conclusions}{69}
+\contentsline {chapter}{\numberline {9}Summative evaluation}{71}
+\contentsline {section}{\numberline {9.1}Methods}{71}
+\contentsline {subsection}{\numberline {9.1.1}Person}{72}
+\contentsline {subsection}{\numberline {9.1.2}Online}{73}
+\contentsline {section}{\numberline {9.2}Results}{74}
+\contentsline {section}{\numberline {9.3}General discussion}{75}
+\contentsline {section}{\numberline {9.4}Conclusions}{76}
+\contentsline {subsection}{\numberline {9.4.1}Suggested future improvements}{77}

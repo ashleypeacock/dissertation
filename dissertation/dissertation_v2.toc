@@ -1,75 +1,52 @@
-\contentsline {chapter}{\numberline {1}Overview}{5}
-\contentsline {section}{\numberline {1.1}Selecting a project}{5}
-\contentsline {subsection}{\numberline {1.1.1}Results}{7}
-\contentsline {subsection}{\numberline {1.1.2}Conclusions}{9}
-\contentsline {chapter}{\numberline {2}Literature review}{10}
-\contentsline {section}{\numberline {2.1}What is Autism?}{10}
-\contentsline {section}{\numberline {2.2}Sensory Experiences}{11}
-\contentsline {section}{\numberline {2.3}Theoretical models}{13}
-\contentsline {subsection}{\numberline {2.3.1}Information processing}{13}
-\contentsline {subsection}{\numberline {2.3.2}Perceptual models}{14}
-\contentsline {section}{\numberline {2.4}Impact of Autism}{15}
-\contentsline {subsection}{\numberline {2.4.1}Impact of Autism in Schools}{15}
-\contentsline {subsection}{\numberline {2.4.2}Impact of Autism on Home}{16}
-\contentsline {section}{\numberline {2.5}Previous work}{16}
-\contentsline {subsection}{\numberline {2.5.1}Disability and mental health simulations}{16}
-\contentsline {subsection}{\numberline {2.5.2}Autism simulation and tools}{19}
-\contentsline {chapter}{\numberline {3}Participatory Design}{22}
-\contentsline {section}{\numberline {3.1}LAER Lab}{22}
-\contentsline {section}{\numberline {3.2}Interviews}{22}
-\contentsline {subsection}{\numberline {3.2.1}Methods}{23}
-\contentsline {section}{\numberline {3.3}Results}{25}
-\contentsline {section}{\numberline {3.4}Conclusions: Goals and restrictions identified}{26}
-\contentsline {chapter}{\numberline {4}Prototype: Design}{27}
-\contentsline {section}{\numberline {4.1}Game play}{27}
-\contentsline {subsection}{\numberline {4.1.1}Interface and Controls}{27}
-\contentsline {subsection}{\numberline {4.1.2}User tasks: Mission and Explore mode}{28}
-\contentsline {section}{\numberline {4.2}Simulator features}{29}
-\contentsline {subsection}{\numberline {4.2.1}Description boxes}{29}
-\contentsline {subsection}{\numberline {4.2.2}Sensory overloads}{29}
-\contentsline {subsection}{\numberline {4.2.3}Meltdowns}{30}
-\contentsline {subsection}{\numberline {4.2.4}Special interests}{30}
-\contentsline {subsection}{\numberline {4.2.5}Information processing delay}{30}
-\contentsline {section}{\numberline {4.3}Tool selection}{30}
-\contentsline {subsection}{\numberline {4.3.1}Game engines}{31}
-\contentsline {subsection}{\numberline {4.3.2}Modelling tools}{32}
-\contentsline {chapter}{\numberline {5}Prototype: Implementation}{33}
-\contentsline {section}{\numberline {5.1}Game play}{33}
-\contentsline {section}{\numberline {5.2}Implementation: technical}{39}
-\contentsline {subsection}{\numberline {5.2.1}Overview}{39}
-\contentsline {subsection}{\numberline {5.2.2}Game loop}{40}
-\contentsline {subsection}{\numberline {5.2.3}GUI}{40}
-\contentsline {subsection}{\numberline {5.2.4}Meltdowns}{40}
-\contentsline {subsection}{\numberline {5.2.5}Player}{40}
-\contentsline {subsubsection}{Sensory Manager}{40}
-\contentsline {subsubsection}{Meltdowns}{40}
-\contentsline {subsection}{\numberline {5.2.6}Mission manager and missions}{40}
-\contentsline {subsection}{\numberline {5.2.7}Missions}{40}
-\contentsline {section}{\numberline {5.3}Overcoming challenges}{40}
-\contentsline {chapter}{\numberline {6}Formative evaluation: Prototype}{42}
-\contentsline {section}{\numberline {6.1}Expert feedback: LAERLab}{42}
-\contentsline {subsection}{\numberline {6.1.1}Results}{42}
-\contentsline {section}{\numberline {6.2}User feedback}{43}
-\contentsline {subsection}{\numberline {6.2.1}Results}{43}
-\contentsline {section}{\numberline {6.3}Conclusions}{46}
-\contentsline {chapter}{\numberline {7}Redesign and Implementation}{47}
-\contentsline {chapter}{\numberline {8}Redesign and Implementation}{48}
-\contentsline {section}{\numberline {8.1}Storyboards}{49}
-\contentsline {section}{\numberline {8.2}House design}{50}
-\contentsline {subsection}{\numberline {8.2.1}Sounds}{52}
-\contentsline {subsection}{\numberline {8.2.2}Rewrite of scenes}{53}
-\contentsline {subsubsection}{House implementation}{54}
-\contentsline {subsection}{\numberline {8.2.3}Game state manager}{56}
-\contentsline {subsection}{\numberline {8.2.4}Sensory System improvements}{56}
-\contentsline {chapter}{\numberline {9}First version}{58}
-\contentsline {chapter}{\numberline {10}Formative evaluation: First version}{59}
-\contentsline {section}{\numberline {10.1}Methods}{60}
-\contentsline {section}{\numberline {10.2}Results}{61}
-\contentsline {section}{\numberline {10.3}Conclusions}{67}
-\contentsline {chapter}{\numberline {11}Summative evaluation}{69}
-\contentsline {section}{\numberline {11.1}Methods: In person}{69}
-\contentsline {section}{\numberline {11.2}Methods: On-line}{69}
-\contentsline {section}{\numberline {11.3}Results}{69}
-\contentsline {section}{\numberline {11.4}Conclusions}{69}
-\contentsline {chapter}{\numberline {12}Conclusions}{70}
-\contentsline {section}{\numberline {12.1}Future work}{70}
+\contentsline {chapter}{\numberline {1}Overview}{4}
+\contentsline {section}{\numberline {1.1}Selecting a project}{4}
+\contentsline {subsection}{\numberline {1.1.1}Results}{6}
+\contentsline {subsection}{\numberline {1.1.2}Conclusions}{8}
+\contentsline {chapter}{\numberline {2}Participatory Design}{9}
+\contentsline {section}{\numberline {2.1}LAER Lab}{9}
+\contentsline {section}{\numberline {2.2}Interviews}{9}
+\contentsline {subsection}{\numberline {2.2.1}Methods}{10}
+\contentsline {section}{\numberline {2.3}Results}{12}
+\contentsline {section}{\numberline {2.4}Conclusions: Goals and restrictions identified}{13}
+\contentsline {chapter}{\numberline {3}Prototype: Design}{14}
+\contentsline {section}{\numberline {3.1}Game play}{14}
+\contentsline {subsection}{\numberline {3.1.1}Interface and Controls}{14}
+\contentsline {subsection}{\numberline {3.1.2}User tasks: Mission and Explore mode}{15}
+\contentsline {section}{\numberline {3.2}Simulator features}{16}
+\contentsline {subsection}{\numberline {3.2.1}Description boxes}{16}
+\contentsline {subsection}{\numberline {3.2.2}Sensory overloads}{16}
+\contentsline {subsection}{\numberline {3.2.3}Meltdowns}{17}
+\contentsline {subsection}{\numberline {3.2.4}Special interests}{17}
+\contentsline {subsection}{\numberline {3.2.5}Information processing delay}{17}
+\contentsline {section}{\numberline {3.3}Tool selection}{17}
+\contentsline {subsection}{\numberline {3.3.1}Game engines}{18}
+\contentsline {subsection}{\numberline {3.3.2}Modelling tools}{19}
+\contentsline {chapter}{\numberline {4}Prototype: Implementation}{20}
+\contentsline {section}{\numberline {4.1}Game play}{20}
+\contentsline {section}{\numberline {4.2}Implementation: technical}{26}
+\contentsline {subsection}{\numberline {4.2.1}Overview}{26}
+\contentsline {subsection}{\numberline {4.2.2}Game loop}{27}
+\contentsline {subsection}{\numberline {4.2.3}GUI}{27}
+\contentsline {subsection}{\numberline {4.2.4}Meltdowns}{27}
+\contentsline {subsection}{\numberline {4.2.5}Player}{27}
+\contentsline {subsubsection}{Sensory Manager}{27}
+\contentsline {subsubsection}{Meltdowns}{27}
+\contentsline {subsection}{\numberline {4.2.6}Mission manager and missions}{27}
+\contentsline {subsection}{\numberline {4.2.7}Missions}{27}
+\contentsline {section}{\numberline {4.3}Overcoming challenges}{27}
+\contentsline {chapter}{\numberline {5}Formative evaluation: Prototype}{29}
+\contentsline {section}{\numberline {5.1}Expert feedback: LAERLab}{29}
+\contentsline {subsection}{\numberline {5.1.1}Results}{29}
+\contentsline {section}{\numberline {5.2}User feedback}{30}
+\contentsline {subsection}{\numberline {5.2.1}Results}{30}
+\contentsline {section}{\numberline {5.3}Conclusions}{33}
+\contentsline {chapter}{\numberline {6}Redesign and Implementation}{34}
+\contentsline {chapter}{\numberline {7}Redesign and Implementation}{35}
+\contentsline {section}{\numberline {7.1}Storyboards}{36}
+\contentsline {section}{\numberline {7.2}House design}{37}
+\contentsline {subsection}{\numberline {7.2.1}Sounds}{39}
+\contentsline {subsection}{\numberline {7.2.2}Rewrite of scenes}{40}
+\contentsline {subsubsection}{House implementation}{41}
+\contentsline {subsection}{\numberline {7.2.3}Game state manager}{43}
+\contentsline {subsection}{\numberline {7.2.4}Sensory System improvements}{43}
+\contentsline {chapter}{\numberline {8}First version}{45}
