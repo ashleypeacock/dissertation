@@ -161,13 +161,6 @@ In JMonkey, scenes are created by adding spatials to a scene file which has the 
 
 The SceneManager contained methods such that common sensory objects were created on initialisation based on the name of the spatials rather than needing to constantly use addSensoryObject methods. The SceneManager would go through all the objects in the scene and found ones that had the name "lamp" and would then assign this as a light sensory object and add point lights saving a lot of work for the developer creating new scenes and scenarios. Pointlights had to be added to root node the the scene in order to make sure lights affect all models around it otherwise it would only influence the node it was attached to, for example if attached to a lamp only the lamp would be lit and not the surrounding objects. The better alternative to adding point lights would be to create materials in blender to represent the lighting however this was a lot of modelling work; the problem with pointlights is that it doubles the amount of vertices in the scene for each one added.
 
-
-\subsection{ActionManager}
-
-
-\subsection{Player}
-\subsubsection{Meltdowns}
-
 \subsection{GUIManager}
 At the time the prototype was developed a new GUI package became available for JMonkey. Although it is still in beta with little documentation it provided a faster method of creating the GUI and and required components. 
 
@@ -175,7 +168,73 @@ The main game loop calls the update method in the GUIManager. The GUIManager con
 
 The most important aspect of the GUIManager is the control of the "QuestionSelector", a component made for users to select actions or respond to questions from other in-game characters. The QuestionSelector takes three pieces of information: questions, answers and a boolean to indicate whether or not actions should be rotated and is additionally used to represent information processing delay.
 
+
+\subsection{ActionManager}
+The ActionManager can be broken down into the most important methods:
+
+\begin{enumerate}
+\item getActions(Spatial): gets the available actions the user can use on the spatial.
+\item doAction(GameActionEvent gae): fires a GameActionEvent which simply contains the name of the action and the spatial to act upon.
+\item notifyGameActionListeners: notifies all listeners of an action event
+\item getType(Spatial s): gets the type of a spatial which defines which actions can be used on it although custom types can be added. These mostly would depend on the name of the spatial, for example anything that contained the name "lamp" would be assigned the "lamp" type however custom types from missions or scenes could be added so that actions only needed for certain missions such as "get a drink" would only be available during the mission.
+\end{enumerate}
+
+If the user clicks on a spatial, using collision detection it is calculated which spatial they have clicked on. It would then use getActions(Spatial s) to acquire which actions the spatial has, based on it's type, and send this to the GUI to display the question selection.
+
+Once the user selects an action the GUI fires doAction which decides what to do about it.
+
+\subsubsection*{Types implemented}
+*** put this in a table I think and  cleanup with above, doesnl't need a whole section.
+
+If the spatial is of type "lamp", it would call changeLight(spatial) which is in GameActions and the spatial is searched for an associated point light to change depending on it's current state. 
+
+If the spatial was type "sound", a particle emitter would be added or removed from the spatial depending on it’s current state(if its on or off).
+
+If the object was type "play", the action manager would call player.doAction(name). All internal player actions were in the player class, for example stim, getDressed, meltdown, pickup item, eat etc. There was other types for interacting with objects such as doors, but doors were never used in the prototype.
+
+\subsubsection*{Custom actions and action listeners}
+Custom actions can be added from missions or from scenes by implementing the GameActionListener which requires implementation of two methods, notify and getCustomGameActions. Below is an example taken from the "FirstMission"
+
+\begin{lstlisting}
+    public ArrayList<GameActionEvent> getCustomGameActions() {
+        ArrayList<GameActionEvent> actionEvents = new ArrayList<GameActionEvent>();
+        actionEvents.add(new GameActionEvent("Speak to", getSpatial("mum")));
+        return actionEvents;
+    }
+\end{lstlisting}
+
+\begin{lstlisting}
+    public boolean notifyAction(GameActionEvent gae) {
+        if(gae.getName().contains("Speak to")) {
+            isComplete = true;
+            return true;
+        }
+        return false;
+    }
+\end{lstlisting}
+
+This approach was used to provide modularity so that actions and gameplay in missions was not restricted by the system(a developer could create their own actions and interactions) however still ensuring some level of implementation a developer would not have to implement. I.e lights, sounds, etc.
+
+Once the listener is added to the action manager it will call getCustomActionEventsTypes() which would return all the custom actions added from either scenes or missions and allow the user to select a custom action. doAction would then attempt the action which if it was custom would not be found. At the end of every doAction it notifies all gameaction listeners. Thus missions can listen on to what the user is doing and act accordingly. 
+
+
+\subsection{Player}
+The player class contained the players location and general states such as if objects were being held, if we are interacting with a special interest or in a state of a meltdown.
+
+The main update loop of the player is called from the Main class and it constantly checks the state of the sensory manager which could be NONE, MEDIUM, OVERLOAD. Depending on this state the class will use filters to create the sense of a sensory overload or when the user is nearing one whilst reducing contentment accordingly. If in MED a light filter is applied to make lights get brighter and if in a sense of overload both the light filter and guassian filter are applied. The player update loop can be seen in the appendix.  
+ 
+\subsubsection{Meltdowns}
+When contentment dropped below 15 a meltdown would start and progressively get worse which would give the player a few seconds to attempt to prevent it. When a meltdown starts the first person camera starts to shake giving warning; and then gets progressively worse to the point the game is not playable. 
+
+Meltdown events were fired after meltdown had occurred and been stopped. Anything that implemented the meltdown listener would be notified. This was so missions could handle meltdowns if wanted to be done in a different way instead of simply forcing the player to restart at a respawn point. It also meant that missions could give custom messages and prompt users or give hints if meltdowns were occurring too frequently.
+
+
 \subsection{Sensory Manager}
+
+Sensory objects setup in the scene and are added to the sensory manager in an arraylist. The manager looks through the arraylist and compares distance from player to these objects. If the distance is below a set threshold it is deemed within proximity to the player and is included in the sensory overload calculation, known as "Sensory points". Sensory points is a running total of how many objects are affecting the player and is deducted from $sensory health$. The state of the sensory manager would depend on this health and it would be set as NONE, MED or OVERLOAD. When the user came away from any sensory objects this health would slowly refill and effects would slowly subsidise. The type of object being set and only sound and light objects were initially implemented as there were no models to create a tactile sensory object and it wasn't deemed necessary at this point. 
+
+\subsubsection{Sensory overload algorithm}
+- need to do psydocode for this, better explaining than words which is complicated. 
 
 
 \subsection{MissionManager}

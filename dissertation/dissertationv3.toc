@@ -1,0 +1,88 @@
+\contentsline {chapter}{\numberline {1}Overview}{4}
+\contentsline {section}{\numberline {1.1}Selecting a project}{4}
+\contentsline {subsection}{\numberline {1.1.1}Results}{7}
+\contentsline {subsection}{\numberline {1.1.2}Conclusions}{9}
+\contentsline {chapter}{\numberline {2}Literature review}{10}
+\contentsline {section}{\numberline {2.1}What is Autism?}{10}
+\contentsline {section}{\numberline {2.2}Sensory Experiences}{11}
+\contentsline {section}{\numberline {2.3}Theoretical models}{13}
+\contentsline {subsection}{\numberline {2.3.1}Information processing}{13}
+\contentsline {subsection}{\numberline {2.3.2}Perceptual models}{14}
+\contentsline {section}{\numberline {2.4}Impact of Autism}{15}
+\contentsline {subsection}{\numberline {2.4.1}Impact of Autism in Schools}{15}
+\contentsline {subsection}{\numberline {2.4.2}Impact of Autism on Home}{16}
+\contentsline {section}{\numberline {2.5}Previous work}{16}
+\contentsline {subsection}{\numberline {2.5.1}Disability and mental health simulations}{16}
+\contentsline {subsection}{\numberline {2.5.2}Autism simulation and tools}{19}
+\contentsline {chapter}{\numberline {3}Participatory Design}{22}
+\contentsline {section}{\numberline {3.1}LAER Lab}{22}
+\contentsline {section}{\numberline {3.2}Interviews}{22}
+\contentsline {subsection}{\numberline {3.2.1}Methods}{23}
+\contentsline {section}{\numberline {3.3}Results}{25}
+\contentsline {section}{\numberline {3.4}Conclusions: Goals and restrictions identified}{26}
+\contentsline {chapter}{\numberline {4}Prototype: Design}{27}
+\contentsline {section}{\numberline {4.1}Game play}{27}
+\contentsline {subsection}{\numberline {4.1.1}Interface and Controls}{27}
+\contentsline {subsection}{\numberline {4.1.2}User tasks: Mission and Explore mode}{28}
+\contentsline {section}{\numberline {4.2}Simulator features}{29}
+\contentsline {subsection}{\numberline {4.2.1}Description boxes}{29}
+\contentsline {subsection}{\numberline {4.2.2}Sensory overloads}{29}
+\contentsline {subsection}{\numberline {4.2.3}Meltdowns}{30}
+\contentsline {subsection}{\numberline {4.2.4}Special interests}{30}
+\contentsline {subsection}{\numberline {4.2.5}Information processing delay}{30}
+\contentsline {section}{\numberline {4.3}Tool selection}{30}
+\contentsline {subsection}{\numberline {4.3.1}Game engines}{31}
+\contentsline {subsection}{\numberline {4.3.2}Modelling tools}{32}
+\contentsline {chapter}{\numberline {5}Prototype: Implementation}{33}
+\contentsline {section}{\numberline {5.1}Game play}{33}
+\contentsline {section}{\numberline {5.2}Implementation: technical}{40}
+\contentsline {subsection}{\numberline {5.2.1}SceneManager}{41}
+\contentsline {subsection}{\numberline {5.2.2}GUIManager}{42}
+\contentsline {subsection}{\numberline {5.2.3}ActionManager}{42}
+\contentsline {subsection}{\numberline {5.2.4}Player}{43}
+\contentsline {subsubsection}{Meltdowns}{44}
+\contentsline {subsection}{\numberline {5.2.5}Sensory Manager}{44}
+\contentsline {subsubsection}{Sensory overload algorithm}{44}
+\contentsline {subsection}{\numberline {5.2.6}MissionManager}{44}
+\contentsline {section}{\numberline {5.3}Overcoming challenges}{45}
+\contentsline {chapter}{\numberline {6}Formative evaluation: Prototype}{46}
+\contentsline {section}{\numberline {6.1}Expert feedback: LAERLab}{46}
+\contentsline {subsection}{\numberline {6.1.1}Results}{46}
+\contentsline {section}{\numberline {6.2}User feedback}{47}
+\contentsline {subsection}{\numberline {6.2.1}Results}{47}
+\contentsline {section}{\numberline {6.3}Conclusions}{50}
+\contentsline {chapter}{\numberline {7}Redesign and Implementation}{51}
+\contentsline {section}{\numberline {7.1}Storyboards}{52}
+\contentsline {section}{\numberline {7.2}House design}{53}
+\contentsline {subsection}{\numberline {7.2.1}Sounds}{55}
+\contentsline {subsection}{\numberline {7.2.2}Rewrite of scenes}{56}
+\contentsline {subsubsection}{House implementation}{57}
+\contentsline {subsection}{\numberline {7.2.3}Game state manager}{59}
+\contentsline {subsection}{\numberline {7.2.4}Sensory System improvements}{59}
+\contentsline {chapter}{\numberline {8}Formative evaluation: First version}{61}
+\contentsline {section}{\numberline {8.1}Methods}{62}
+\contentsline {section}{\numberline {8.2}Results}{63}
+\contentsline {section}{\numberline {8.3}Conclusions}{69}
+\contentsline {chapter}{\numberline {9}Summative evaluation}{71}
+\contentsline {section}{\numberline {9.1}Methods}{71}
+\contentsline {subsection}{\numberline {9.1.1}Person}{72}
+\contentsline {subsection}{\numberline {9.1.2}Online}{73}
+\contentsline {section}{\numberline {9.2}Results}{74}
+\contentsline {section}{\numberline {9.3}General discussion}{75}
+\contentsline {section}{\numberline {9.4}Conclusions}{76}
+\contentsline {subsection}{\numberline {9.4.1}Suggested future improvements}{77}
+\contentsline {chapter}{\numberline {10}Discussion and final conclusions}{78}
+\contentsline {section}{\numberline {10.1}Review of aims}{78}
+\contentsline {section}{\numberline {10.2}Limitations}{80}
+\contentsline {subsection}{\numberline {10.2.1}Evaluation and data collection}{80}
+\contentsline {subsection}{\numberline {10.2.2}Simulator}{81}
+\contentsline {subsubsection}{Sensory system}{81}
+\contentsline {subsection}{\numberline {10.2.3}Use of tools}{81}
+\contentsline {subsubsection}{JMonkey}{81}
+\contentsline {subsubsection}{Blender}{82}
+\contentsline {section}{\numberline {10.3}Future directions}{82}
+\contentsline {subsection}{\numberline {10.3.1}Scenario and scene customisability}{82}
+\contentsline {subsection}{\numberline {10.3.2}Designing for autism}{82}
+\contentsline {subsection}{\numberline {10.3.3}Difficulty setting}{83}
+\contentsline {section}{\numberline {10.4}Public response}{83}
+\contentsline {section}{\numberline {10.5}Conclusions}{83}
