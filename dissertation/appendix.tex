@@ -2,3 +2,438 @@
 
 \chapter{Summative}
 - vingettes
+
+\chapter{Prototype implementation}
+
+\section{HouseScene}
+\begin{lstlisting}
+
+public class HouseScene extends SceneManager {
+
+    public HouseScene(String houseScene, Main app) {
+        super(houseScene, app);
+    }
+
+    @Override
+    public void setupModels() {
+        setupLights();
+        setupDoors();
+        setupDescriptions();
+
+    }
+    
+    
+    public void setupLights() {
+        Iterator it = models.keySet().iterator();
+        while (it.hasNext()) {
+            String key = it.next().toString();
+            if(key.contains("lamp")) {
+                Spatial node = models.get(key);
+                addLampLight(node);
+                node.setUserData("state", true);
+                node.setUserData("sensory", "lamp");
+                System.out.println("Added light to " + key);
+                Main.getSensoryManager().addSensoryObject(node, "light");
+            }
+        }
+        
+    }
+    
+    public void setupDescriptions() {
+        addDescription("fridge", "This is a fridge and it smells");
+        addDescription("fryingpan", "Urg, the smell of this is overpowering");
+        addDescription("wardrobe", "Certain clothes can be very uncomfortable for someone with Autism. One person describes"
+                + "it as like wearing sand paper, and clothes labels feeling like sandpaper");
+        addDescription("tv", "TV Adverts: Parents be warned. If you buy a toy from an advert and it doesn't do"
+                + "exactly what the advert says, your child may be quite surprised and upset. Similarly, things on TV "
+                + "can be taken very literally and a child with autism may not know they what they see is not real.");
+        
+    }
+    
+    public void setupDoors() {
+      Iterator it = models.keySet().iterator();
+        while (it.hasNext()) {
+            String key = it.next().toString();
+            if(!key.contains("door")) 
+                continue; 
+            
+            Node door = (Node) models.get(key);
+            if(door.getName().contains("door")) {
+                DoorControl dc = new DoorControl();
+                door.addControl(dc);               
+            }
+        }
+    }
+
+    @Override
+    public void setupMaterials() {
+        Material m = new Material(am, "Common/MatDefs/Misc/Unshaded.j3md");
+        MaterialsManager.addMaterial("unshaded", m); 
+    }
+}
+
+\end{lstlisting}
+
+\chapter{First version}
+
+\section{Rewrite of scene manager}
+
+\subsection{HomeScene}
+\begin{lstlisting}
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package mygame.scene.scenes;
+
+import com.jme3.asset.AssetManager;
+import com.jme3.audio.AudioNode;
+import com.jme3.math.Vector3f;
+import com.jme3.scene.Node;
+import com.jme3.scene.Spatial;
+import java.util.ArrayList;
+import mygame.Main;
+import mygame.MainGameAppState;
+import mygame.events.GameActionEvent;
+import mygame.events.GameActionListener;
+import mygame.scene.MaterialsManager;
+import mygame.scene.Scene;
+import mygame.scene.SceneManager;
+import mygame.sensory.LightSensoryObject;
+import mygame.sensory.LightSensoryObject.LightType;
+import mygame.sensory.SensoryObject;
+
+/**
+ * Contains all the information for the home scene.
+ * @author Ashley
+ */
+public class HomeScene extends SceneManager implements GameActionListener {
+    Scene kitchen;
+    Scene livingroom;
+    Scene bedroom;
+    Scene bathroom;
+    Scene hallway;
+    
+    AssetManager am = null;
+    Main app;
+    
+    /** Bedroom sensory objects **/
+    SensoryObject bedroom_alarmSO;
+    LightSensoryObject bedroom_lampSO;
+    LightSensoryObject bedroom_ceilingSO;
+    
+    /** Bathroom objects **/
+    SensoryObject bathroom_toiletSO;
+    SensoryObject bathroom_toothBrushSO; // this is a cup atm, change to toothrbush when I get one.
+    SensoryObject bathroom_ceilingLampSO;
+    
+    /** Hallway objects **/
+    LightSensoryObject hallwayLampSO;
+    LightSensoryObject hallwayCeilingSO;
+    
+    /** Kitchen objects **/
+    LightSensoryObject kitchenCeilingSO;
+    SensoryObject washingMachineSO;
+    AudioNode drinkWater = new AudioNode();
+    LightSensoryObject fLightSO;
+    
+    /** Livingroom objects **/
+    LightSensoryObject livingroomFloorLampSO;
+    LightSensoryObject livingroomCeilingSO;
+    SensoryObject livingroomHooverSO;
+    
+    public HomeScene(Main app) {
+        super(app);
+        
+        
+        this.am = app.getAssetManager();
+        this.app = app; 
+        
+        bedroom = new Scene("bedroom", app);
+        bedroom.setSceneLoadPoint(new Vector3f(3.9f, 0.45f, 4.2f), new Vector3f(-0.99f, -0.03f, -0.04f));
+        bedroom.setScale(3f);
+        bedroom.assignSpatialActions("wardrobe", "dressed");
+        bedroom.assignSpatialThought("routine", "Routines make me feel safer!");
+        bedroom.addDescription("routine", "People with autism often have a desire for a strict routine. One minute off can throw them off.");
+               
+        bathroom = new Scene("bathroom", app);
+        bathroom.setSceneLoadPoint(new Vector3f(0.844f, 2.1f, -6.54f), new Vector3f(-0.01f, 0.04f, 0.99f));
+        bathroom.setScale(4f);
+        
+        livingroom = new Scene("livingroom", app);
+        livingroom.setSceneLoadPoint(new Vector3f(5, 4, 5), new Vector3f(-0.14f, -0.013f, -0.99f));
+        livingroom.assignSpatialActions("mill.001", "play");
+        livingroom.assignSpatialActions("mill.002", "play");
+        livingroom.assignSpatialActions("millbase", "play");
+        
+        livingroom.addDescription("lightening_poster", "Thunderstorms was one of the top listed 'Unusual fears' for children with Autism. During interviews, two people with autism explained they could literally feel the air change before a storm. "
+                + "This caused stressed for one and excitement for another. Sensory problems in Autism are unique for each individual"); 
+        
+        hallway = new Scene("hallway", app);
+        hallway.setSceneLoadPoint(new Vector3f(-9.09f, 2.04f, 5.99f), new Vector3f(-0.99f, -0.37f, 0.02f));
+        hallway.setScale(3f);
+        
+        kitchen = new Scene("kitchen", app);
+        kitchen.setSceneLoadPoint(new Vector3f(7.42f, 1.25f, 2.36f), new Vector3f(0.02f, -0.05f, -0.99f));
+        kitchen.setScale(2f);
+        
+        kitchen.assignSpatialActions("Fridge", "food");
+        kitchen.assignSpatialActions("cheese", "food");
+        kitchen.assignSpatialActions("grapes", "food");
+        kitchen.assignSpatialActions("turkeyleg", "food");
+        kitchen.assignSpatialActions("foodinbowl", "food");
+        kitchen.assignSpatialActions("lamp", "sensory");
+        
+        setMeltdownRespawn(bedroom);
+        loadScene(bedroom);        
+        addGameActionListener(this);
+        setupSensoryObjects();
+        addHouseDescriptions();
+    }
+    
+    public void addHouseDescriptions() {
+           bedroom.assignSpatialThought("dinosaur", "Play with me");
+           bedroom.assignSpatialThought("wardrobe", "Certain clothes can be very uncomfortable for someone with Autism. One person describes "
+                   + "them as like wearing sand paper, and the labels on them feeling like barbed wire.");
+           bedroom.assignSpatialThought("ceilinglamp", "Some of these lights hurt my eyes");
+           
+           livingroom.assignSpatialThought("tv", "Wow. I want a dinosaur as big as on TV! Can't wait to get him for christmas");
+           livingroom.addDescription("tv", "Literal interpretation: children with autism tend to interpret information literally. If they recieve a toy seen on TV they may not realise it does not behave in the same way. i.e toy Buzz Lightyear won't fly in real life!");
+           livingroom.assignSpatialThought("mill.001", "Oh oh oh. I like this!");
+           livingroom.assignSpatialThought("mill.002", "Oh oh oh. I like this!");
+           livingroom.assignSpatialThought("millbase", "Oh oh oh. I like this!");
+    }
+
+    /**
+     * Handles all the object actions of the scene.
+     * @param gae
+     * @return 
+     */
+    public boolean notify(GameActionEvent gae) {
+        String currentSceneName = currentScene.getName();
+        String actionSpatial = gae.getSpatial().getName();
+        Spatial actionParentSpatial = gae.getSpatial().getParent();
+        
+        // this may cause problems because it's getting the second level of nodes rather than
+        // finding them.
+        //System.out.println("Acted on spatial " + actionSpatial + " in room " + currentSceneName + ", ");
+        
+        if(currentSceneName.equals("kitchen")) {
+            if(actionSpatial.contains("door")) {
+                hallway.setSceneLoadPoint(new Vector3f(-5.18f, 2.04f, 6.9f), new Vector3f(-0.014f, -0.03f, -0.99f));
+                changeScene(hallway);
+            }else if(actionSpatial.contains("switch")) {
+                kitchenCeilingSO.doAction();
+                fLightSO.doAction();
+            }
+            //System.out.println("Action spatial " + actionSpatial);
+        }else if(currentSceneName.equals("livingroom")) {
+            if(actionSpatial.contains("door")) {
+                hallway.setSceneLoadPoint(new Vector3f(3.32f, 1.9f, -4.2f), new Vector3f(-0.01f, -0.03f, 0.99f));
+                changeScene(hallway);
+            }else if(actionSpatial.contains("switch")) {
+                livingroomCeilingSO.doAction();
+            }
+        }else if(currentSceneName.equals("bathroom")) {
+            if(actionSpatial.equals("door")) {
+                hallway.setSceneLoadPoint(new Vector3f(12.7f, 2.01f, 4.2f), new Vector3f(0.216f, -0.03f, 0.976f));
+                changeScene(hallway);
+            }else if(actionSpatial.contains("toilet")) {
+                bathroom_toiletSO.doAction();
+            }else if(actionSpatial.contains("switch")) {
+                bathroom_ceilingLampSO.doAction();
+            }
+            
+        } else if(currentSceneName.equals("bedroom")) {
+             if(actionSpatial.equals("door")) {
+                 hallway.setSceneLoadPoint(new Vector3f(21.9f, 1.9f, 5.7f), new Vector3f(-0.99f, -0.37f, 0.02f));
+                changeScene(hallway);             
+             } else if(actionSpatial.contains("clock") || actionParentSpatial.getName().contains("clock")) {
+                 System.out.println("Acting on clock");
+                 bedroom_alarmSO.doAction();               
+             } 
+             
+             if(actionSpatial.contains("switch")) {
+                 bedroom_ceilingSO.doAction();
+             }
+             
+        } else if(currentSceneName.equals("hallway")) {
+            if(actionSpatial.contains("door")) {
+                String actionSpatialID = actionParentSpatial.getParent().getName(); 
+                System.out.println("Action ID spatial is " + actionSpatialID);
+                if(actionSpatialID.contains("living")) 
+                    changeScene(livingroom);
+                else if(actionSpatialID.contains("kitchen")) {
+                    changeScene(kitchen);
+                } else if(actionSpatialID.contains("bath")) {
+                    changeScene(bathroom);
+                } else if(actionSpatialID.contains("bedr")) {
+                    changeScene(bedroom);
+                }
+            }
+            
+            if(actionSpatial.contains("switch")) {
+                // this helps deal with differing linked objects
+                String actionSpatialID = gae.getSpatial().getParent().getParent().getName(); 
+                if(actionSpatialID.contains("lam")) {
+                    if(hallwayLampSO == null) {
+                    } else {
+                        hallwayLampSO.doAction();
+                    }
+                } else { // it's just the normal switch. Two switches in the room so need to differentiate. 
+                    hallwayCeilingSO.doAction();
+                }
+            }else if(actionSpatial.contains("tap")) {
+                MainGameAppState.getMyPlayer().eat(null);
+            }
+            
+            
+        } 
+        return false;
+    }
+    
+    /**
+     * Sets up all sensory objects in the scene and assigns their properties.
+     **/
+    public void setupSensoryObjects() {
+        // ****** Livingroom sensory objects *******/
+        Spatial floorLamp = livingroom.getSpatial("Floor lamp");
+        if(floorLamp != null) {
+            livingroomFloorLampSO = new LightSensoryObject(floorLamp, "Inside screen2", null, MaterialsManager.getMaterial("transparent"), LightType.STANDARD);
+            livingroomFloorLampSO.setUpperLevel(SensoryObject.SensoryState.LOW);
+            livingroom.addSensoryObject(livingroomFloorLampSO);
+            livingroom.addLampLight(floorLamp);
+            livingroomFloorLampSO.setLight(true);
+        }
+        
+        Spatial livingroomCeilingLamp = livingroom.getSpatial("ceilinglamp");
+        if(livingroomCeilingLamp != null) {
+            livingroomCeilingSO = new LightSensoryObject(livingroomCeilingLamp, LightType.STANDARD);
+            livingroomCeilingSO.setUpperLevel(SensoryObject.SensoryState.LOW);
+            livingroom.addSensoryObject(livingroomCeilingSO);
+            livingroom.addLampLight(livingroomCeilingLamp);
+        }
+        
+        Spatial hoover = livingroom.getSpatial("hoover");
+        if(hoover != null) {
+            livingroomHooverSO = new SensoryObject(hoover, false, SensoryObject.SensoryType.SOUND_SWITCH, SensoryObject.SensoryState.NONE);
+            livingroomHooverSO.setUpperLevel(SensoryObject.SensoryState.HIGH);
+            AudioNode hooverNoise = new AudioNode(am, "Sounds/vax.ogg", false); 
+            livingroomHooverSO.addSound(hooverNoise, (Node) hoover);
+            livingroom.addSensoryObject(livingroomHooverSO);
+        }
+        
+        // ******* Bedroom object setup *******/
+        Spatial alarmClock = bedroom.getSpatial("clockface");
+        if(alarmClock != null) {
+            bedroom_alarmSO = new SensoryObject(alarmClock, false, SensoryObject.SensoryType.SOUND_TEMP, SensoryObject.SensoryState.NONE);
+            bedroom_alarmSO.setUpperLevel(SensoryObject.SensoryState.HIGH);
+            AudioNode bell = new AudioNode(am, "Sounds/bell.ogg", false);
+            bedroom_alarmSO.addSound(bell, (Node)alarmClock);
+            bedroom.addSensoryObject(bedroom_alarmSO);
+            
+            // not the best way to get around the spatial having seperate parts.
+            // this assigns it type sensory so it will fire through the action manager.
+            // and we can handle it within this class.
+            bedroom.assignSpatialActions("clock_body", "sensory");
+        }
+        
+        Spatial bedroomLamp = bedroom.getSpatial("lamp");
+        if(bedroomLamp != null) {     
+            bedroom_lampSO = new LightSensoryObject(bedroomLamp, LightType.STANDARD);
+            bedroom_lampSO.setUpperLevel(SensoryObject.SensoryState.NONE);
+            bedroom.addSensoryObject(bedroom_lampSO);
+            bedroom.addLampLight(bedroomLamp);
+            
+        }    
+        
+        Spatial bedroomCeilingLamp = bedroom.getSpatial("ceilinglamp");
+        if(bedroomCeilingLamp != null) {
+            bedroom_ceilingSO = new LightSensoryObject(bedroomCeilingLamp, LightType.STANDARD);
+            bedroom_ceilingSO.setUpperLevel(SensoryObject.SensoryState.LOW);
+            bedroom.addSensoryObject(bedroom_lampSO);
+            bedroom.addLampLight(bedroomCeilingLamp);
+            
+        }
+        
+        // ******** Bathroom setup ********/
+        Spatial toilet = bathroom.getSpatial("toilet");
+        if(toilet != null) {
+            AudioNode flush = new AudioNode(am, "Sounds/toilet.ogg", false);
+            bathroom_toiletSO = new SensoryObject(toilet, false, SensoryObject.SensoryType.SOUND_TEMP, SensoryObject.SensoryState.NONE);
+            bathroom_toiletSO.setUpperLevel(SensoryObject.SensoryState.HIGH);
+            bathroom_toiletSO.addSound(flush, (Node)toilet);
+            bathroom.addSensoryObject(bathroom_toiletSO);
+        }
+        
+        Spatial toothbrush = bathroom.getSpatial("toothbrush");
+        if(toothbrush != null) {
+            bathroom_toothBrushSO = new SensoryObject(toothbrush, false, SensoryObject.SensoryType.SOUND_TEMP, SensoryObject.SensoryState.NONE);
+            bathroom_toothBrushSO.setUpperLevel(SensoryObject.SensoryState.MED);
+            bathroom_toothBrushSO.addSound(new AudioNode(am, "Sounds/brushteeth.ogg", false), (Node)toothbrush);
+            bathroom.addSensoryObject(bathroom_toothBrushSO);
+        }
+        
+        Spatial bathroomCeilingLamp = bathroom.getSpatial("ceilinglamp");
+        if(bathroomCeilingLamp != null) {
+            bathroom_ceilingLampSO = new LightSensoryObject(bathroomCeilingLamp, LightType.STANDARD);
+            bathroom.addSensoryObject(bathroom_ceilingLampSO);
+            bathroom.addLampLight(bathroomCeilingLamp);
+        }
+        
+        // ********* Hallway ********/
+        Spatial hallwayLamp = hallway.getSpatial("lamp");
+        if(hallwayLamp != null) {
+            hallwayLampSO = new LightSensoryObject(hallwayLamp, LightType.STANDARD);
+            hallwayLampSO.setUpperLevel(SensoryObject.SensoryState.HIGH);
+            hallway.addSensoryObject(hallwayLampSO);
+            hallway.addLampLight(hallwayLamp);
+            hallwayLampSO.setLight(false);
+        }       
+        
+        Spatial hallwayCeilingLamp = hallway.getSpatial("ceilinglamp");
+        if(hallwayCeilingLamp != null) {
+            hallwayCeilingSO = new LightSensoryObject(hallwayCeilingLamp, LightType.STANDARD); 
+            hallwayCeilingSO.setUpperLevel(SensoryObject.SensoryState.LOW);
+            hallway.addSensoryObject(hallwayCeilingSO);
+            hallway.addLampLight(hallwayCeilingLamp);
+        } 
+        
+        // ********** Kitchen *********/
+        Spatial kitchenCeilingLamp = kitchen.getSpatial("ceilinglamp");
+        if(hallwayCeilingLamp != null) {
+            kitchenCeilingSO = new LightSensoryObject(kitchenCeilingLamp, LightType.STANDARD); 
+            kitchenCeilingSO.setUpperLevel(SensoryObject.SensoryState.NONE);
+            kitchen.addSensoryObject(kitchenCeilingSO);
+            kitchen.addLampLight(kitchenCeilingLamp);
+        } 
+        
+        Spatial washingMachine = kitchen.getSpatial("Washer");
+        if(washingMachine != null) {
+            washingMachineSO = new SensoryObject(washingMachine, false, SensoryObject.SensoryType.SOUND_SWITCH, SensoryObject.SensoryState.NONE);
+            washingMachineSO.setUpperLevel(SensoryObject.SensoryState.MED);
+            AudioNode wash = new AudioNode(am, "Sounds/washingmachine.ogg", false);
+            washingMachineSO.addSound(wash, (Node) washingMachine);
+            kitchen.addSensoryObject(washingMachineSO);
+        }
+        
+        Spatial fluLight = kitchen.getSpatial("flurescentlight");
+        if(fluLight != null) {
+            fLightSO = new LightSensoryObject(fluLight, LightType.FLIGHT);
+            fLightSO.setUpperLevel(SensoryObject.SensoryState.MED);
+            kitchen.addSensoryObject(fLightSO);
+            kitchen.addLampLight(fluLight);
+        }
+        
+        
+    }
+    
+    public ArrayList<GameActionEvent> getCustomGameActionEvents() {
+        ArrayList<GameActionEvent> gameActions = new ArrayList<GameActionEvent>();
+        return gameActions;
+    }
+    
+}
+
+\end{lstlisting}
+

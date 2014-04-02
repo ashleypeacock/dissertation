@@ -1,10 +1,39 @@
-\chapter{Discussion}
+\chapter{Discussion and final conclusions}
 
 The overall project started by selecting the project; through speaking to professionals at the ADDISS conference and after the initial selection through interviews this was reduced these to a set of goals.  
 From this a prototype version was created and formally evaluated by experts in the field as well as parents of children autism and people with autism themselves. Following feedback and identified changes stories were created with consultation from someone with autism whom also recorded many of the sounds that were used.
 The first version was subsequently created although due to performance issues the redesign was much greater than anticipated; not only was there substantial changes to the code the entire house required remodelling on an even greater level than before. 
-Formative evaluations were then conducted to target potential game play problems and to create a project that could be "picked up and played" with minimal materials and instructions required such that people were able to learn mostly from experience, trial and error and trying out different strategies. This was an iterative process to identify which problems were frequently appearing and through the formative process it is felt that improvements in participants were seen in terms of their ability to primarily focus on the simulator and learning goals rather than game-play elements. 
-Following this a summative evaluation was conducted with teachers and people from an education background to see if there was an overall improvement in understanding of autism. However owing many came from autism backgrounds not much of an improvement was seen although understanding definitely was not made worse.
+Formative evaluations were then conducted to target potential game play problems and to create a project that could be "picked up and played" with minimal materials and instructions required such that people were able to learn mostly from experience, trial and error and trying out different strategies. This was an iterative process to identify which problems were frequently appearing and through the formative process it is felt that improvements in participants were seen in terms of their ability to primarily focus on the simulator and learning goals rather than game-play elements. Following this a summative evaluation was conducted with teachers and people from an education background to see if there was an overall improvement in understanding of autism. However owing many came from autism backgrounds not much of an improvement was seen although understanding definitely was not made worse.
+
+\section{Review of aims}
+
+Does the project reach its goals?
+\begin{enumerate}
+\item Can a simulator be developed that is successful in allowing users to play as an autistic child and thereby experience some of the difficulties/obstacles faced?
+\item How was a particular focus on sensory difficulties built in to this?
+\item Does the game allow the user to obtain some useful information on how possible household items/situations can trigger sensory problems, as well as how a child with autism might cope with these?
+\item Does the simulator increase understanding and awareness of autism and the difficulties faced?
+\end{enumerate}
+
+\subsection*{Aim 1}
+A simulator was created with the goals of allowing users to play as a child with autism and came with experiencing some of the specifically, sensory difficulties faced. Apart from the height of the character in relation to the rest of the game however and the special interest of a dinosaur not much particularly distinguishes the simulation from an adult with autism. Most information in sensory difficulties was obtained from adults whom are better adapted to dealing with these. Research would be required to give a better all around representation of how a child might deal with these, possibly including perceived sensory alleviating features such as repetitive movements and behaviours.  
+
+\subsection*{Aim 2}
+Sensory difficulties were given the most attention both during development and throughout game play. It is the only aspect which the user really experiences; other aspects of autism are explained by using description boxes which should give additional information to those whom want it but are not the most salient aspect. 
+
+\subsection*{Aim 3}
+The user can obtain useful information on how possible household objects can trigger sensory problems by experiencing them or acquiring information from description boxes:
+
+Sensory overloads are conveyed with visual distortions, lights get brighter and more obtrusive and for sounds direct recordings of sounds are used with a high volumne although the user can of course turn these down if they are too problematic. Some senses were implemented by using descriptions and thoughts such as smell or food textures so when the user tries to eat cheese or chicken thoughts appear of their dislike. Tactile representations were added such as the toothbrush and action of getting dressed; however it is felt more needs to be done to represent this and the "getDressed" needs better explaining, a better hint or a more obvious animation such as the wardrobe opening.
+
+The simulator conveys the effects of sensory overloads by an implementation of meltdowns in two ways; freeze and fight. Freeze was a suggestion from someone with autism and was later chosen not to be used in the public release as it was uncertain if this aspect had been accurately translated. A person with autism suggested this could happen during sensory overloads and because they could not move it would lead to a meltdown rather than freezing being a direct response to a meltdown. 
+
+Finally in terms of learning about how a child may deal with these problems, the morning routine gives some indication and explanation that routines are an important feature of autism to alleviate the problem but it is felt more can be done. Much of the simulator is left for the user to think of their own conclusions and strategies by discovery; there is no explicit hint given that users could walk around looking at the ground to alleviate light sensory problems.
+
+
+\subsection*{Aim 4}
+Although conclusions from the summative evaluation suffer from the ceiling effect there is evidence of at least some of an increase in understanding of autism. The aim is unfortunately only partially achieved and it is felt that more research is required, ideally not with people whom come from having had experience with autism. By making a website available and having the system readily accessible this should aid increasing awareness of autism and as later expressed in \ref{sec:publicresponse}, the website received a large amount of viewers in the space of a few days. However, the aim of putting this completely online so users would not have to download it was not reached as it was not possible to protect the source code due to problems with obfuscation. However, the project could possibly be made open source at a later date.
+
 
 \section{Limitations}
 
@@ -47,13 +76,22 @@ Unity would definitely have obtained similar results far quicker and with much, 
 Blender was a fantastic program to use and is widely used by professionals. It did have an exceptionally steep learning curve and time is regretted to have been spent on sketchup in the prototype state when it could have been spent learning to use this and made modelling quicker in the second year of this project. Far too much time was spent on the prototype finding models which could be used and then spending a large amount of time trying to clean them up so they could be imported into JMonkey and it is felt this time would also have been much better spent on learning blender. The new living room took three days to model however when it came to the kitchen which was much more detailed this was done in only 3 hours due to increased experience.
 
 \section{Future directions}
+In addition to suggested future improvement in the summative and formative: additional work is required for sound sensory. Pre-recorded sounds not that were not fully implemented in the first version need to be implemented and some additional ones need to be recorded such as sounds outside such as cars or dogs when walking around the house. Particle emitters were implemented from the prototype although not directly used in the final version. This was because feedback on the use of these was desired and owing people with autism expressed already "the sound is very accurate" it was decided not to include these and was left for a future question and improvement. 
 
-More sounds need to be recorded and combined so that the user can hear sounds outside such as cars or dogs when walking around the house. 
+Improving animations; some users expressed they expected the door of the wardrobe to open although there was no need to implement this and a representation of getting dressed was indicated by the images more realistic animations and interactions at a later date are advised to create a further immersive environment. For example making the dinosaur move instead of simply rotation. 
 
+Further interactions of items without explicitly having to interact with them; i.e looking at the windmill and if the user tries to look away the camera is brought back to it. Thus directing the in-game players attention will be difficult to completely control.  
 
+Breaking down explore mode and having both an explore mode and a tutorial mode. Due to time explore mode became a bit more like a tutorial mode although the two were never fully separated and combined. 
+
+Interface needs further improving as thoughts are still not obvious. The tool tip which has been centred under the cross hair is a large improvement however it still needs to be further obvious. 
 
 \subsection{Scenario and scene customisability}
-More scenarios and stories need to be created and I feel that having now completed the original process and story I am better equipped to know which questions specific information needs to be requested in interviews or generally when designing the next phases. What has been additionally created is a platform for people to get support and create their own scenarios and situations however further compartmentalisation of missions from the rest of the system and better documentation is needed. Ideally it would be good to test this with a few computer scientists before releasing it.
+More scenarios and stories need to be created and I feel that having now completed the original process and story I am better equipped to know which questions specific information needs to be requested in interviews or generally when designing the next phases. 
+
+In game characters could have obscure body language or skills could be acquired as missions go on, i.e acquiring "stimming" as an action that can be used as long as the parent is not in the room(otherwise they are asked to stop and this results in another drop in contentment instead of increasing it).
+
+What has been additionally created is a platform for people to be able to create their own scenarios and situations however further compartmentalisation of missions from the rest of the system and better documentation is needed. Ideally it would be good to test this with a few computer scientists before releasing it.
 
 \subsection{Designing for autism}
 There needs to be options to turn on and off sensory overload effects and and aspects such as the fluorescent lights which could cause major problems for some users and  potentially hinder feedback from those with autism whom struggled to play due to causing them sensory overloads although none specified they could not play it at all - just with a bit of difficulty. 
@@ -61,7 +99,7 @@ There needs to be options to turn on and off sensory overload effects and and as
 There also needs to be more thought in terms of designing the system for people with autism so they can give feedback. The website in some places was found to be confusing with specific information not being given. Such lead to fantastic feedback although individuals reported being confused of content, layout with a more specific explanation of the projects aims and goals:
 
 \begin{quote}
-I learned a bit about what it might feel like to have sensory issues but not sure if I learned anything about autism. I would imagine that people who do not have autism but have sensory issues will suffer similarly. You are focusing on symptoms that some people with autism have but others do not.
+I learned a bit about what it might feel like to have sensory issues but not sure if I learned anything about autism. I would imagine that people who do not have autism but have sensory issues will suffer similarly. You are focusing on symptoms that some people with autism have but others do not. ~ Adult with aspergers syndrome
 \end{quote}
 
 In addition to allowing customisation to enable access to a wider audience, people with autism could customise the system to mimic their individual experiences and from this we could draw conclusions with machine learning techniques on how people with autism generally experience sensory difficulties without needing required skills to create their own scenarios if they could adjust settings to make it more realistic to how it is for them and have this information sent for analysis.
@@ -69,15 +107,16 @@ In addition to allowing customisation to enable access to a wider audience, peop
 \subsection{Difficulty setting}
 People could answer questions depending on their autism experience and their gaming experience and a difficulty would be set. I feel this would offer something better than simply "easy", "medium" or "hard". Formatives were mostly with people whom had gaming experience so more tests needs to be done on people whom do not.
 
+\subsection{Further research}
+A questionnaire for users after playing to see which aspects are being successfully conveyed with more stories or vignettes or an entirely different approach. 
+
+
 \section{Public response}
+\label{sec:publicresponse}
 The feedback so far has been overwhelmingly positive. Inspite of only emailing around a few people in attempt to get feedback online and not advertising on youtube or twitter but simply asking others to forward information to others they may know, the website reached 1500 hits in the space of a few days. This result alone I feel demonstrates the wide need and interest and need of such a project. 
 
 \begin{quote}
-"The influence of other people talking, or interacting, would be a really useful addition as that is how teachers/trainers etc can learn about how their own interaction affects those with autism. The statements at the bottom of the screen built up until they covered almost half the screen which was also off-putting. Overall this is a genius idea, really useful and I think it could be really good for those working with ASD children and adults (you could also have a child and adult version - are there differences?)" - Feedback from an experience autism support working during the summative.
-\end{quote}
-
-\begin{quote}
-"Watching the video I felt empowered and more comfortable voicing it. Years ago I was institutionalised. I tried to explain that I felt I was being sucked into an alternative universe. They took that as I was crazy but I wasn't, it was the feeling caused by a sensory overload and no-one understood. I never knew that at the time and I never knew how to explain it. If I had something like this back then I feel it would have helped me also understand myself. All I want to do now is go and give this to them and say "Look! This is what was happening!" - Anonymous feedback from an adult with autism.
+"Watching the video I felt empowered and more comfortable voicing myself. Years ago I was institutionalised. I tried to explain that I felt I was being sucked into an alternative universe and they took that as I was crazy but I wasn't it was the feeling caused by a sensory overload and no-one understood. I never knew that at the time and I never knew how to explain it. If I had something like this back then I feel it would have really helped. All I want to do now is go and give this to them and say "Look! This is what was happening!" - Anonymous feedback from an adult with autism.
 \end{quote}
 
 \begin{quote}
@@ -85,16 +124,8 @@ The feedback so far has been overwhelmingly positive. Inspite of only emailing a
 \end{quote}
 
 \section{Conclusions}
-This was an extremely large project that had a lot of trepidation on whether it was possible given the time restraints. It was also a project that required multiple roles; a researcher, a graphics designer and artist to create the 3d models and images, and a programmer; skills that are separate in the game programming industry. Some more ambitious initial plans were unfortunately dropped however, the system developed is a solid platform with a modular architecture and is already in a state in which people could design their own scenarios and tasks now; although better documentation is definitely required. 
+Goals 1-3 to have been clearly met, however, it cannot be convincingly concluded that the 4th and more research is required. 
 
-I have been in an ideal and very fortunate position to create this with having family members on the autistic spectrum, a few summers as a carer of children with autism and supervisors with a lot of experience in designing learning adaptive environments and autism technology.
+This was an extremely large project that had a lot of trepidation on whether it was possible given the time restraints. It was also a project that required multiple roles; a researcher, a graphics designer and artist to create the 3d models and images, and a programmer; skills that are separate in the game programming industry. Some more ambitious initial plans were unfortunately dropped however, the system developed is a solid platform with a modular architecture and is already in a state in which people could design their own scenarios and tasks now; although better documentation is definitely required. Very fortunate position to create this with having family members on the autistic spectrum and supervisors with a lot of experience in designing learning adaptive environments and specifically autism technology.
 
-From the virtual reality conference there was a large portion of negativity surrounding the use of virtual reality the the effect on personhood. But, I think this project has shown that virtual reality and games really do have a lot to offer and this perspective isn't always just.
-
-There was little research into the success of using simulations to aid understanding of neurological conditions, but this project has shown that visual simulations have the potential to be an extremely successful tool.
-
-
-
-
-
-
+From a virtual reality conference held in Edinburgh by the Albertus Institute(January, 2014) there was quite a lot of negativity surrounding the use of virtual reality and the effects this can have on personhood such as becoming too attached to in-game characters. The risk of this in relation to this project is that if the users experience too many negative attributes of autism of take the simulator too literally they may leave feeling pity. However, overall I feel this project has given some indication that virtual reality and games really do have a lot of positives to offer; there was little research documenting the success of using simulations to aid understanding of neurological conditions, but this project has shown that visual simulations have at least the potential to be an extremely successful tool.

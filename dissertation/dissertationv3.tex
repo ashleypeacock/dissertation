@@ -14,15 +14,15 @@
 
 \chapter{Overview}
 
-The projected started by firstly creating and considering various project proposals that may benefit people with ADHD or Autism. Following this, research and feedback aided the selection of the project an "Autism Simulator" whereby the user plays as a child with Autism and gets to experience some of the difficulties, specifically sensory related difficulties through their eyes. Consultation with the Learning and Adaptive Environment Research(LAER lab) in addition to interviews with people on the Autistic spectrum, professionals and school teachers further solidified this selection and gave indication of the challenges faced as to inform design choices and goal selection. A prototype of the simulator was created using a game engine to quicken development and the project was evaluated by the LAER group with an additional evaluation in the form of an on-line survey where participants were able to view a video demo of the simulator and give feedback. The first playable version was subsequently created after an extensive re-write and addition. A final formative evaluation was conducted with various students to aid game-play decisions and improvements before a summative evaluation was completed by various members of the university involved in education. 
+The projected started by firstly creating and considering various project proposals that may benefit people with ADHD or Autism. Following this, research and feedback aided the selection of the project an "Autism Simulator" whereby the user plays as a child with Autism and gets to experience some of the difficulties, specifically sensory related difficulties through their eyes. Consultation with the Learning and Adaptive Environment Research(LAER lab) in addition to interviews with people on the Autistic spectrum, professionals and school teachers further solidified this selection and gave indication of the challenges faced as to inform design choices and goal selection. A prototype of the simulator was created using a game engine to quicken development and the project was evaluated by the LAER group with an additional evaluation in the form of an on-line survey where participants were able to view a video demo of the simulator and give feedback. The first playable version was subsequently created after an extensive re-write and addition. A final formative evaluation was conducted with various students to aid game-play decisions and improvements before two similar evaluations were carried out; one online and one in person and was completed by various members of the university involved in education. \\
 
-Below is a summary of the projects overall aims and goals which are further discussed and identified in \ref{goalsandrestrictions}:
-\textbf{Questions:}
+Below is a summary of the projects overall aims and goals which were further discussed and identified in \ref{goalsandrestrictions}:\\
+\textbf{Questions:}\\
 \begin{enumerate}
-\item Can a simulator be developed that allows users to play as an autistic child and thereby experience some of the difficulties/obstacles faced?
-\item How might a particular focus on sensory difficulties be built in to this?
-\item Does the game allow the user to obtain some useful information on how possible household items/situations can trigger sensory problems, as well as how a child with autism might cope with these
-\item Does the simulator increase understanding and awareness of autism and the difficulties faced.
+\item Develop a simulator that allows users to play as an autistic child and thereby experience some of the difficulties/obstacles faced
+\item Focus on sensory difficulties but include some other information about autism.
+\item Allow the user the ability to obtain useful information on how possible household items/situations can trigger sensory problems as well as how a child with autism might cope with these.
+\item Increase understanding and awareness of autism and the difficulties faced.
 \end{enumerate}
 
 \section{Selecting a project}
@@ -457,9 +457,9 @@ Due to the complexity of conveying social and communication problems it was deci
 Project goals and aims were identified as:
 
 \begin{enumerate}
-\item Developed that allows users to play as an autistic child and thereby experience some of the difficulties/obstacles faced
+\item Develop a simulator that allows users to play as an autistic child and thereby experience some of the difficulties/obstacles faced
 \item Focus on sensory difficulties but include some other information about autism.
-\item Give the user to obtain some useful information on how possible household items/situations can trigger sensory problems, as well as how a child with autism might cope with these.
+\item Allow the user the ability to obtain useful information on how possible household items/situations can trigger sensory problems as well as how a child with autism might cope with these.
 \item Increase understanding and awareness of autism and the difficulties faced.
 \end{enumerate}
 
@@ -869,15 +869,72 @@ Meltdown events were fired after meltdown had occurred and been stopped. Anythin
 
 \subsection{Sensory Manager}
 
-Sensory objects setup in the scene and are added to the sensory manager in an arraylist. The manager looks through the arraylist and compares distance from player to these objects. If the distance is below a set threshold it is deemed within proximity to the player and is included in the sensory overload calculation, known as "Sensory points". Sensory points is a running total of how many objects are affecting the player and is deducted from $sensory health$. The state of the sensory manager would depend on this health and it would be set as NONE, MED or OVERLOAD. When the user came away from any sensory objects this health would slowly refill and effects would slowly subsidise. The type of object being set and only sound and light objects were initially implemented as there were no models to create a tactile sensory object and it wasn't deemed necessary at this point. 
+\begin{enumerate}
+\item Sensory health
+\item Sensory state: state of senses and objects around that are affecting. Has three states: LOW, MED, OVERLOAD which the Player class uses to determine which sensory effects or filters need to be used.
+\item ArrayList: containing all the added sensory objects that may affect us, added by scenes or the scene manager (in the case of items being automatically added by spatial name). 
+\item SensoryState: sensory state calculated depending on the value of sensory health. 
+\end{enumerate}
+
+Overall sensory state is calculated depending on the value of sensory health. Calculation of sensory health is initially set to a maximum of 100 and is reduced depending on the calculation of sensory points and the reduction occurs during the main game loops. Sensory points calculation is explained in greater detail in \ref{sec:prototypesensoryoverloadalgorithm}.
+
+\begin{lstlisting}
+SensorySensoryState getSensoryState() {
+	if(sensoryHealth < 40)
+		return SensoryState.OVERLOAD
+	if(sensoryHealth < 70)
+		return SensoryState.MED
+	return SensoryState.NONE;
+}
+\end{lstlisting}
+
+if the state is set to Overload: player class will then apply gaussian and bloom filters
+If the state is set to MED: Player class will apply bloom filter which makes lights and the surrounding environment much louder
+If state is NONE: filters are removed if in effect
+
 
 \subsubsection{Sensory overload algorithm}
-- need to do psydocode for this, better explaining than words which is complicated. 
+\label{sec:prototypesensoryoverloadalgorithm}
+Objects within a set distance threshold are taken with the threshold set by the sensory manager. The distance measure was arbitrarily set.
 
+\begin{lstlisting}
+float getAffectingWeight(Spatial s) {
+        Vector3f obj = s.getWorldTranslation();
+        float dist = player.getLocation().subtract(obj).length();
+        if(dist < distanceAffecting) {
+            return (distanceAffecting / dist)
+        }       
+        return 0
+    }
+\end{lstlisting}
+
+Weights are then accumulated to give "sensoryPoints". Sensory health is then reduced by the point score and sensory points are additionally adjusted depending on the players current contentment. If contentment is low sensory points will be greater and thus the reduction in sensory health is greater. If the player is stimming or interacting with a special interest sensory points are reduced. If it accumulates to give a negative number, sensory health will increase.
+
+\begin{lstlisting}
+float getSensoryPoints() {       
+        sensoryPoints = getTotalAffectingWeight();
+        
+        float health = player.getHealth();
+            if(health <= 75 && health > 50) {
+                sensoryPoints = 2 * sensoryPoints;
+            } else if(health <= 50 && health > 25 ) {
+                sensoryPoints = 3 * sensoryPoints;
+            } else if(health <= 25) {
+                sensoryPoints = 4 * sensoryPoints;
+         }
+        
+        if(player.isPlaying() || player.isStimming()) {
+            sensoryPoints -=4;
+        }       
+        return sensoryPoints;
+        
+    }
+\end{lstlisting}
+
+The thresholds and the design was used to allow a sensory overload to be conveyed accumulative as was conveyed in video in literature review of the simulation of person with autism walking down the street and how they experienced the world. Thus if lights started to get brighter, the user could move away and prevent a full sensory overload. Finally, it means that severity of the sensory overload(and how far sensory health has been reduced) will affect how long it will take the player to recover and have the on screen affects reduced. Discussion and justificaton od sensory design decisions can be seen in \ref{p_imp_discussion}
 
 \subsection{MissionManager}
-The mission manager keeps track the current mission played, missions completed and all subsequent missions. Once a mission has been complete it will select the next one in the ArrayList. 
-
+The mission manager keeps track the current mission played, missions completed and all subsequent missions. Once a mission has been complete it will select the next one in the ArrayList. Weights of how much a sensory object affects the user: calculated using a distance measure. Objects further are assigned less of a weight than object closer. It does not take into account the type of object; for example if a certain noise or sound causes the individual more of a problem than others. Light and sound are all treated in the same way.
 
 \subsubsection*{Missions}
 Missions are AbstractAppStates and once loaded by the missions manager has defined game logic that comes into effect but only fur the duration of a specific mission. 
@@ -893,9 +950,10 @@ Missions must implement three methods:
 
 In addition missions can define custom actions on objects which may only be applicable when the mission is active, e.g, get a drink, get dressed, ask Mum for help by implementing the GameActionListener. Task classes set the conditions for completion such as player the player must be holding a drink or be dressed and on completion the next task is selected and displayed to the user. One of the benefits of missions and tasks comes with testing; specific tasks can be selected and tested and it thus does not require playing an entire story to get to the parts that are required.
 
-\section{Overcoming challenges}
-
-// hmm, maybe move this to a discussion section? Pretty sure there's more I can yap on about here. 
+\section{Discussion}
+\label{sec:p_imp_discussion}
+There are some anticipated problems with the sensory overload algorithm, the main one being that by using discrete thresholds it reduces flexibility. In addition objects in different rooms if within the threshold still affect the sensory system and thus lights in other rooms if close to the walls of these rooms would still affect the player. 
+However, the main purpose of the prototype is to acquire and overall bigger picture of accuracy of sensory overloads by being able to present and get feedback on the process rather than specific details. The sensory system thus needs rethinking for the first version to allow greater flexibility, take into account differing sensory object types(light, sound, tactile) and allowing individual sensory objects to set weights on how much these objects affect the user thus, alarms can be set to affect the user more than a tap dripping for example; this level of customisation is required as different people with autism are affected by sensory objects in a different way. Some take enjoyment from certain sounds that others fear. 
 
 At the start of the project significant amounts of time were spent trying to import rather than create models. It was a tedious task because small changes to the models required the whole house scene to be remade in JMonkey or
 time had to be spent on editing models better work with JMonkeys import system. It also became evident from using Blender that it has a very steep learning curve and is a tool which can take some considerable time to master.
@@ -1031,25 +1089,35 @@ Game play: remove mouse for controlling the camera and allow simple arrow direct
 
 Interface: User instructions for the start of the game need to be implemented as well as menu's and options for enabling or disabling certain sensory effects as viewers with autism commented they found it difficult to watch as it was causing them to have a sensory overload. 
 
-\chapter{Redesign and Implementation}
-Large parts of the system were rewritten and improved upon such as the GUI and sensory manager. The benefits resulted in simplification of use at the higher level (such as implementing storyboards) and a better representation of the causes of sensory overloads.
+\chapter{First version}
+The main focus of the new implementation was to 
 
-Selecting actions to interact with objects is now less intrusive. Prior a menu would pop up and prompt the user to make a selection with their mouse which will now only happen if there are multiple options. With the removal of description boxes, thoughts are now displayed at the bottom of the screen when to user is looking at a specific object.
+\begin{enumerate}
+\item Improve performance
+\item Improve the game play experience
+\item Further modularisation and design for reusable code whilst improving easy of development. 
+\end{enumerate}
+
+Large parts of the system were rewritten and improved upon such as the GUI, sensory manager, scene manager. The benefits resulted in simplification of use at the higher level (such as implementing storyboards) and a better representation of the causes of sensory overloads.
 
 Performance issues which were not previously too severe now required direct attention. The game requires a frame rate of 30fps(frame per second) or above in order to be fluent and played without lag. Scenes are required to have a maximum of 100k vertices(from models) with an average of 10-50k. Each pointlight(which is a light the user can turn on/off) used requires the scene to be rendered again and so the number of vertices double with each point light used. Thus, even when keeping within the limits, the amount of lights being used in the game was pushing it to well over a million and the frame frequently dropped below the desired threshold. This was occurring on a computer with a decent processor and graphics card, thus playing on a low-powered machine would not be a good experience.  
 
-Having originally taken a large amount of models from other websites and using programs such as sketchup to aid quicker development, these were found to be inefficient at runtime. Efforts therefore were spent on re-learning the details of blender and what is required to make lightweight game models. 
-
-Where previously the entire house modelled and then imported, the solution to the above problem was to split the house into individual rooms/scenes. When the user then clicks a door, the required scene is loaded very quickly. This approach allows for inclusion of more detailed models within each scene as each scene is only a small room. The problems to performance caused by point lights is then reduced as it is only rendering a single room again, not the entire house. 
-
-Further benefits from compartmentalising the house into rooms arose for dealing with the model pipeline. It became much easier to create individual models and link them into the scene, so if the model needed to be edited it could be without requiring the pain of reimporting and fixing textures or materials. 
+Previously a large amount of models from other websites such as blendswap.com with using programs such as sketchup were used to further quicker development but these were found to be exceptionally inefficient at runtime due to the number of vertices. Efforts were spent on improving skills in Blender and what was required to make lightweight game models and as the whole house needed to be recreated, from previous experience too much time was spent on attempting to find models and thus it was decided to do virtually all of this personally so if any further problems arose I would be better equipped to deal with them. Where previously the entire house was modelled and imported, the solution to the above problem was to split the house into individual rooms/scenes with doors that would load unload the current scene and load the next one. Problems to performance caused by point lights is reduced as a single room only needs to be rendered again and not the entire house and this approach further allows for more detailed models as it would not affect the entire scene but a single room.  
 
 The result of the restructure meant the FPS improved tenfold, from an average of 30fps to 200-400fps. If any objects were found to be creating problems from being too detailed or not textures properly, they could be removed without impacting on the rest of the scene.
 
-\section{Storyboards}
-Following the prototype which had little story or goals, a more in-depth story and set of tasks were created. The user will play as an example "Day in the life of a child with autism". This will be split up into several "Missions"(tasks). The initial story was developed with consultation from two individuals; One was an adult with autism whom has a child with autism and the second was a 12-year old with autism.
+Finally, additional benefits from compartmentalising the house into rooms arose for dealing with the model pipeline; it was far easier to load a single room into JMonkey than to load an entire house and fix any issues with materials, textures or general JMonkey importing problems.
 
-\subsection*{Mission 1: Complete morning routine}
+The result of the restructure resulted in a drastic improved FPS, from an average of 30-60fps to 200-400fps. If any objects were found to be creating problems from being too detailed or not textures properly, they could be removed without impacting on the rest of the scene.
+
+\section{Planning}
+
+Following the prototype which had little story or goals, a more in-depth story and set of tasks were created, the house was planned and sounds were recorded.
+
+\subsection{Storyboards}
+The user will play as an example "Day in the life of a child with autism". This will be split up into several "Missions". The initial story was developed with consultation from an individual whom gave initial interviews. 
+
+\subsubsection*{Mission 1: Complete morning routine}
 Complete your morning routine in the designated time(the more out of time, the more contentment drops). Player starts in the bedroom which is a designated safe place/sensory room. 
 
 Routine to complete: eat breakfast, brush teeth, get dressed.
@@ -1064,7 +1132,7 @@ Routine to complete: eat breakfast, brush teeth, get dressed.
 \item Child has a meltdown, thoughts flood the screen with fears and anxieties. Where are we going? Are we taking the car? When will I be back? Stomach hurts, stomach hurts - words become even more jumbled. They weren't warned and thought they could replenish energy levels in their room, the change means the rest of the day could be faced with countless unprepared fears.
 \end{enumerate}
 
-\subsection*{Mission 2: Afternoon, find out the cause of stomach pain}
+\subsubsection*{Mission 2: Afternoon, find out the cause of stomach pain}
 Mission is to find out why the characters stomach may be hurting which also gives the user a chance to explore. Contentment slowly drops until the solution is found. Reasons for the pain could be:
 
 \begin{itemize}
@@ -1075,10 +1143,10 @@ Mission is to find out why the characters stomach may be hurting which also give
 
 The user will be expected to attempt all of the above(the final one the user finds will always be the cause). During the above the door bell will unexpectedly ring and a new character will enter, the parent's friend. The friend was meant to be meeting you both out but due to the earlier meltdown has come to the house instead. Mum tried to explain in advance but words weren't making sense. The person looks like a stranger and can't be recognised and contentment reduces(touch sensitivity occurring from this stranger?). 
 
-\subsection*{Mission 3: Evening, get to bed}
+\subsubsection*{Mission 3: Evening, get to bed}
 Mission pops up that it is time to go to bed but mum stops you and says you can continue playing. Parent then approaches after an unknown amount of time and informs you to go to bed. Meltdown occurs as it's not the exact time and the characters bedtime routine has been broken.
 
-\section{House design}
+\subsection{House design}
 Following a need to compartmentalise the previous house environment as a solution to performance issues, a new and more structured plan of the house was created. The game description column of the table is information the user will see when they interact with the object and will be displayed as "thoughts":
 
 \begin{table}[H]
@@ -1134,7 +1202,7 @@ Following a need to compartmentalise the previous house environment as a solutio
     \end{tabular}
 \end{table}
 
-In addition to this, light switches were added as prior the user would have to click on the object itself. A distance measure was added to actions to make sure that users were close enough to the objects to interact with them. This was necessary for the morning routine and unexpected light turning on; otherwise users would be able to turn it off at a distance which is unrealistic and makes it easy to avoid.
+Light switches were added as prior the user would have to click on the object itself. A distance measure was added to actions to make sure that users were close enough to the objects to interact with them. This was necessary for the morning routine and unexpected light turning on; otherwise users would be able to turn it off at a distance which is unrealistic and makes it easy to avoid.
 
 \subsection{Sounds}
 One of the tasks in moving from the prototype to the first version was to create a more immersive environment, the addition sound was felt to promote this.
@@ -1163,9 +1231,99 @@ Sounds recorded were:
 
 By asking someone with autism to record the sounds themselves, it personally gave me an experience of the types of things they hear and thus revealed what I needed to convey rather than using guesswork. Sounds such as the humming from the fridge were never considered until the results of the recordings came. Some of these will not be incorporated into the first version, but left for a later date. 
 
+\section{Implementation}
 
-\subsection{Rewrite of scenes}
-Most the the effort in the last few weeks of the semester were spend on re-writing the scene manager and remodelling the house. 
+Small game play elements added; selecting actions to interact with objects is now less intrusive. Prior a menu would pop up and prompt the user to make a selection with their mouse which will now only happen if there are multiple options. No object in the environment was designed to have more than 2 actions at the moment, so when an object has a description it will simply be defined in the mission script to pop up and give information afterwards and only once. 
+
+Descriptions usage was adjusted instead of being removed based on feedback from LAER lab. These are now only utalised in the explore mode when giving user hints after a meltdown has occurred. In replacement of some of the description boxes, thoughts are now displayed at the bottom of the screen when to user is looking at a specific object. 
+
+Overall the project is now nearly 5 thousand lines of code, up from 1200 in the prototype. 
+
+\subsection{GUI Changes}
+All components now utilize listeners which was not an inbuilt feature of the gui package and had to be built. However it has allowed missions greater control being able to create their own gui without interfering or causing problems to the rest of the system.
+
+The GUIManager was updated to the GameScreen which is now an app state and so does not need to be called in the main game loop, reducing some unneeded code and it now uses states to keep track of the state of the interface. If a description box is on display, or a question is being asked, the start screen is on or the user is in general game play mode. Screens added such as HelpScreen, AboutScreen and StartScreen. These were build however the information was not added on the Help or About screen and needs to be done at a later date as with the release a video was planned to give information as required. 
+
+
+\subsection{Sensory System improvements}
+Following the feedback on sensory overloads and additional problems discussed, improvements were made to how sensory overloads occurred and were calculated. Previously, objects which could affect the sensory system were put into a Hashable which were then periodically checked for the distance to the player and if in proximity would assign a weight. However, all objects would affect the user by the same weight which was not ideal. In addition, sensory overloads were calculated by discrete values and thresholds, making experimentation difficult. This is changed into a continuous function adding scalability and a flexible means to experiment by simply changing parameters, thus helping to address previous issues of meltdowns occurring too quickly.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=90mm]{images/sensoryobjects.jpg}
+\caption{Diagram showing an overview implementation of sensory system}
+\label{sensorysystem}
+\end{figure}
+
+Each sensory object is given two properties (from the green boxes above) and from this a sensory function is applied and a weight for each object is calculated. The sensory function is an exponential: the higher the affecting level the higher the weight returned and if the object is set as a 'soothing object' a negative value will return instead. 
+
+The sensory manager then takes all the weights of the objects that are in proximity and sums them, taking the log of this. If the log is negative there are no objects and contentment replenishes. The result of the summation is then taken away from the players contentment. 
+
+The first change was to create a new SensoryObject type and in here store all the information required for the sensory objects. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=90mm]{images/implementationfirst/sensoryobject.png}
+\caption{Diagram showing an overview of sensory objects}
+\label{sensorysystem}
+\end{figure}
+
+Sensory objects have the following important fields:
+\begin{enumerate}
+\item SensoryType: The type of sensory object it is. The type will impact what happen when doAction is called.
+\item SensoryState: Available states the sensory object can be in. 
+\end{enumerate}
+
+LightSensoryObject is an extention of SensoryObject with its own additional set of methods and types. FLight represents a flurescent light and if set the bulb of the light will constantly flicker when it is turned on.
+
+\begin{description}
+\item Soundtemp: Object will only temporarily play and then remove itself.
+\item Light: Object is a light object
+\item Tactile sensory object
+\item sinterest: object is a sensory object and will give a negative weight
+\item Soundswitch: object is sound and a switch and the user can turn it on or off.
+\end{description}
+
+Sounds were the final addition to the sensory manager. When acting on the toilet it now flushes and the alarm clock in the room rings. Sounds create a more immersive environment and an additional layer for creating sensory overloads(i.e making objects more high-pitched). 
+
+In addition each sensory object has two important methods
+\begin{enumerate}
+\item  doAction which will decide how to act on the object depending on its type when it is called. Each sensory object has three sensory states: current state(the one that is currently set), passive state(effect when the object is off) and active state(effect when the object is on). 
+\item getWeight: takes the current state and returns a value weight (also later referred to as the sensory function)
+\end{enumerate}
+
+The benefits of representing objects in this way is that the developer can simply create a new SensoryObject from a spatial, set it's properties and how it behaves:
+
+\begin{lstlisting}
+        Spatial hoover = livingroom.getSpatial("hoover")
+        if(hoover != null) {
+           // set the object as a sound switch(it's not constant and the user can turn it on and off.)
+            livingroomHooverSO = new SensoryObject(hoover, false, SensoryObject.SensoryType.SOUND_SWITCH, SensoryObject.SensoryState.NONE)
+           // set state to high when it is turned on.
+            livingroomHooverSO.setUpperLevel(SensoryObject.SensoryState.HIGH)
+            // assign the audio that is associated with the object
+            AudioNode hooverNoise = new AudioNode(am, "Sounds/vax.ogg", false)
+            // add the sound
+            livingroomHooverSO.addSound(hooverNoise, (Node) hoover)
+            // add the sensory object to the livingroom scene. 
+            livingroom.addSensoryObject(livingroomHooverSO)
+        } 
+        
+        Spatial bedroomLamp = bedroom.getSpatial("lamp");
+        if(bedroomLamp != null) {     
+            bedroom_lampSO = new LightSensoryObject(bedroomLamp, LightType.STANDARD);
+            bedroom_lampSO.setUpperLevel(SensoryObject.SensoryState.NONE);
+            bedroom.addSensoryObject(bedroom_lampSO);
+            bedroom.addLampLight(bedroomLamp);
+            
+        }    
+\end{lstlisting}
+
+Further, the action manager no longer has to find object and calculate what to do about them. It now simply sees that it is a sensory object and calls doAction which will then decide what do about it consequently reducing a substantial amount of code in the action manager allowing the developer to focus on higher level attributes. 
+
+Finally, meltdowns were changed to allow for two different meltdowns, "Freeze" and "Fight". These could be set in missions, fight was the same as previous however "Freeze" would simply make the character freeze and become unresponsive. When a meltdown occurs a radio noise is played. This was partially because of reports of when sensory overloads are bad it can sound like a radio tuning in and out, however it was primarily to create a horrible noise to encourage the user to prevent meltdowns and create an unwelcomed state. The radio noise itself does feel will need to be changed and ideally it would be done with a better sound or audio system; taking all affecting sounds and combining to create a sensory overload effect of tuning in and out. This is left as future improvements however as experience with sound development and creation is lacking and this is thus not time efficient. 
+
+\subsection{Rewrite of scene manger}
 
 \begin{figure}[H]
 \centering
@@ -1174,10 +1332,34 @@ Most the the effort in the last few weeks of the semester were spend on re-writi
 \label{scenemanager}
 \end{figure}
 
-SceneManager contains useful tools for the creation, deletion and changing of scenes. The "HomeScene" extends this and contains objects which are all instances of Scene and represent the individual rooms. By extending the SceneManager the HomeScene can listen to events occurring in the game and specify custom ones that are unique for that collection of scenes(or rooms), for example it can specify that doors require changing and loading of different rooms. 
+The original SceneManager was renamed to Scene. Scene continued to have useful methods for the creation of individual scenes. 
+
+SceneManager now contained tools for the creation, deletion and changing of scenes. The "HomeScene" extends this and contains multiple Scenes which represent the individual rooms. Instead of whole Scene class needing to be created for individual scenes, the class extending SceneManager, "HomeScene" simply needs to specify the jmonkey scene spatial files and set properties of the scene just as points in which the player will appear when it is loaded. 
+
+The HomeScene now implements GameActionListener so it can listen to events occurring in the game and specify custom ones such as needing to load other rooms when users click on doors. The HomeScene can be seen in the appendix.
+
+From the design, some items were not implemented due to complexity or not being necessary at the time. However, some additional objects were created:
+
+Items not implemented:
+\begin{enumerate}
+\item Flowers
+\item Bath was implemented but with no action
+\item Collection of items
+\item Touchside lamp: although the setup is there and the doAction for when a light object is set to type dim light simply needs implementing(although a fluorescent light was later implemented).
+\item Stairs: considered not necessary
+\end{enumerate}
+
+Additional items:
+\begin{enumerate}
+\item Thunder and lightning poster: gives a description explanation unusual fears and autism and that sensory experiences differ for each individual. 
+\item Two people in living-room with description of facial recognition problems.
+\end{enumerate}
+
 
 \subsubsection{House implementation}
-In addition to remodelling parts of the house a bathroom was created and added along with new actions such as being able to flush the toilet(with sounds to accompany this). Now being able to handle individual objects in rooms allows for easy addition animation, the clock's hands in the room move and will indicate the time of day. Below gives some screen shots of the new environment and it's accompanying frame-rates. 
+The additional setup features in addition to the large changes to the sensory manager created an improved way of handling objects. Previously all actions on objects needed to be sent to the action manager to processing but these could now be directly acted upon. 
+
+Below gives some screen shots of the new environment and it's accompanying frame-rates. 
 
 
 \begin{figure}[H]
@@ -1210,29 +1392,11 @@ In addition to remodelling parts of the house a bathroom was created and added a
 
 \subsection{Game state manager}
 
-As the size of the system grew, one of the most important changes was the addition of a game state manager, enabling universal control and monitoring of the overall system. 
+As the size of the system grew one of the most important changes was the addition of a game state manager enabling universal control and monitoring of the overall system whilst reducing the amount of code in the main game loop. 
 
-The user can now change between "Explore mode"(the user has no tasks and can simply look around the environment) and "Mission mode"(given the tasks or story) without having to restart the simulator. From this came the addition of the start and help screen and ability for the user to pause the game.  
+The user could now change between "Explore mode"(the user has no tasks and can simply look around the environment) and "Mission mode"(given the tasks or story) without having to restart the simulator although the transition itself was only half implemented with a custom gui. It was not finished due to plans of putting it online where the gui would not be used. However, from this came the addition of the start and help screen and allowance for the user to pause the simulator; common expectations users will have of games.  
 
-The rest of the system can now request useful information from the GSM such as which mission is currently being run, which scene the player is currently in and what the state of the GUI is (if actions are being displayed, if the user is required to select an option). If the GUI needs to display information(such as selecting actions) it will notify the game state manager which will halt processes that may interfere. Having a central control made other parts of the simulator easier to develop and reuse since each part of the system only needs to worry about which state it is in rather than checking multiple conditions.
-
-\subsection{Sensory System improvements}
-Following the feedback on sensory overloads, improvements were required in how sensory overloads occurred rather than what was happening when they did. Previously, objects which could affect the sensory system were put into a Hashable which were then periodically checked for the distance to the player and if in proximity, would affect the sensory system depending on how far the object is. However, all objects would affect the user by the same weight and the effect on contentment would change depending on what threshold of objects were reached (i.e if 2 were in proximity the health reduction would be low, if more than two the reduction would be greater). Filters to mirror sensory overloads would then be applied depending on this level.
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=90mm]{images/sensoryobjects.jpg}
-\caption{Diagram showing implementation of sensory system}
-\label{sensorysystem}
-\end{figure}
-
-The new implementation attempts to create a better less fragmented model of how objects affect the player and cause sensory overloads/meltdowns. This approach is more scalable and enables a flexible means to experiment by simply changing parameters, thus helping to address previous issues of meltdowns occurring too quickly.
-
-Each sensory object is given two properties (from the green boxes above) and from this a sensory function is applied and a weight for each object is calculated. The sensory function is simply an exponential: the higher the affecting level the higher the weight returned and if the object is set as a 'soothing object' a negative value will return instead. 
-
-The sensory manager then takes all the weights of the objects that are in proximity and sums them, taking the log of this. If the log is negative there are no objects and contentment replenishes. The result of the summation is then taken away from the players contentment. 
-
-Sounds were the final addition to the simulator. When acting on the toilet it now flushes and the alarm clock in the room rings. Sounds create a more immersive environment and an additional layer for creating sensory overloads(i.e making objects more high-pitched). 
+The rest of the system can now request useful information from the GSM such as the current mission, which scene the player is currently in and what the state of the GUI is (if actions are being displayed, if the user is required to select an option). If the GUI needs to display information(such as selecting actions) it will notify the game state manager which will halt processes that may interfere. Having a central control made other parts of the simulator easier to develop and reuse since each part of the system only needs to be concerned with the overall game state rather than needing to check a variety of conditions in separate classes.
 
 \chapter{Formative evaluation: First version}
 The formative evaluation primarily focused on user experience and game play with a latter goal of making sure the simulation was successful in teaching awareness of at least one attribute of autism. 
@@ -1662,6 +1826,14 @@ Finally in terms of learning about how a child may deal with these problems, the
 \subsection*{Aim 4}
 Although conclusions from the summative evaluation suffer from the ceiling effect there is evidence of at least some of an increase in understanding of autism. The aim is unfortunately only partially achieved and it is felt that more research is required, ideally not with people whom come from having had experience with autism. By making a website available and having the system readily accessible this should aid increasing awareness of autism and as later expressed in \ref{sec:publicresponse}, the website received a large amount of viewers in the space of a few days. However, the aim of putting this completely online so users would not have to download it was not reached as it was not possible to protect the source code due to problems with obfuscation. However, the project could possibly be made open source at a later date.
 
+\subsection{Discussion of system design}
+The system design was a huge improvement from the prototype. Previously with the prototype version it was found that after period of time having not been working on it, there was a large amount of effort to remember how it worked. With the new system however, development was much easier possibly because of the modularity and lack of a requirement of remembering how the whole system worked. This did lead to a need to design a debug system which although was useful in its incomplete form was not required to be finished. One of the aims of the new sensory manager was to make it easier to experiment to reduce the impact of sensory overloads occurring too fast. Although feedback suggests this is occurring too fast, a simple value can be changed to address this rather than needing to change various thresholds which was extremely time consuming and improved with the first version. 
+
+\begin{lstlisting}
+	reduceHealth(sensoryLevel * meltdownSpeed * tpf);
+\end{lstlisting}
+
+The rewrite of the scene manager and complete separation of scenes such that they are also objects with set properties was a welcomed improvement and greatly improved the speed of development although it did require a substantial amount of work; in the long term dividends are paid. 
 
 \section{Limitations}
 
@@ -1704,7 +1876,13 @@ Unity would definitely have obtained similar results far quicker and with much, 
 Blender was a fantastic program to use and is widely used by professionals. It did have an exceptionally steep learning curve and time is regretted to have been spent on sketchup in the prototype state when it could have been spent learning to use this and made modelling quicker in the second year of this project. Far too much time was spent on the prototype finding models which could be used and then spending a large amount of time trying to clean them up so they could be imported into JMonkey and it is felt this time would also have been much better spent on learning blender. The new living room took three days to model however when it came to the kitchen which was much more detailed this was done in only 3 hours due to increased experience.
 
 \section{Future directions}
-In addition to suggested future improvement in the summative and formative more sounds need to be recorded and combined so that the user can hear sounds outside such as cars or dogs when walking around the house. 
+In addition to suggested future improvement in the summative and formative: additional work is required for sound sensory. Pre-recorded sounds not that were not fully implemented in the first version need to be implemented and some additional ones need to be recorded such as sounds outside such as cars or dogs when walking around the house. Particle emitters were implemented from the prototype although not directly used in the final version. This was because feedback on the use of these was desired and owing people with autism expressed already "the sound is very accurate" it was decided not to include these and was left for a future question and improvement. 
+
+Improving animations; some users expressed they expected the door of the wardrobe to open although there was no need to implement this and a representation of getting dressed was indicated by the images more realistic animations and interactions at a later date are advised to create a further immersive environment. For example making the dinosaur move instead of simply rotation. 
+
+Further interactions of items without explicitly having to interact with them; i.e looking at the windmill and if the user tries to look away the camera is brought back to it. Thus directing the in-game players attention will be difficult to completely control.  
+
+Breaking down explore mode and having both an explore mode and a tutorial mode. Due to time explore mode became a bit more like a tutorial mode although the two were never fully separated and combined. 
 
 Interface needs further improving as thoughts are still not obvious. The tool tip which has been centred under the cross hair is a large improvement however it still needs to be further obvious. 
 
@@ -1728,6 +1906,9 @@ In addition to allowing customisation to enable access to a wider audience, peop
 
 \subsection{Difficulty setting}
 People could answer questions depending on their autism experience and their gaming experience and a difficulty would be set. I feel this would offer something better than simply "easy", "medium" or "hard". Formatives were mostly with people whom had gaming experience so more tests needs to be done on people whom do not.
+
+\subsection{Further research}
+A questionnaire for users after playing to see which aspects are being successfully conveyed with more stories or vignettes or an entirely different approach. 
 
 
 \section{Public response}

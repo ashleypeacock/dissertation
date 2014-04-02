@@ -1,0 +1,26 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdftex 2014.4.2)  2 APR 2014 10:34
+entering extended mode
+**C:/Users/Ashley/University*git/dissertation/dissertation/dissertation/biblio.
+bib
+
+("C:/Users/Ashley/University git/dissertation/dissertation/dissertation/biblio.
+bib"
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.3 @inbook{Bogdashina_
+                       2003, title={Sensory perceptual profile}, url={http:/...
+
+? 
+! Emergency stop.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.3 @inbook{Bogdashina_
+                       2003, title={Sensory perceptual profile}, url={http:/...
+End of file on the terminal!
+
+!  ==> Fatal error occurred, no output PDF file produced!
