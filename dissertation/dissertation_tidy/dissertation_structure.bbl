@@ -1,0 +1,32 @@
+\begin{thebibliography}{3}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Gabriels et~al.(2008)Gabriels, Agnew, Miller, Gralla, Pan, Goldson,
+  Ledbetter, Dinkins, and Hooks]{Gabriels_et_al_2008}
+Robin~L. Gabriels, John~A. Agnew, Lucy~Jane Miller, Jane Gralla, Zhaoxing Pan,
+  Edward Goldson, James~C. Ledbetter, Juliet~P. Dinkins, and Elizabeth Hooks.
+\newblock Is there a relationship between restricted, repetitive, stereotyped
+  behaviors and interests and abnormal sensory response in children with autism
+  spectrum disorders?
+\newblock \emph{Research in Autism Spectrum Disorders}, 2\penalty0
+  (4):\penalty0 660--670, 2008.
+
+\bibitem[Matson and Kozlowski(2011)]{Matson_Kozlowski_2011}
+Johnny~L. Matson and Alison~M. Kozlowski.
+\newblock The increasing prevalence of autism spectrum disorders.
+\newblock \emph{Research in Autism Spectrum Disorders}, 5\penalty0
+  (1):\penalty0 418--425, 2011.
+
+\bibitem[Mayes et~al.(2013)Mayes, Calhoun, Aggarwal, Baker, Mathapati,
+  Molitoris, and Mayes]{Mayes_et_al_2013}
+Susan~Dickerson Mayes, Susan~L. Calhoun, Richa Aggarwal, Courtney Baker,
+  Santosh Mathapati, Sarah Molitoris, and Rebecca~D. Mayes.
+\newblock Unusual fears in children with autism.
+\newblock \emph{Research in Autism Spectrum Disorders}, 7\penalty0
+  (1):\penalty0 151--158, 2013.
+
+\end{thebibliography}

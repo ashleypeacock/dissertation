@@ -1,0 +1,41 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: dissertationv3.aux
+The style file: plainnat.bst
+Database file #1: biblio.bib
+Repeated entry---line 86 of file biblio.bib
+ : @article{teachersinclusion
+ :                           , title={ Factors relating to education professionals' classroom practices for the inclusion of students with ASD. Matthew J Segall, Jonathon M. Campbel, year={2012}}
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "mottron"
+Warning--I didn't find a database entry for "laer_partdesign"
+Warning--to sort, need author or key in nas
+Warning--to sort, need author or key in dsm52
+Warning--to sort, need author or key in autismmisconception
+Too many commas in name 1 of "Amanda Batten, Clare Corbett, Mia Rosenblatt, Liz Withers" for entry nasschool
+while executing---line 1347 of file plainnat.bst
+Too many commas in name 1 of "Amanda Batten, Clare Corbett, Mia Rosenblatt, Liz Withers" for entry nasschool
+while executing---line 1347 of file plainnat.bst
+Warning--to sort, need author or key in sensory_overview
+Warning--to sort, need author or key in statsandfacts
+Warning--to sort, need author or key in dd
+Warning--to sort, need author or key in udyslexia
+Warning--empty year in autismmisconception
+Warning--empty year in dd
+Warning--empty author in dsm52
+Warning--empty journal in dsm52
+Warning--empty year in dsm52
+Warning--empty year in dsm52
+Warning--empty year in nas
+Warning--empty author in sensory_overview
+Warning--empty journal in sensory_overview
+Warning--empty year in sensory_overview
+Warning--empty year in sensory_overview
+Warning--empty year in statsandfacts
+Warning--empty year in udyslexia
+Too many commas in name 1 of "Amanda Batten, Clare Corbett, Mia Rosenblatt, Liz Withers" for entry nasschool
+while executing---line 1429 of file plainnat.bst
+Too many commas in name 1 of "Amanda Batten, Clare Corbett, Mia Rosenblatt, Liz Withers" for entry nasschool
+while executing---line 1429 of file plainnat.bst
+Warning--empty journal in nasschool
+Warning--empty year in nasschool
+Warning--empty year in nasschool
+(There were 5 error messages)

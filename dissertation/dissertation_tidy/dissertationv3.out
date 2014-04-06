@@ -1,0 +1,111 @@
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Selecting a project}{chapter.1}% 2
+\BOOKMARK [2][-]{subsection.1.1.1}{Results}{section.1.1}% 3
+\BOOKMARK [2][-]{subsection.1.1.2}{Conclusions}{section.1.1}% 4
+\BOOKMARK [1][-]{section.1.2}{Overview of previous work}{chapter.1}% 5
+\BOOKMARK [0][-]{chapter.2}{Literature review}{}% 6
+\BOOKMARK [1][-]{section.2.1}{What is Autism?}{chapter.2}% 7
+\BOOKMARK [1][-]{section.2.2}{Sensory Experiences}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.3}{Theoretical models}{chapter.2}% 9
+\BOOKMARK [2][-]{subsection.2.3.1}{Information processing}{section.2.3}% 10
+\BOOKMARK [2][-]{subsection.2.3.2}{Perceptual models}{section.2.3}% 11
+\BOOKMARK [1][-]{section.2.4}{Impact of Autism}{chapter.2}% 12
+\BOOKMARK [2][-]{subsection.2.4.1}{Impact of Autism in Schools}{section.2.4}% 13
+\BOOKMARK [2][-]{subsection.2.4.2}{Impact of Autism on Home}{section.2.4}% 14
+\BOOKMARK [1][-]{section.2.5}{Previous work}{chapter.2}% 15
+\BOOKMARK [2][-]{subsection.2.5.1}{Disability and mental health simulations}{section.2.5}% 16
+\BOOKMARK [2][-]{subsection.2.5.2}{Autism simulation and tools}{section.2.5}% 17
+\BOOKMARK [0][-]{chapter.3}{Participatory Design}{}% 18
+\BOOKMARK [1][-]{section.3.1}{LAER Lab}{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.2}{Interviews}{chapter.3}% 20
+\BOOKMARK [2][-]{subsection.3.2.1}{Methods}{section.3.2}% 21
+\BOOKMARK [1][-]{section.3.3}{Results}{chapter.3}% 22
+\BOOKMARK [1][-]{section.3.4}{Conclusions: Goals and restrictions identified}{chapter.3}% 23
+\BOOKMARK [0][-]{chapter.4}{Prototype: Design}{}% 24
+\BOOKMARK [1][-]{section.4.1}{Tool selection}{chapter.4}% 25
+\BOOKMARK [2][-]{subsection.4.1.1}{Game engines}{section.4.1}% 26
+\BOOKMARK [2][-]{subsection.4.1.2}{Modelling tools}{section.4.1}% 27
+\BOOKMARK [1][-]{section.4.2}{Game play}{chapter.4}% 28
+\BOOKMARK [2][-]{subsection.4.2.1}{Interface and Controls}{section.4.2}% 29
+\BOOKMARK [2][-]{subsection.4.2.2}{User tasks: Mission and Explore mode}{section.4.2}% 30
+\BOOKMARK [1][-]{section.4.3}{Simulator features}{chapter.4}% 31
+\BOOKMARK [2][-]{subsection.4.3.1}{Description boxes}{section.4.3}% 32
+\BOOKMARK [2][-]{subsection.4.3.2}{Sensory overloads}{section.4.3}% 33
+\BOOKMARK [2][-]{subsection.4.3.3}{Meltdowns}{section.4.3}% 34
+\BOOKMARK [2][-]{subsection.4.3.4}{Special interests}{section.4.3}% 35
+\BOOKMARK [2][-]{subsection.4.3.5}{Information processing delay}{section.4.3}% 36
+\BOOKMARK [0][-]{chapter.5}{Prototype: Implementation}{}% 37
+\BOOKMARK [1][-]{section.5.1}{Game play}{chapter.5}% 38
+\BOOKMARK [1][-]{section.5.2}{Implementation: technical}{chapter.5}% 39
+\BOOKMARK [2][-]{subsection.5.2.1}{SceneManager}{section.5.2}% 40
+\BOOKMARK [2][-]{subsection.5.2.2}{GUIManager}{section.5.2}% 41
+\BOOKMARK [2][-]{subsection.5.2.3}{ActionManager}{section.5.2}% 42
+\BOOKMARK [2][-]{subsection.5.2.4}{Player}{section.5.2}% 43
+\BOOKMARK [2][-]{subsection.5.2.5}{Sensory Manager}{section.5.2}% 44
+\BOOKMARK [2][-]{subsection.5.2.6}{MissionManager}{section.5.2}% 45
+\BOOKMARK [1][-]{section.5.3}{Discussion}{chapter.5}% 46
+\BOOKMARK [0][-]{chapter.6}{Formative evaluation: Prototype}{}% 47
+\BOOKMARK [1][-]{section.6.1}{Expert feedback: LAERLab}{chapter.6}% 48
+\BOOKMARK [2][-]{subsection.6.1.1}{Methods}{section.6.1}% 49
+\BOOKMARK [2][-]{subsection.6.1.2}{Results}{section.6.1}% 50
+\BOOKMARK [1][-]{section.6.2}{User feedback}{chapter.6}% 51
+\BOOKMARK [2][-]{subsection.6.2.1}{Results}{section.6.2}% 52
+\BOOKMARK [1][-]{section.6.3}{Conclusions}{chapter.6}% 53
+\BOOKMARK [0][-]{chapter.7}{First version}{}% 54
+\BOOKMARK [1][-]{section.7.1}{Planning}{chapter.7}% 55
+\BOOKMARK [2][-]{subsection.7.1.1}{Storyboards}{section.7.1}% 56
+\BOOKMARK [2][-]{subsection.7.1.2}{House design}{section.7.1}% 57
+\BOOKMARK [2][-]{subsection.7.1.3}{Sounds}{section.7.1}% 58
+\BOOKMARK [1][-]{section.7.2}{Implementation: Game play}{chapter.7}% 59
+\BOOKMARK [2][-]{subsection.7.2.1}{House and game images}{section.7.2}% 60
+\BOOKMARK [2][-]{subsection.7.2.2}{Game modes}{section.7.2}% 61
+\BOOKMARK [1][-]{section.7.3}{Implementation: System}{chapter.7}% 62
+\BOOKMARK [2][-]{subsection.7.3.1}{GUI Changes}{section.7.3}% 63
+\BOOKMARK [2][-]{subsection.7.3.2}{Sensory System improvements}{section.7.3}% 64
+\BOOKMARK [2][-]{subsection.7.3.3}{Rewrite of scene manger}{section.7.3}% 65
+\BOOKMARK [2][-]{subsection.7.3.4}{Game state manager}{section.7.3}% 66
+\BOOKMARK [1][-]{section.7.4}{Future work}{chapter.7}% 67
+\BOOKMARK [0][-]{chapter.8}{Formative evaluation: First version}{}% 68
+\BOOKMARK [1][-]{section.8.1}{Methods}{chapter.8}% 69
+\BOOKMARK [1][-]{section.8.2}{Results}{chapter.8}% 70
+\BOOKMARK [1][-]{section.8.3}{Sensory system changes}{chapter.8}% 71
+\BOOKMARK [1][-]{section.8.4}{Conclusions}{chapter.8}% 72
+\BOOKMARK [0][-]{chapter.9}{Summative evaluation}{}% 73
+\BOOKMARK [1][-]{section.9.1}{Participants}{chapter.9}% 74
+\BOOKMARK [1][-]{section.9.2}{Materials}{chapter.9}% 75
+\BOOKMARK [1][-]{section.9.3}{Procedure}{chapter.9}% 76
+\BOOKMARK [2][-]{subsection.9.3.1}{Procedure: In-Person Participation}{section.9.3}% 77
+\BOOKMARK [2][-]{subsection.9.3.2}{Procedure: Online Participants}{section.9.3}% 78
+\BOOKMARK [1][-]{section.9.4}{Results}{chapter.9}% 79
+\BOOKMARK [1][-]{section.9.5}{General discussion}{chapter.9}% 80
+\BOOKMARK [1][-]{section.9.6}{Limitations}{chapter.9}% 81
+\BOOKMARK [1][-]{section.9.7}{Participants responses to software}{chapter.9}% 82
+\BOOKMARK [1][-]{section.9.8}{Conclusions}{chapter.9}% 83
+\BOOKMARK [0][-]{chapter.10}{Discussion and final conclusions}{}% 84
+\BOOKMARK [1][-]{section.10.1}{Review of aims}{chapter.10}% 85
+\BOOKMARK [2][-]{subsection.10.1.1}{Discussion of system design}{section.10.1}% 86
+\BOOKMARK [1][-]{section.10.2}{Limitations}{chapter.10}% 87
+\BOOKMARK [2][-]{subsection.10.2.1}{Simulator}{section.10.2}% 88
+\BOOKMARK [2][-]{subsection.10.2.2}{Use of tools}{section.10.2}% 89
+\BOOKMARK [1][-]{section.10.3}{Future directions}{chapter.10}% 90
+\BOOKMARK [2][-]{subsection.10.3.1}{Scenario and scene customisability}{section.10.3}% 91
+\BOOKMARK [2][-]{subsection.10.3.2}{Designing for autism}{section.10.3}% 92
+\BOOKMARK [2][-]{subsection.10.3.3}{Difficulty setting}{section.10.3}% 93
+\BOOKMARK [2][-]{subsection.10.3.4}{Further research}{section.10.3}% 94
+\BOOKMARK [1][-]{section.10.4}{Public response}{chapter.10}% 95
+\BOOKMARK [1][-]{section.10.5}{Conclusions}{chapter.10}% 96
+\BOOKMARK [0][-]{section*.29}{Appendices}{}% 97
+\BOOKMARK [0][-]{Appendix.a.A}{Prototype}{}% 98
+\BOOKMARK [0][-]{Appendix.a.B}{Formative}{}% 99
+\BOOKMARK [0][-]{Appendix.a.C}{Participatory design materials}{}% 100
+\BOOKMARK [1][-]{section.a.C.1}{LAER Lab}{Appendix.a.C}% 101
+\BOOKMARK [1][-]{section.a.C.2}{Interviews}{Appendix.a.C}% 102
+\BOOKMARK [2][-]{subsection.a.C.2.1}{Teacher: Candidate 2}{section.a.C.2}% 103
+\BOOKMARK [2][-]{subsection.a.C.2.2}{Candidate 3: conversation spiralled off in many directions so script is not linear}{section.a.C.2}% 104
+\BOOKMARK [0][-]{Appendix.a.D}{Summative}{}% 105
+\BOOKMARK [1][-]{section.a.D.1}{Summative materials}{Appendix.a.D}% 106
+\BOOKMARK [1][-]{section.a.D.2}{Summative results}{Appendix.a.D}% 107
+\BOOKMARK [1][-]{section.a.D.3}{Summative question responses}{Appendix.a.D}% 108
+\BOOKMARK [0][-]{Appendix.a.E}{Prototype implementation}{}% 109
+\BOOKMARK [1][-]{section.a.E.1}{HouseScene: Code}{Appendix.a.E}% 110
+\BOOKMARK [0][-]{Appendix.a.F}{First version}{}% 111

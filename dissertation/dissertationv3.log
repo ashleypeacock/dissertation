@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.25)  2 APR 2014 16:08
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.25)  2 APR 2014 17:14
 entering extended mode
 **dissertationv3.tex
 
@@ -1592,7 +1592,10 @@ Chapter 10.
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no  in font cmr10!
- [89] [90]
+ [89] [90] [91
+
+
+]
 ("C:\Users\Ashley\University git\dissertation\dissertation\dissertation\dissert
 ationv3.aux")
 
@@ -1617,9 +1620,9 @@ eX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
 msfonts/cm/cmsy10.pfb>
-Output written on dissertationv3.pdf (91 pages, 9903969 bytes).
+Output written on dissertationv3.pdf (92 pages, 9904451 bytes).
 PDF statistics:
- 356 PDF objects out of 1000 (max. 8388607)
+ 359 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  146 words of extra memory for PDF output out of 10000 (max. 10000000)
 
